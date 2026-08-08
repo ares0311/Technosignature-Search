@@ -25,6 +25,8 @@ Techno-Hunter = "techno_search.hunter_shell:main"
 Create-New-Search = "techno_search.hunter_cli:create_new_search"
 Run-New-Search = "techno_search.hunter_cli:run_new_search"
 Show-Follow-Ups = "techno_search.hunter_cli:show_follow_ups"
+Inspect-Target = "techno_search.hunter_cli:inspect_target_command"
+prod-check = "techno_search.hunter_prod_check:main"
 
 [project.optional-dependencies]
 dev = [

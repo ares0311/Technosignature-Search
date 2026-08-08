@@ -1,0 +1,130 @@
+{
+  "app_version": "1.2.72",
+  "checks": [
+    {
+      "check_id": "canonical_routing",
+      "detail": {},
+      "requirement_ids": [
+        "PIPE-01",
+        "PIPE-02",
+        "CLI-03"
+      ],
+      "status": "PASS",
+      "summary": "the shell delegates every command to the canonical Hunter entry points"
+    },
+    {
+      "check_id": "exact_target_freezing",
+      "detail": {
+        "inspected": [
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260719T133145Z-3650F32A"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260719T141028Z-6D7C655C"
+          },
+          {
+            "executed_count": 3,
+            "frozen_count": 3,
+            "search_id": "SEARCH-20260721T173605Z-0F6693E8"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260722T012439Z-6285F141"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260722T012732Z-759A1D93"
+          },
+          {
+            "executed_count": 61,
+            "frozen_count": 61,
+            "search_id": "SEARCH-20260724T062429Z-D7FA314D"
+          },
+          {
+            "executed_count": 10,
+            "frozen_count": 10,
+            "search_id": "SEARCH-20260725T033433Z-21EE3252"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260726T010212Z-69817987"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260726T011409Z-39A09771"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260728T035648Z-A9FE6463"
+          }
+        ]
+      },
+      "requirement_ids": [
+        "DUR-02"
+      ],
+      "status": "PASS",
+      "summary": "16 completed run(s) executed only their frozen targets"
+    },
+    {
+      "check_id": "identity_and_history",
+      "detail": {},
+      "requirement_ids": [
+        "IDENT-01",
+        "IDENT-03"
+      ],
+      "status": "PASS",
+      "summary": "the history contract implements every validity state and the New selection path gates eligibility on the decision states"
+    }
+  ],
+  "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+  "contract_version": "HUNTER-PROD-2026-07-30.3",
+  "counts": {
+    "executed": 3,
+    "failed": 0,
+    "not_executed": 0,
+    "passed": 3
+  },
+  "environment": {
+    "app_version": "1.2.72",
+    "bin_dir": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin",
+    "installation_mode": "editable",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/python",
+    "python_version": "3.14.3",
+    "relevant_environment": {
+      "CI": null,
+      "NO_COLOR": "1",
+      "REDUCE_MOTION": null,
+      "TECHNO_HUNTER_REDUCE_MOTION": null,
+      "TECHNO_SEARCH_ENABLE_LIVE_DATA": null,
+      "TERM": "xterm-ghostty",
+      "VIRTUAL_ENV": null
+    },
+    "repo_root": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+    "resolved_canonical_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/TechnoHunter",
+    "virtual_environment": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv"
+  },
+  "gate_passed": true,
+  "no_claim": "This gate verifies software conformance only. It makes no detection, discovery, expert-review, external-validation, or external-submission claim.",
+  "prod_ready": false,
+  "schema_version": "hunter_prod_check_report_v1",
+  "scope": {
+    "kind": "partial",
+    "selected_checks": [
+      "canonical_routing",
+      "exact_target_freezing",
+      "identity_and_history"
+    ]
+  },
+  "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+  "working_tree_state": "dirty"
+}

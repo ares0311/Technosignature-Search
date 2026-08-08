@@ -22,17 +22,47 @@
 #
 # Usage:
 #   bash scripts/patch_turbo_seti_numpy2_compat.sh
+#   bash scripts/patch_turbo_seti_numpy2_compat.sh --python /path/to/venv/bin/python
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+TARGET_PYTHON="${REPO_ROOT}/.venv/bin/python"
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --python)
+      if [[ $# -lt 2 || -z "$2" ]]; then
+        echo "[ERROR] --python requires an interpreter path." >&2
+        exit 2
+      fi
+      TARGET_PYTHON="$2"
+      shift 2
+      ;;
+    -h|--help)
+      echo "Usage: bash scripts/patch_turbo_seti_numpy2_compat.sh [--python PATH]"
+      exit 0
+      ;;
+    *)
+      echo "[ERROR] Unknown argument: $1" >&2
+      echo "Usage: bash scripts/patch_turbo_seti_numpy2_compat.sh [--python PATH]" >&2
+      exit 2
+      ;;
+  esac
+done
+
+if [[ ! -x "${TARGET_PYTHON}" ]]; then
+  echo "[ERROR] Python interpreter is not executable: ${TARGET_PYTHON}" >&2
+  exit 1
+fi
+
 export MPLCONFIGDIR="${REPO_ROOT}/data_cache/mplconfig"
 mkdir -p "${MPLCONFIGDIR}"
 TARGET_FILE="$(
-  "${REPO_ROOT}/.venv/bin/python" -c "import turbo_seti.find_doppler.find_doppler as m; print(m.__file__)" 2>/dev/null | tail -1
+  "${TARGET_PYTHON}" -c "import turbo_seti.find_doppler.find_doppler as m; print(m.__file__)" | tail -1
 )" || {
-  echo "[ERROR] turbo_seti is not importable in this venv -- install the 'radio' extra first:" >&2
-  echo "  .venv/bin/python -m pip install -e '.[radio]'" >&2
+  echo "[ERROR] turbo_seti is not importable with ${TARGET_PYTHON} -- install the 'radio' extra first:" >&2
+  echo "  ${TARGET_PYTHON} -m pip install -e '.[radio]'" >&2
   exit 1
 }
 
@@ -51,15 +81,17 @@ if ! grep -qF "${BUGGY_LINE}" "${TARGET_FILE}"; then
   exit 1
 fi
 
-python3 -c "
+"${TARGET_PYTHON}" -c '
 import pathlib
-path = pathlib.Path('${TARGET_FILE}')
-text = path.read_text(encoding='utf-8')
-buggy = '''${BUGGY_LINE}'''
-fixed = '''${FIXED_LINE}'''
+import sys
+
+path = pathlib.Path(sys.argv[1])
+text = path.read_text(encoding="utf-8")
+buggy = sys.argv[2]
+fixed = sys.argv[3]
 if buggy not in text:
-    raise SystemExit('buggy line vanished between grep check and patch -- aborting')
-path.write_text(text.replace(buggy, fixed, 1), encoding='utf-8')
-"
+    raise SystemExit("buggy line vanished between grep check and patch -- aborting")
+path.write_text(text.replace(buggy, fixed, 1), encoding="utf-8")
+' "${TARGET_FILE}" "${BUGGY_LINE}" "${FIXED_LINE}"
 
 echo "[OK] Patched ${TARGET_FILE} (added missing [0] index on total_n_hits)."

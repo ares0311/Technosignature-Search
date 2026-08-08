@@ -1,0 +1,10 @@
+# Guided parameter entry — UX-IN-01, UX-IN-02, UX-ADV-01
+# surface: "/New-Search" with no arguments
+/New-Search
+Targets
+[20]
+Scientific constraints
+[Open…]
+required
+Tab next field
+Escape cancel

@@ -1,0 +1,7 @@
+# Negative control — this repository is Techno-Hunter, never NEO-Hunter.
+# See tests/golden/README.md for why this baseline is negative here.
+TechnoHunter
+!NEOHunter
+!NEO-Hunter
+!close-approach geometry
+!radar acquisition

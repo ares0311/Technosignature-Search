@@ -1,0 +1,32 @@
+state ledger updated: /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/configs/HUNTER_PROD_STATE.json
+prod-check hunter_prod_check_report_v1 — app 1.2.72 @ 03a154badd0f9370e8af765f9d24f86722f55091 (dirty)
+executed 24  passed 23  failed 1  not executed 1
+
+[PASS         ] documented_installation: README documents the uv install command and the canonical executable
+[PASS         ] entry_points: all 5 documented entry points started cleanly
+[PASS         ] launch_repo_root: repository-root launch exposed the palette, /Help and /Exit
+[PASS         ] launch_outside_repository: the installed application started and exited cleanly outside the repository
+[PASS         ] invalid_input: invalid input exits non-zero with an actionable message and no traceback
+[PASS         ] command_palette: typing / opens a palette listing every required command with parameter shapes
+[NOT EXECUTED ] interactive_pty_palette: NOT EXECUTED — the host denied pseudo-terminal allocation (posix_openpt failed: EPERM: Operation not permitted)
+[PASS         ] guided_input: guided fields and live type/range sentinels reject invalid input actionably
+[PASS         ] animation_degrades: redirected non-TTY output is free of ANSI control sequences
+[PASS         ] machine_output: machine-readable follow-up output is clean parseable JSON
+[PASS         ] result_table: the result table stays within 80 and 140 column terminals
+[PASS         ] action_preview: the resolved-action preview reports every required row before freezing
+[PASS         ] golden_ux_tests: all 11 golden UX baselines exist
+[PASS         ] canonical_routing: the shell delegates every command to the canonical Hunter entry points
+[PASS         ] durable_record_kinds: all five durable record kinds are present
+[PASS         ] exact_target_freezing: 16 completed run(s) executed only their frozen targets
+[PASS         ] adaptive_discovery: the frozen manifest persists complete adaptive-discovery sufficiency evidence
+[PASS         ] identity_and_history: the cross-project history contract implements every permitted validity state
+[PASS         ] restart_and_resume: 1 search(es) preserve a durable failure-then-resume sequence
+[PASS         ] real_data_evidence: 3 machine-readable acceptance evidence bundle(s) are present
+[PASS         ] package_completeness: every required console script is registered in package metadata
+[PASS         ] sibling_write_isolation: sibling access is repository-relative, read-only and schema-versioned
+[FAIL         ] readme_conformance: the README uses forbidden planning vocabulary
+[PASS         ] skipped_stage_labeling: non-executed stages are labeled NOT EXECUTED and excluded from pass totals
+[PASS         ] state_authority: every machine-owned status in the ledger is justified by this gate run
+
+verdict: NOT PROD
+This gate verifies software conformance only. It makes no detection, discovery, expert-review, external-validation, or external-submission claim.

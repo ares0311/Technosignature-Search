@@ -5,7 +5,7 @@
   "schema_version": 1,
   "sources": [
     {
-      "completed_at": "2026-08-01T22:27:11.028574+00:00",
+      "completed_at": "2026-08-03T03:00:03.166414+00:00",
       "entries": [
         {
           "canonical_id": "HIP 74981",
@@ -211,6 +211,15 @@
           "run_id": "RUN-2026-07-24_062446Z-WE1V-hunter-search",
           "score": 0.98929,
           "searched_at": "2026-07-24T06:27:11.588008Z",
+          "status": "human_review_queue",
+          "target_id": "HIP111313"
+        },
+        {
+          "canonical_id": "HIP 111313",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025831Z-OI90-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:42.841883Z",
           "status": "human_review_queue",
           "target_id": "HIP111313"
         },
@@ -598,6 +607,15 @@
           "run_id": "RUN-2026-07-24_062446Z-WE1V-hunter-search",
           "score": 0.98929,
           "searched_at": "2026-07-24T06:27:11.610464Z",
+          "status": "human_review_queue",
+          "target_id": "HIP113357"
+        },
+        {
+          "canonical_id": "HIP 113357",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025831Z-OI90-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:42.844592Z",
           "status": "human_review_queue",
           "target_id": "HIP113357"
         },
@@ -3001,6 +3019,15 @@
           "run_id": "RUN-2026-07-24_062446Z-WE1V-hunter-search",
           "score": 0.98929,
           "searched_at": "2026-07-24T06:27:11.711255Z",
+          "status": "human_review_queue",
+          "target_id": "HIP110774"
+        },
+        {
+          "canonical_id": "HIP 110774",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025831Z-OI90-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:42.849224Z",
           "status": "human_review_queue",
           "target_id": "HIP110774"
         },
@@ -6119,6 +6146,15 @@
           "target_id": "HIP11029"
         },
         {
+          "canonical_id": "HIP 11029",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025831Z-OI90-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:42.841990Z",
+          "status": "human_review_queue",
+          "target_id": "HIP11029"
+        },
+        {
           "canonical_id": "HIP 108036",
           "mission": "GBT/MeerKAT radio",
           "run_id": "RUN-2026-07-25_033508Z-7GDV-hunter-search",
@@ -6133,6 +6169,15 @@
           "run_id": "RUN-2026-07-25_033508Z-7GDV-hunter-search",
           "score": 0.98929,
           "searched_at": "2026-07-25T03:42:03.375514Z",
+          "status": "human_review_queue",
+          "target_id": "HIP110341"
+        },
+        {
+          "canonical_id": "HIP 110341",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025831Z-OI90-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:42.846926Z",
           "status": "human_review_queue",
           "target_id": "HIP110341"
         },
@@ -6252,17 +6297,152 @@
           "searched_at": "2026-07-29T05:59:52.220902Z",
           "status": "human_review_queue",
           "target_id": "HIP103039"
+        },
+        {
+          "canonical_id": "HIP 1444",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T01:41:55.574687Z",
+          "status": "human_review_queue",
+          "target_id": "HIP1444"
+        },
+        {
+          "canonical_id": "HIP 2",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T01:41:55.575050Z",
+          "status": "human_review_queue",
+          "target_id": "HIP2"
+        },
+        {
+          "canonical_id": "HIP 5938",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T01:41:55.577475Z",
+          "status": "human_review_queue",
+          "target_id": "HIP5938"
+        },
+        {
+          "canonical_id": "HIP 6748",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T01:41:55.579750Z",
+          "status": "human_review_queue",
+          "target_id": "HIP6748"
+        },
+        {
+          "canonical_id": "HIP 57866",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T01:41:55.582026Z",
+          "status": "human_review_queue",
+          "target_id": "HIP57866"
+        },
+        {
+          "canonical_id": "HIP 103096",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+          "score": 0.988661,
+          "searched_at": "2026-08-03T01:59:52.114986Z",
+          "status": "human_review_queue",
+          "target_id": "HIP103096"
+        },
+        {
+          "canonical_id": "HIP 111313",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+          "score": 0.125593,
+          "searched_at": "2026-08-03T01:59:52.120901Z",
+          "status": "do_not_submit_false_positive",
+          "target_id": "HIP111313"
+        },
+        {
+          "canonical_id": "HIP 113357",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+          "score": 0.125822,
+          "searched_at": "2026-08-03T01:59:52.124006Z",
+          "status": "do_not_submit_false_positive",
+          "target_id": "HIP113357"
+        },
+        {
+          "canonical_id": "HIP 11565",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+          "score": 0.125411,
+          "searched_at": "2026-08-03T01:59:52.126841Z",
+          "status": "do_not_submit_false_positive",
+          "target_id": "HIP11565"
+        },
+        {
+          "canonical_id": "HIP 117712",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+          "score": 0.125397,
+          "searched_at": "2026-08-03T01:59:52.129503Z",
+          "status": "do_not_submit_false_positive",
+          "target_id": "HIP117712"
+        },
+        {
+          "canonical_id": "HIP 116971",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025429Z-5SDQ-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:14.989962Z",
+          "status": "human_review_queue",
+          "target_id": "HIP116971"
+        },
+        {
+          "canonical_id": "HIP 58684",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025429Z-5SDQ-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:14.990449Z",
+          "status": "human_review_queue",
+          "target_id": "HIP58684"
+        },
+        {
+          "canonical_id": "HIP 59608",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025429Z-5SDQ-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:14.992793Z",
+          "status": "human_review_queue",
+          "target_id": "HIP59608"
+        },
+        {
+          "canonical_id": "HIP 63608",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025429Z-5SDQ-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:14.995021Z",
+          "status": "human_review_queue",
+          "target_id": "HIP63608"
+        },
+        {
+          "canonical_id": "HIP 116819",
+          "mission": "GBT/MeerKAT radio",
+          "run_id": "RUN-2026-08-03_025429Z-5SDQ-hunter-search",
+          "score": 0.98929,
+          "searched_at": "2026-08-03T02:58:14.997532Z",
+          "status": "human_review_queue",
+          "target_id": "HIP116819"
         }
       ],
       "method_or_data": "GBT/MeerKAT turboSETI radio SETI search; ABACAB cadence + composite pathway scoring",
       "mode": "new",
-      "provenance_uri": "local-artifact:results/scan_history.ndjson#sha256=471f6bae2f117e1e938d581a6b3f273a424600f63e2ae2749a5780ee8dab5d6b",
-      "search_id": "techno-hunter-scan-history-export-2026-08-01T22:27:11.028574+00:00",
+      "provenance_uri": "local-artifact:results/scan_history.ndjson#sha256=3413ce80381825a20c7b1f97dd1814bf5ec02f40a5275ac49da2e0adda7d6634",
+      "search_id": "techno-hunter-scan-history-export-2026-08-03T03:00:03.166414+00:00",
       "searched_by": "Techno-Hunter",
       "source_path": "results/scan_history.ndjson",
       "source_project": "2026 Technosignatures",
-      "source_sha256": "471f6bae2f117e1e938d581a6b3f273a424600f63e2ae2749a5780ee8dab5d6b",
-      "started_at": "2026-08-01T22:27:11.028574+00:00"
+      "source_sha256": "3413ce80381825a20c7b1f97dd1814bf5ec02f40a5275ac49da2e0adda7d6634",
+      "started_at": "2026-08-03T03:00:03.166414+00:00"
     }
   ]
 }

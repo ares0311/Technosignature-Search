@@ -1,0 +1,388 @@
+[2026-08-03T01:38:06Z] [INFO]  Logging to console and results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/acquisition.log
+[2026-08-03T01:38:06Z] [START] stream_process_evict batch
+[2026-08-03T01:38:06Z] [INFO]  Manifest: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json
+[2026-08-03T01:38:06Z] [INFO]  Targets: 5 (chunk size 25)
+[2026-08-03T01:38:06Z] [INFO]  Local storage cap: 100GB; free-space reserve: 10GB
+[2026-08-03T01:38:07Z] [1/5] HIP2
+[2026-08-03T01:38:07Z] [DL]   HIP2 <- spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.h5 (~0.238747GB)
+[2026-08-03T01:38:27Z] [BATCH] 0.24GB/1.22GB downloaded (19.6%), elapsed 0m, ETA ~1m remaining
+[2026-08-03T01:38:27Z] [2/5] HIP1444
+[2026-08-03T01:38:27Z] [DL]   HIP1444 <- spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.h5 (~0.241579GB)
+[2026-08-03T01:38:47Z] [BATCH] 0.48GB/1.22GB downloaded (39.4%), elapsed 0m, ETA ~1m remaining
+[2026-08-03T01:38:47Z] [3/5] HIP57866
+[2026-08-03T01:38:47Z] [DL]   HIP57866 <- spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.h5 (~0.263061GB)
+[2026-08-03T01:39:07Z] [BATCH] 0.74GB/1.22GB downloaded (61.0%), elapsed 1m, ETA ~0m remaining
+[2026-08-03T01:39:07Z] [4/5] HIP5938
+[2026-08-03T01:39:07Z] [DL]   HIP5938 <- spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.h5 (~0.238623GB)
+[2026-08-03T01:39:27Z] [BATCH] 0.98GB/1.22GB downloaded (80.5%), elapsed 1m, ETA ~0m remaining
+[2026-08-03T01:39:27Z] [5/5] HIP6748
+[2026-08-03T01:39:27Z] [DL]   HIP6748 <- spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.h5 (~0.237601GB)
+[2026-08-03T01:39:47Z] [BATCH] 1.22GB/1.22GB downloaded (100.0%), elapsed 1m, ETA ~0m remaining
+[2026-08-03T01:39:48Z] [CHUNK] HIP2: running isolated turboSETI
+
+[21:39:48] === turboSETI extended corpus processing ===
+[21:39:48] [INFO]  Corpus dir: data/extended_corpus/HIP2
+[21:39:48] [INFO]  Max drift: 10 Hz/s
+[21:39:48] [INFO]  Min drift: 0.0001 Hz/s
+[21:39:48] [INFO]  SNR:       10
+[21:39:48] [INFO]  Dry run:    false
+
+[21:39:48] [INFO]  [RUN]  HIP2: spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.h5
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+[2026-08-02T21:40:02] From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP2', 'src_dej': <Angle -19.17916972 deg>, 'src_raj': <Angle 0.00027694 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57573.58480324074), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/HIP2/spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/HIP2, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+[21:40:19] [OK]    HIP2: produced spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.dat
+
+
+[21:40:19] === Summary ===
+[21:40:19] [INFO]  Processed : 1
+[21:40:19] [INFO]  Skipped   : 0 (already had .dat)
+[21:40:19] [INFO]  Failed    : 0
+
+Scientific guardrail:
+  Hit tables produced here are local calibration and generalisation aids.
+  No hit table entry constitutes a technosignature detection or
+  authorizes external submission.
+
+Next steps:
+  1. Build candidate reports from the new hit tables:
+       caffeinate -i bash scripts/run_pipeline_on_bl_data.sh \
+           --dat-dir data/extended_corpus
+  2. Run the production scan over all extended corpus targets:
+       caffeinate -i bash scripts/run_production_scan.sh \
+           --dat-dir data/extended_corpus
+[2026-08-03T01:40:19Z] [CHUNK] HIP2: running isolated pipeline (12 workers)
+[2026-08-02T21:40:19] === run_pipeline_on_bl_data.sh starting ===
+[2026-08-02T21:40:19] Repo root   : /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures
+[2026-08-02T21:40:19] Python      : Python 3.14.3
+[2026-08-02T21:40:19] Data dir    : data/extended_corpus/HIP2
+[2026-08-02T21:40:19] Results dir : results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:40:19] Workers     : 12 (M4 Max has 12 performance cores)
+[2026-08-02T21:40:19] Found 1 .dat file(s) recursively — launching parallel candidate manifest generation ...
+[2026-08-02T21:40:19] Running pipeline on 1 recursive .dat file(s) with 12 workers ...
+[2026-08-02T21:40:19]   Processing: data/extended_corpus/HIP2/spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.dat -> results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results/spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002
+[2026-08-02T21:40:24]   OK: data/extended_corpus/HIP2/spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.dat
+[2026-08-02T21:40:24] Done: 1 OK, 0 failed
+[2026-08-02T21:40:24] 
+[2026-08-02T21:40:24] Candidate reports written to: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:40:24] NEXT STEP:
+[2026-08-02T21:40:24]   git pull origin main
+[2026-08-02T21:40:24]   caffeinate -i bash scripts/run_production_scan.sh
+[2026-08-02T21:40:24] === run_pipeline_on_bl_data.sh done ===
+[2026-08-03T01:40:24Z] [CHUNK] HIP1444: running isolated turboSETI
+
+[21:40:24] === turboSETI extended corpus processing ===
+[21:40:24] [INFO]  Corpus dir: data/extended_corpus/HIP1444
+[21:40:24] [INFO]  Max drift: 10 Hz/s
+[21:40:24] [INFO]  Min drift: 0.0001 Hz/s
+[21:40:24] [INFO]  SNR:       10
+[21:40:24] [INFO]  Dry run:    false
+
+[21:40:24] [INFO]  [RUN]  HIP1444: spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.h5
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+[2026-08-02T21:40:26] From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP1444', 'src_dej': <Angle -13.2222275 deg>, 'src_raj': <Angle 0.29980444 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.058013184), 'tstart': np.float64(57522.64079861111), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/HIP1444/spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/HIP1444, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.797633276305945
+
+[21:40:43] [OK]    HIP1444: produced spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.dat
+
+
+[21:40:43] === Summary ===
+[21:40:43] [INFO]  Processed : 1
+[21:40:43] [INFO]  Skipped   : 0 (already had .dat)
+[21:40:43] [INFO]  Failed    : 0
+
+Scientific guardrail:
+  Hit tables produced here are local calibration and generalisation aids.
+  No hit table entry constitutes a technosignature detection or
+  authorizes external submission.
+
+Next steps:
+  1. Build candidate reports from the new hit tables:
+       caffeinate -i bash scripts/run_pipeline_on_bl_data.sh \
+           --dat-dir data/extended_corpus
+  2. Run the production scan over all extended corpus targets:
+       caffeinate -i bash scripts/run_production_scan.sh \
+           --dat-dir data/extended_corpus
+[2026-08-03T01:40:43Z] [CHUNK] HIP1444: running isolated pipeline (12 workers)
+[2026-08-02T21:40:43] === run_pipeline_on_bl_data.sh starting ===
+[2026-08-02T21:40:43] Repo root   : /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures
+[2026-08-02T21:40:43] Python      : Python 3.14.3
+[2026-08-02T21:40:43] Data dir    : data/extended_corpus/HIP1444
+[2026-08-02T21:40:43] Results dir : results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:40:43] Workers     : 12 (M4 Max has 12 performance cores)
+[2026-08-02T21:40:43] Found 1 .dat file(s) recursively — launching parallel candidate manifest generation ...
+[2026-08-02T21:40:43] Running pipeline on 1 recursive .dat file(s) with 12 workers ...
+[2026-08-02T21:40:43]   Processing: data/extended_corpus/HIP1444/spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.dat -> results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results/spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002
+[2026-08-02T21:40:45]   OK: data/extended_corpus/HIP1444/spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.dat
+[2026-08-02T21:40:45] Done: 1 OK, 0 failed
+[2026-08-02T21:40:45] 
+[2026-08-02T21:40:45] Candidate reports written to: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:40:45] NEXT STEP:
+[2026-08-02T21:40:45]   git pull origin main
+[2026-08-02T21:40:45]   caffeinate -i bash scripts/run_production_scan.sh
+[2026-08-02T21:40:45] === run_pipeline_on_bl_data.sh done ===
+[2026-08-03T01:40:45Z] [CHUNK] HIP57866: running isolated turboSETI
+
+[21:40:45] === turboSETI extended corpus processing ===
+[21:40:45] [INFO]  Corpus dir: data/extended_corpus/HIP57866
+[21:40:45] [INFO]  Max drift: 10 Hz/s
+[21:40:45] [INFO]  Min drift: 0.0001 Hz/s
+[21:40:45] [INFO]  SNR:       10
+[21:40:45] [INFO]  Dry run:    false
+
+[21:40:45] [INFO]  [RUN]  HIP57866: spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.h5
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+[2026-08-02T21:40:47] From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.83203125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP57866', 'src_dej': <Angle 18.75361528 deg>, 'src_raj': <Angle 11.8688825 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57692.647152777776), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/HIP57866/spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/HIP57866, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+[21:41:06] [OK]    HIP57866: produced spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.dat
+
+
+[21:41:06] === Summary ===
+[21:41:06] [INFO]  Processed : 1
+[21:41:06] [INFO]  Skipped   : 0 (already had .dat)
+[21:41:06] [INFO]  Failed    : 0
+
+Scientific guardrail:
+  Hit tables produced here are local calibration and generalisation aids.
+  No hit table entry constitutes a technosignature detection or
+  authorizes external submission.
+
+Next steps:
+  1. Build candidate reports from the new hit tables:
+       caffeinate -i bash scripts/run_pipeline_on_bl_data.sh \
+           --dat-dir data/extended_corpus
+  2. Run the production scan over all extended corpus targets:
+       caffeinate -i bash scripts/run_production_scan.sh \
+           --dat-dir data/extended_corpus
+[2026-08-03T01:41:06Z] [CHUNK] HIP57866: running isolated pipeline (12 workers)
+[2026-08-02T21:41:06] === run_pipeline_on_bl_data.sh starting ===
+[2026-08-02T21:41:06] Repo root   : /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures
+[2026-08-02T21:41:06] Python      : Python 3.14.3
+[2026-08-02T21:41:06] Data dir    : data/extended_corpus/HIP57866
+[2026-08-02T21:41:06] Results dir : results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:41:06] Workers     : 12 (M4 Max has 12 performance cores)
+[2026-08-02T21:41:06] Found 1 .dat file(s) recursively — launching parallel candidate manifest generation ...
+[2026-08-02T21:41:06] Running pipeline on 1 recursive .dat file(s) with 12 workers ...
+[2026-08-02T21:41:06]   Processing: data/extended_corpus/HIP57866/spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.dat -> results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results/spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002
+[2026-08-02T21:41:08]   OK: data/extended_corpus/HIP57866/spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.dat
+[2026-08-02T21:41:08] Done: 1 OK, 0 failed
+[2026-08-02T21:41:08] 
+[2026-08-02T21:41:08] Candidate reports written to: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:41:08] NEXT STEP:
+[2026-08-02T21:41:08]   git pull origin main
+[2026-08-02T21:41:08]   caffeinate -i bash scripts/run_production_scan.sh
+[2026-08-02T21:41:08] === run_pipeline_on_bl_data.sh done ===
+[2026-08-03T01:41:08Z] [CHUNK] HIP5938: running isolated turboSETI
+
+[21:41:08] === turboSETI extended corpus processing ===
+[21:41:08] [INFO]  Corpus dir: data/extended_corpus/HIP5938
+[21:41:08] [INFO]  Max drift: 10 Hz/s
+[21:41:08] [INFO]  Min drift: 0.0001 Hz/s
+[21:41:08] [INFO]  SNR:       10
+[21:41:08] [INFO]  Dry run:    false
+
+[21:41:08] [INFO]  [RUN]  HIP5938: spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.h5
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+[2026-08-02T21:41:10] From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'Hip5938', 'src_dej': <Angle -12.58083 deg>, 'src_raj': <Angle 1.27341028 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57654.26368055555), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/HIP5938/spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/HIP5938, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+[21:41:26] [OK]    HIP5938: produced spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.dat
+
+
+[21:41:26] === Summary ===
+[21:41:26] [INFO]  Processed : 1
+[21:41:26] [INFO]  Skipped   : 0 (already had .dat)
+[21:41:26] [INFO]  Failed    : 0
+
+Scientific guardrail:
+  Hit tables produced here are local calibration and generalisation aids.
+  No hit table entry constitutes a technosignature detection or
+  authorizes external submission.
+
+Next steps:
+  1. Build candidate reports from the new hit tables:
+       caffeinate -i bash scripts/run_pipeline_on_bl_data.sh \
+           --dat-dir data/extended_corpus
+  2. Run the production scan over all extended corpus targets:
+       caffeinate -i bash scripts/run_production_scan.sh \
+           --dat-dir data/extended_corpus
+[2026-08-03T01:41:26Z] [CHUNK] HIP5938: running isolated pipeline (12 workers)
+[2026-08-02T21:41:27] === run_pipeline_on_bl_data.sh starting ===
+[2026-08-02T21:41:27] Repo root   : /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures
+[2026-08-02T21:41:27] Python      : Python 3.14.3
+[2026-08-02T21:41:27] Data dir    : data/extended_corpus/HIP5938
+[2026-08-02T21:41:27] Results dir : results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:41:27] Workers     : 12 (M4 Max has 12 performance cores)
+[2026-08-02T21:41:27] Found 1 .dat file(s) recursively — launching parallel candidate manifest generation ...
+[2026-08-02T21:41:27] Running pipeline on 1 recursive .dat file(s) with 12 workers ...
+[2026-08-02T21:41:27]   Processing: data/extended_corpus/HIP5938/spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.dat -> results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results/spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002
+[2026-08-02T21:41:32]   OK: data/extended_corpus/HIP5938/spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.dat
+[2026-08-02T21:41:32] Done: 1 OK, 0 failed
+[2026-08-02T21:41:32] 
+[2026-08-02T21:41:32] Candidate reports written to: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:41:32] NEXT STEP:
+[2026-08-02T21:41:32]   git pull origin main
+[2026-08-02T21:41:32]   caffeinate -i bash scripts/run_production_scan.sh
+[2026-08-02T21:41:32] === run_pipeline_on_bl_data.sh done ===
+[2026-08-03T01:41:32Z] [CHUNK] HIP6748: running isolated turboSETI
+
+[21:41:32] === turboSETI extended corpus processing ===
+[21:41:32] [INFO]  Corpus dir: data/extended_corpus/HIP6748
+[21:41:32] [INFO]  Max drift: 10 Hz/s
+[21:41:32] [INFO]  Min drift: 0.0001 Hz/s
+[21:41:32] [INFO]  SNR:       10
+[21:41:32] [INFO]  Dry run:    false
+
+[21:41:32] [INFO]  [RUN]  HIP6748: spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.h5
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+[2026-08-02T21:41:35] From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP6748', 'src_dej': <Angle -13.62139111 deg>, 'src_raj': <Angle 1.4476325 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57662.23125), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/HIP6748/spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/HIP6748, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+[21:41:52] [OK]    HIP6748: produced spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.dat
+
+
+[21:41:52] === Summary ===
+[21:41:52] [INFO]  Processed : 1
+[21:41:52] [INFO]  Skipped   : 0 (already had .dat)
+[21:41:52] [INFO]  Failed    : 0
+
+Scientific guardrail:
+  Hit tables produced here are local calibration and generalisation aids.
+  No hit table entry constitutes a technosignature detection or
+  authorizes external submission.
+
+Next steps:
+  1. Build candidate reports from the new hit tables:
+       caffeinate -i bash scripts/run_pipeline_on_bl_data.sh \
+           --dat-dir data/extended_corpus
+  2. Run the production scan over all extended corpus targets:
+       caffeinate -i bash scripts/run_production_scan.sh \
+           --dat-dir data/extended_corpus
+[2026-08-03T01:41:52Z] [CHUNK] HIP6748: running isolated pipeline (12 workers)
+[2026-08-02T21:41:52] === run_pipeline_on_bl_data.sh starting ===
+[2026-08-02T21:41:52] Repo root   : /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures
+[2026-08-02T21:41:52] Python      : Python 3.14.3
+[2026-08-02T21:41:52] Data dir    : data/extended_corpus/HIP6748
+[2026-08-02T21:41:52] Results dir : results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:41:52] Workers     : 12 (M4 Max has 12 performance cores)
+[2026-08-02T21:41:52] Found 1 .dat file(s) recursively — launching parallel candidate manifest generation ...
+[2026-08-02T21:41:52] Running pipeline on 1 recursive .dat file(s) with 12 workers ...
+[2026-08-02T21:41:52]   Processing: data/extended_corpus/HIP6748/spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.dat -> results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results/spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002
+[2026-08-02T21:41:54]   OK: data/extended_corpus/HIP6748/spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.dat
+[2026-08-02T21:41:54] Done: 1 OK, 0 failed
+[2026-08-02T21:41:54] 
+[2026-08-02T21:41:54] Candidate reports written to: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results
+[2026-08-02T21:41:54] NEXT STEP:
+[2026-08-02T21:41:54]   git pull origin main
+[2026-08-02T21:41:54]   caffeinate -i bash scripts/run_production_scan.sh
+[2026-08-02T21:41:54] === run_pipeline_on_bl_data.sh done ===
+[2026-08-03T01:41:54Z] [EVICT] HIP2: raw HDF5 payload deleted (report: spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.manifest.json)
+[2026-08-03T01:41:54Z] [EVICT] HIP1444: raw HDF5 payload deleted (report: spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.manifest.json)
+[2026-08-03T01:41:54Z] [EVICT] HIP57866: raw HDF5 payload deleted (report: spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.manifest.json)
+[2026-08-03T01:41:54Z] [EVICT] HIP5938: raw HDF5 payload deleted (report: spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.manifest.json)
+[2026-08-03T01:41:54Z] [EVICT] HIP6748: raw HDF5 payload deleted (report: spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.manifest.json)
+[2026-08-03T01:41:54Z] [DONE]  stream_process_evict batch complete
+[2026-08-03T01:41:54Z] [INFO]  Targets attempted: 5/5
+[2026-08-03T01:41:54Z] [INFO]  Downloaded: 5 (~1.219611GB)
+[2026-08-03T01:41:54Z] [INFO]  Newly processed: 5
+[2026-08-03T01:41:54Z] [INFO]  Evicted (raw payload deleted after processing): 5
+[2026-08-03T01:41:54Z] [INFO]  Reused local DAT (no raw payload present): 0
+[2026-08-03T01:41:54Z] [INFO]  Already processed (download skipped): 0
+[2026-08-03T01:41:54Z] [INFO]  Failed: 0
+[2026-08-03T01:41:54Z] [INFO]  Total .dat files now in data/extended_corpus: 826
+[2026-08-03T01:41:54Z] [INFO]  Total candidate report manifests in results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/pipeline_results: 5
+
+Scientific guardrail:
+  Downloaded files and derived hit tables/candidate reports are local
+  calibration and generalisation aids only. No file or report entry
+  constitutes a technosignature detection or authorizes external
+  submission.
+Production scan RUN-2026-08-03_013806Z-8NEO-hunter-search
+Artifacts: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/runs/RUN-2026-08-03_013806Z-8NEO-hunter-search
+Guardrail: local scheduling aid only; no detection or submission claim.
+[?25l⠋ validate-all[2K⠙ validate-all[2K⠹ validate-all[2K⠸ validate-all[2K⠸ validate-all
+[?25h[1A[2KOK validate-all (0.4s)
+[?25l⠋ scan-summary (5 candidates)
+[?25h[1A[2KOK scan-summary (5 candidates) (0.0s)
+[?25l⠋ cross-target-rfi-summary
+[?25h[1A[2KOK cross-target-rfi-summary (0.0s)
+[?25l⠋ escalation-gate-check
+[?25h[1A[2KOK escalation-gate-check (0.0s)
+[?25l⠋ review-dashboard
+[?25h[1A[2KOK review-dashboard (0.0s)
+[?25l⠋ prod-write-outcomes
+[?25h[1A[2KOK prod-write-outcomes (0.0s)
+[3m                          Completed target evaluations                          [0m
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃[1m [0m[1mIndex       [0m[1m [0m┃[1m [0m[1mTarget      [0m[1m [0m┃[1m [0m[1mKind        [0m[1m [0m┃[1m [0m[1mFollow-up[0m[1m [0m┃[1m [0m[1mScore[0m[1m [0m┃[1m [0m[1mPathway    [0m[1m [0m┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+└──────────────┴──────────────┴──────────────┴───────────┴───────┴─────────────┘
+Done RUN-2026-08-03_013806Z-8NEO-hunter-search: 5 target(s), 5 follow-up candidate target(s).
+Completed SEARCH-20260803T013540Z-9EC480FD as RUN-2026-08-03_013806Z-8NEO-hunter-search: 5 target(s), 5 follow-up target(s).

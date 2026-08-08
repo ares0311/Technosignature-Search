@@ -1,0 +1,948 @@
+^D
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP103096', 'src_dej': <Angle 62.15055083 deg>, 'src_raj': <Angle 20.88879972 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57683.09578703704), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP103096_2016-10-22_ABACAD/spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP101938', 'src_dej': <Angle 65.14558139 deg>, 'src_raj': <Angle 20.65738194 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57683.09967592593), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP103096_2016-10-22_ABACAD/spliced_blc0001020304050607_guppi_57683_08612_HIP101938_0022.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP103096', 'src_dej': <Angle 62.15055444 deg>, 'src_raj': <Angle 20.88880056 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57683.10356481482), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP103096_2016-10-22_ABACAD/spliced_blc0001020304050607_guppi_57683_08948_HIP103096_0023.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP102193', 'src_dej': <Angle 63.35082056 deg>, 'src_raj': <Angle 20.70588278 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57683.10738425926), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP103096_2016-10-22_ABACAD/spliced_blc0001020304050607_guppi_57683_09278_HIP102193_0024.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP103096', 'src_dej': <Angle 62.15055222 deg>, 'src_raj': <Angle 20.88880028 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57683.1112037037), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP103096_2016-10-22_ABACAD/spliced_blc0001020304050607_guppi_57683_09608_HIP103096_0025.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(1926.26953125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP102544', 'src_dej': <Angle 63.98554833 deg>, 'src_raj': <Angle 20.78032861 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57683.11505787037), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP103096_2016-10-22_ABACAD/spliced_blc0001020304050607_guppi_57683_09941_HIP102544_0026.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+{
+  "cadence_csv": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP103096_2016-10-22_ABACAD.csv",
+  "cadence_sha256": "42c2b3174a2ef4866d4e72d02c125146a1bc2522605fe21d0468ff4d47967eb1",
+  "row_count": 118,
+  "scan_summaries": [
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002.dat",
+      "hit_count": 18,
+      "scan_role": "on",
+      "sha256": "66bc2e89d5e7db3cd036fd0fe105e1ff8d5d1f702b09313d62fe7941fbe2b039",
+      "source_name": "HIP103096"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57683_08612_HIP101938_0022.gpuspec.0002.dat",
+      "hit_count": 22,
+      "scan_role": "off",
+      "sha256": "964ec3620b9b38a9d9a04a98ca06ea8029fb14c9294aeab8fb1c15956f47c4f3",
+      "source_name": "HIP101938"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57683_08948_HIP103096_0023.gpuspec.0002.dat",
+      "hit_count": 18,
+      "scan_role": "on",
+      "sha256": "74571b7cd7b05486c9a3d0a3a7e957c9a5f8d9e1cb8822a946ad5ccd011899d0",
+      "source_name": "HIP103096"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57683_09278_HIP102193_0024.gpuspec.0002.dat",
+      "hit_count": 19,
+      "scan_role": "off",
+      "sha256": "fc5a447e44f46a9b186a3e56740cb8bded011c5ecae5f433d3ec3e6354f3fae5",
+      "source_name": "HIP102193"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57683_09608_HIP103096_0025.gpuspec.0002.dat",
+      "hit_count": 26,
+      "scan_role": "on",
+      "sha256": "3fd9c4ce25a6193b5339d8f9afff783a661b407bb04b78301cffed67e650f57d",
+      "source_name": "HIP103096"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57683_09941_HIP102544_0026.gpuspec.0002.dat",
+      "hit_count": 15,
+      "scan_role": "off",
+      "sha256": "78fd8173a92708fa7c22cef9307c8f9a2ad118df67764ab601cd63c31fc3fc6d",
+      "source_name": "HIP102544"
+    }
+  ],
+  "source_dat_files": [
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57683_08612_HIP101938_0022.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57683_08948_HIP103096_0023.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57683_09278_HIP102193_0024.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57683_09608_HIP103096_0025.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57683_09941_HIP102544_0026.gpuspec.0002.dat"
+  ]
+}
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP111313', 'src_dej': <Angle 9.37833172 deg>, 'src_raj': <Angle 22.55054993 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57723.020949074074), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP111313_2016-12-01_ABACAD/spliced_blc1011121314151617_guppi_57723_01810_HIP111313_0027.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP110205', 'src_dej': <Angle 12.46003749 deg>, 'src_raj': <Angle 22.3236335 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57723.025), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP111313_2016-12-01_ABACAD/spliced_blc1011121314151617_guppi_57723_02160_HIP110205_0028.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP111313', 'src_dej': <Angle 9.37833415 deg>, 'src_raj': <Angle 22.5505503 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57723.02903935185), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP111313_2016-12-01_ABACAD/spliced_blc1011121314151617_guppi_57723_02509_HIP111313_0029.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP110250', 'src_dej': <Angle 12.45167809 deg>, 'src_raj': <Angle 22.33204973 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57723.03306712963), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP111313_2016-12-01_ABACAD/spliced_blc1011121314151617_guppi_57723_02857_HIP110250_0030.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP111313', 'src_dej': <Angle 9.3783357 deg>, 'src_raj': <Angle 22.55054948 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57723.037094907406), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP111313_2016-12-01_ABACAD/spliced_blc1011121314151617_guppi_57723_03205_HIP111313_0031.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP110386', 'src_dej': <Angle 12.2051668 deg>, 'src_raj': <Angle 22.35863337 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57723.04109953704), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP111313_2016-12-01_ABACAD/spliced_blc1011121314151617_guppi_57723_03551_HIP110386_0032.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+{
+  "cadence_csv": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP111313_2016-12-01_ABACAD.csv",
+  "cadence_sha256": "7f700a34c1223a639287295e34a9a6a812757135d3add476a3324b2e4d21d3d0",
+  "row_count": 94,
+  "scan_summaries": [
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_57723_01810_HIP111313_0027.gpuspec.0002.dat",
+      "hit_count": 19,
+      "scan_role": "on",
+      "sha256": "dbc65f799b2f3b7b03798c5f8548ad7bd22bf8936c1551c0e78a896bbfa5fed3",
+      "source_name": "HIP111313"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_57723_02160_HIP110205_0028.gpuspec.0002.dat",
+      "hit_count": 19,
+      "scan_role": "off",
+      "sha256": "21475291ec9269e07259e82739edb83fea97983a5479d5cc3abed9a2a22a4a5f",
+      "source_name": "HIP110205"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_57723_02509_HIP111313_0029.gpuspec.0002.dat",
+      "hit_count": 22,
+      "scan_role": "on",
+      "sha256": "80607d81807cc53d0a57f689ffdba5f1a8192570c62c35bb7ea839cfcf353783",
+      "source_name": "HIP111313"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_57723_02857_HIP110250_0030.gpuspec.0002.dat",
+      "hit_count": 10,
+      "scan_role": "off",
+      "sha256": "d41f7f64e311aa5d22dca57d30e0661da287f968f828a2bd424b4970f27fa428",
+      "source_name": "HIP110250"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_57723_03205_HIP111313_0031.gpuspec.0002.dat",
+      "hit_count": 15,
+      "scan_role": "on",
+      "sha256": "f0f9319dc3f3c8f7ed8663ed9b2e6229930878356dadbd9ecdacadd9b50adfcd",
+      "source_name": "HIP111313"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_57723_03551_HIP110386_0032.gpuspec.0002.dat",
+      "hit_count": 9,
+      "scan_role": "off",
+      "sha256": "6f0c974960f62cfe15852d52af234ded5b97602ee473d8611df9f589636d7eea",
+      "source_name": "HIP110386"
+    }
+  ],
+  "source_dat_files": [
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_57723_01810_HIP111313_0027.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_57723_02160_HIP110205_0028.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_57723_02509_HIP111313_0029.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_57723_02857_HIP110250_0030.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_57723_03205_HIP111313_0031.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_57723_03551_HIP110386_0032.gpuspec.0002.dat"
+  ]
+}
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.83203125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP113357', 'src_dej': <Angle 20.76888083 deg>, 'src_raj': <Angle 22.95782917 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57761.01503472222), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP113357_2017-01-08_ABACAD/spliced_blc0001020304050607_guppi_57761_01299_HIP113357_0021.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.83203125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP112359', 'src_dej': <Angle 24.31465361 deg>, 'src_raj': <Angle 22.7580775 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57761.01905092593), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP113357_2017-01-08_ABACAD/spliced_blc0001020304050607_guppi_57761_01646_HIP112359_0022.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.83203125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP113357', 'src_dej': <Angle 20.76888583 deg>, 'src_raj': <Angle 22.95782556 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57761.02305555555), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP113357_2017-01-08_ABACAD/spliced_blc0001020304050607_guppi_57761_01992_HIP113357_0023.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.83203125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP112495', 'src_dej': <Angle 23.98500972 deg>, 'src_raj': <Angle 22.78694139 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57761.027037037034), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP113357_2017-01-08_ABACAD/spliced_blc0001020304050607_guppi_57761_02336_HIP112495_0024.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.83203125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP113357', 'src_dej': <Angle 20.768895 deg>, 'src_raj': <Angle 22.95782944 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57761.031018518515), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP113357_2017-01-08_ABACAD/spliced_blc0001020304050607_guppi_57761_02680_HIP113357_0025.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=343
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2802.8306007385254), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(351232), 'nifs': np.int64(1), 'source_name': 'HIP112918', 'src_dej': <Angle 23.4135 deg>, 'src_raj': <Angle 22.86720667 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57761.03494212963), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP113357_2017-01-08_ABACAD/spliced_blc0001020304050607_guppi_57761_03019_HIP112918_0026.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=343, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.796085511398442
+
+{
+  "cadence_csv": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP113357_2017-01-08_ABACAD.csv",
+  "cadence_sha256": "7a8c892e83d279a34711d04e2f8394e35f21f82718c1d59bdbb67abb47d2c594",
+  "row_count": 78,
+  "scan_summaries": [
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57761_01299_HIP113357_0021.gpuspec.0002.dat",
+      "hit_count": 11,
+      "scan_role": "on",
+      "sha256": "d6bf248c3e76183525b74d40cc912babae791c53d7e29b7a8ca5dedf22eda326",
+      "source_name": "HIP113357"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57761_01646_HIP112359_0022.gpuspec.0002.dat",
+      "hit_count": 12,
+      "scan_role": "off",
+      "sha256": "d04045e748fe8c38cc188a15fc51d71f8f92747ef6e72fa73f2ac238985e8698",
+      "source_name": "HIP112359"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57761_01992_HIP113357_0023.gpuspec.0002.dat",
+      "hit_count": 11,
+      "scan_role": "on",
+      "sha256": "59447e8858b2afc00300a7fd9ec2cbd4bf136f437337d4a46a77cd3c23755a3f",
+      "source_name": "HIP113357"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57761_02336_HIP112495_0024.gpuspec.0002.dat",
+      "hit_count": 14,
+      "scan_role": "off",
+      "sha256": "ade112424a6bd0fde9ce31023c34d0193ec8ccfc23a4a8f6f8d70e9ff2ccc88e",
+      "source_name": "HIP112495"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57761_02680_HIP113357_0025.gpuspec.0002.dat",
+      "hit_count": 18,
+      "scan_role": "on",
+      "sha256": "85ceef91f7313953267cd962638e9d2ca5bb411da8acd622c6dd2fae88a617fa",
+      "source_name": "HIP113357"
+    },
+    {
+      "artifact_filename": "spliced_blc0001020304050607_guppi_57761_03019_HIP112918_0026.gpuspec.0002.dat",
+      "hit_count": 12,
+      "scan_role": "off",
+      "sha256": "0deb6ea752411a2d368aeb8c0b8a8ba268c587b4a4069949a9fe443f6750ba58",
+      "source_name": "HIP112918"
+    }
+  ],
+  "source_dat_files": [
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57761_01299_HIP113357_0021.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57761_01646_HIP112359_0022.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57761_01992_HIP113357_0023.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57761_02336_HIP112495_0024.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57761_02680_HIP113357_0025.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc0001020304050607_guppi_57761_03019_HIP112918_0026.gpuspec.0002.dat"
+  ]
+}
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP11565', 'src_dej': <Angle -19.97805113 deg>, 'src_raj': <Angle 2.48388169 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57998.44949074074), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP11565_2017-09-02_ABACAD/spliced_blc3031323334353637_guppi_57998_38836_HIP11565_0013.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP10878', 'src_dej': <Angle -18.015626 deg>, 'src_raj': <Angle 2.3329378 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57998.45333333333), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP11565_2017-09-02_ABACAD/spliced_blc3031323334353637_guppi_57998_39168_HIP10878_0014.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP11565', 'src_dej': <Angle -19.9780522 deg>, 'src_raj': <Angle 2.48388288 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57998.45717592593), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP11565_2017-09-02_ABACAD/spliced_blc3031323334353637_guppi_57998_39500_HIP11565_0015.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP10962', 'src_dej': <Angle -17.11245278 deg>, 'src_raj': <Angle 2.35365972 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57998.46103009259), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP11565_2017-09-02_ABACAD/spliced_blc3031323334353637_guppi_57998_39833_HIP10962_0016.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP11565', 'src_dej': <Angle -19.97804739 deg>, 'src_raj': <Angle 2.48388305 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57998.46488425926), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP11565_2017-09-02_ABACAD/spliced_blc3031323334353637_guppi_57998_40166_HIP11565_0017.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP10998', 'src_dej': <Angle -16.96358529 deg>, 'src_raj': <Angle 2.36199372 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(57998.46873842592), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP11565_2017-09-02_ABACAD/spliced_blc3031323334353637_guppi_57998_40499_HIP10998_0018.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+{
+  "cadence_csv": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP11565_2017-09-02_ABACAD.csv",
+  "cadence_sha256": "566064d863c6be7c77e2aadab82786102b1c5b7e25118616092bc217260ac0a0",
+  "row_count": 103,
+  "scan_summaries": [
+    {
+      "artifact_filename": "spliced_blc3031323334353637_guppi_57998_38836_HIP11565_0013.gpuspec.0002.dat",
+      "hit_count": 11,
+      "scan_role": "on",
+      "sha256": "9a6889afb9b1b28adad2edd0fc9436e72d290c19526f8468ac44ba982984f303",
+      "source_name": "HIP11565"
+    },
+    {
+      "artifact_filename": "spliced_blc3031323334353637_guppi_57998_39168_HIP10878_0014.gpuspec.0002.dat",
+      "hit_count": 23,
+      "scan_role": "off",
+      "sha256": "d83a781c8ab35249621627d16220d088fde3a6ff14cc35b31e317c1e1515d733",
+      "source_name": "HIP10878"
+    },
+    {
+      "artifact_filename": "spliced_blc3031323334353637_guppi_57998_39500_HIP11565_0015.gpuspec.0002.dat",
+      "hit_count": 18,
+      "scan_role": "on",
+      "sha256": "93061754601e085584d93530c142c4315871449582cd338fb7d285f075904ba2",
+      "source_name": "HIP11565"
+    },
+    {
+      "artifact_filename": "spliced_blc3031323334353637_guppi_57998_39833_HIP10962_0016.gpuspec.0002.dat",
+      "hit_count": 22,
+      "scan_role": "off",
+      "sha256": "06438979c83f11c3edea558f9bae45ebd26fc3ed99c50f1b56fde335e419bfa7",
+      "source_name": "HIP10962"
+    },
+    {
+      "artifact_filename": "spliced_blc3031323334353637_guppi_57998_40166_HIP11565_0017.gpuspec.0002.dat",
+      "hit_count": 14,
+      "scan_role": "on",
+      "sha256": "b94874806e8ee184baa144b84c19700e60cf68fda0da61eff943590caddb3725",
+      "source_name": "HIP11565"
+    },
+    {
+      "artifact_filename": "spliced_blc3031323334353637_guppi_57998_40499_HIP10998_0018.gpuspec.0002.dat",
+      "hit_count": 15,
+      "scan_role": "off",
+      "sha256": "8106bba974bfdaa33af7a3c53239b687116df580556d76a0416713b9a4951bdf",
+      "source_name": "HIP10998"
+    }
+  ],
+  "source_dat_files": [
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc3031323334353637_guppi_57998_38836_HIP11565_0013.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc3031323334353637_guppi_57998_39168_HIP10878_0014.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc3031323334353637_guppi_57998_39500_HIP11565_0015.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc3031323334353637_guppi_57998_39833_HIP10962_0016.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc3031323334353637_guppi_57998_40166_HIP11565_0017.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc3031323334353637_guppi_57998_40499_HIP10998_0018.gpuspec.0002.dat"
+  ]
+}
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP117712', 'src_dej': <Angle 75.5447175 deg>, 'src_raj': <Angle 23.87408008 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(58110.804444444446), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP117712_2017-12-23_ABACAD/spliced_blc1011121314151617_guppi_58110_69504_HIP117712_0057.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP117172', 'src_dej': <Angle 78.55785205 deg>, 'src_raj': <Angle 23.75579938 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(58110.80832175926), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP117712_2017-12-23_ABACAD/spliced_blc1011121314151617_guppi_58110_69839_HIP117172_0058.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP117712', 'src_dej': <Angle 75.54471703 deg>, 'src_raj': <Angle 23.87407842 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(58110.81219907408), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP117712_2017-12-23_ABACAD/spliced_blc1011121314151617_guppi_58110_70174_HIP117712_0059.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP117376', 'src_dej': <Angle 78.37608242 deg>, 'src_raj': <Angle 23.79943899 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(58110.81606481481), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP117712_2017-12-23_ABACAD/spliced_blc1011121314151617_guppi_58110_70508_HIP117376_0060.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP117712', 'src_dej': <Angle 75.54471627 deg>, 'src_raj': <Angle 23.87408148 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(58110.81993055555), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP117712_2017-12-23_ABACAD/spliced_blc1011121314151617_guppi_58110_70842_HIP117712_0061.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+
+turbo_seti version 2.3.2
+blimpy version 2.1.4
+h5py version 3.16.0
+hdf5plugin version 7.0.0
+HDF5 library version 2.0.0
+
+
+data_handler    INFO     From blimpy, n_coarse_chan=308
+HDF5 header info: {'DIMENSION_LABELS': array(['frequency', 'feed_id', 'time'], dtype=object), 'az_start': np.float64(0.0), 'data_type': np.int64(1), 'fch1': np.float64(2720.80078125), 'foff': np.float64(-0.00286102294921875), 'machine_id': np.int64(20), 'nbits': np.int64(32), 'nchans': np.int64(315392), 'nifs': np.int64(1), 'source_name': 'HIP117681', 'src_dej': <Angle 77.59960301 deg>, 'src_raj': <Angle 23.86580411 hourangle>, 'telescope_id': np.int64(6), 'tsamp': np.float64(1.0737418239999998), 'tstart': np.float64(58110.82375), 'za_start': np.float64(0.0)}
+
+Starting ET search with parameters: datafile=data/extended_corpus/hunter_follow_ups/bl_observations/GBT_HIP117712_2017-12-23_ABACAD/spliced_blc1011121314151617_guppi_58110_71172_HIP117681_0062.gpuspec.0002.h5, max_drift=10.0, min_drift=0.0001, snr=10.0, out_dir=data/extended_corpus/hunter_follow_ups/bl_hits, coarse_chans=None, flagging=False, n_coarse_chan=308, kernels=None, gpu_id=0, gpu_backend=False, blank_dc=True, precision=1, append_output=False, log_level_int=30, obs_info={'pulsar': 0, 'pulsar_found': 0, 'pulsar_dm': 0.0, 'pulsar_snr': 0.0, 'pulsar_stats': array([0., 0., 0., 0., 0., 0.]), 'RFI_level': 0.0, 'Mean_SEFD': 0.0, 'psrflux_Sens': 0.0, 'SEFDs_val': [0.0], 'SEFDs_freq': [0.0], 'SEFDs_freq_up': [0.0]}
+
+Computed drift rate resolution: 9.584659205397037
+
+{
+  "cadence_csv": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP117712_2017-12-23_ABACAD.csv",
+  "cadence_sha256": "ab860f2b1da997f29e4f310072c14abe42f0eaa4ebfeded7dea8f04010081a1b",
+  "row_count": 65,
+  "scan_summaries": [
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_58110_69504_HIP117712_0057.gpuspec.0002.dat",
+      "hit_count": 8,
+      "scan_role": "on",
+      "sha256": "e98324c7674fb1786662882558d3a317d133ae601a432fe1a59d51e05e6968d3",
+      "source_name": "HIP117712"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_58110_69839_HIP117172_0058.gpuspec.0002.dat",
+      "hit_count": 13,
+      "scan_role": "off",
+      "sha256": "6fb90ce21c769e21ed715432dbdd6d24f45018f7ad4165be789ae7651b2eae4d",
+      "source_name": "HIP117172"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_58110_70174_HIP117712_0059.gpuspec.0002.dat",
+      "hit_count": 13,
+      "scan_role": "on",
+      "sha256": "5dbf8b1c23b87d5b420fe75cedb066dd60de9e465f5f035aba2a153d33b52287",
+      "source_name": "HIP117712"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_58110_70508_HIP117376_0060.gpuspec.0002.dat",
+      "hit_count": 13,
+      "scan_role": "off",
+      "sha256": "9c6e9563b27dd32b7abce74fdbda70eb2afb0dfc5aa8b3491c6605da5c474b08",
+      "source_name": "HIP117376"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_58110_70842_HIP117712_0061.gpuspec.0002.dat",
+      "hit_count": 10,
+      "scan_role": "on",
+      "sha256": "92b88dfaf4cc0cd4d3f4f5c9eb834e8c1a2e2fa164375ab5a21683477b169e71",
+      "source_name": "HIP117712"
+    },
+    {
+      "artifact_filename": "spliced_blc1011121314151617_guppi_58110_71172_HIP117681_0062.gpuspec.0002.dat",
+      "hit_count": 8,
+      "scan_role": "off",
+      "sha256": "42e4e678a5e536f3168ab7d9f8d2133a8c7d42e21c5ee0a29e2f18759bbd75fb",
+      "source_name": "HIP117681"
+    }
+  ],
+  "source_dat_files": [
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_58110_69504_HIP117712_0057.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_58110_69839_HIP117172_0058.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_58110_70174_HIP117712_0059.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_58110_70508_HIP117376_0060.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_58110_70842_HIP117712_0061.gpuspec.0002.dat",
+    "data/extended_corpus/hunter_follow_ups/bl_hits/spliced_blc1011121314151617_guppi_58110_71172_HIP117681_0062.gpuspec.0002.dat"
+  ]
+}
+[2026-08-03T01:59:37Z] [INFO]  Logging to console and results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/acquisition.log
+[2026-08-03T01:59:38Z] [START] stream_process_evict batch
+[2026-08-03T01:59:38Z] [INFO]  Manifest: results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json
+[2026-08-03T01:59:38Z] [INFO]  Targets: 5 (chunk size 25)
+[2026-08-03T01:59:38Z] [INFO]  Local storage cap: 100GB; free-space reserve: 10GB
+[2026-08-03T01:59:38Z] [1/5] HIP103096
+[2026-08-03T01:59:38Z] [REUSE] HIP103096: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T01:59:38Z] [2/5] HIP111313
+[2026-08-03T01:59:38Z] [REUSE] HIP111313: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T01:59:38Z] [3/5] HIP113357
+[2026-08-03T01:59:38Z] [REUSE] HIP113357: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T01:59:38Z] [4/5] HIP11565
+[2026-08-03T01:59:39Z] [REUSE] HIP11565: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T01:59:39Z] [5/5] HIP117712
+[2026-08-03T01:59:39Z] [REUSE] HIP117712: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T01:59:39Z] [CHUNK] HIP103096: scoring preserved local evidence GBT_HIP103096_2016-10-22_ABACAD
+{
+  "adversarial_review_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP103096_2016-10-22_ABACAD/GBT_HIP103096_2016-10-22_ABACAD.adversarial.json",
+  "candidate_id": "GBT_HIP103096_2016-10-22_ABACAD",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP103096_2016-10-22_ABACAD.csv",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP103096_2016-10-22_ABACAD.csv",
+    "row_count": 118,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP103096_2016-10-22_ABACAD/GBT_HIP103096_2016-10-22_ABACAD.json",
+  "known_explanation_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP103096_2016-10-22_ABACAD/GBT_HIP103096_2016-10-22_ABACAD.known-explanation.json",
+  "known_explanation_state": "unknown",
+  "manifest_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP103096_2016-10-22_ABACAD/GBT_HIP103096_2016-10-22_ABACAD.manifest.json",
+  "markdown_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP103096_2016-10-22_ABACAD/GBT_HIP103096_2016-10-22_ABACAD.md",
+  "ok": true,
+  "pathway": "human_review_queue",
+  "reader_type": "turboSETI_csv",
+  "row_count": 118,
+  "track": "radio"
+}
+[2026-08-03T01:59:42Z] [CHUNK] HIP111313: scoring preserved local evidence GBT_HIP111313_2016-12-01_ABACAD
+{
+  "adversarial_review_path": null,
+  "candidate_id": "GBT_HIP111313_2016-12-01_ABACAD",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP111313_2016-12-01_ABACAD.csv",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP111313_2016-12-01_ABACAD.csv",
+    "row_count": 94,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP111313_2016-12-01_ABACAD/GBT_HIP111313_2016-12-01_ABACAD.json",
+  "known_explanation_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP111313_2016-12-01_ABACAD/GBT_HIP111313_2016-12-01_ABACAD.known-explanation.json",
+  "known_explanation_state": "known",
+  "manifest_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP111313_2016-12-01_ABACAD/GBT_HIP111313_2016-12-01_ABACAD.manifest.json",
+  "markdown_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP111313_2016-12-01_ABACAD/GBT_HIP111313_2016-12-01_ABACAD.md",
+  "ok": true,
+  "pathway": "do_not_submit_false_positive",
+  "reader_type": "turboSETI_csv",
+  "row_count": 94,
+  "track": "radio"
+}
+[2026-08-03T01:59:44Z] [CHUNK] HIP113357: scoring preserved local evidence GBT_HIP113357_2017-01-08_ABACAD
+{
+  "adversarial_review_path": null,
+  "candidate_id": "GBT_HIP113357_2017-01-08_ABACAD",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP113357_2017-01-08_ABACAD.csv",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP113357_2017-01-08_ABACAD.csv",
+    "row_count": 78,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP113357_2017-01-08_ABACAD/GBT_HIP113357_2017-01-08_ABACAD.json",
+  "known_explanation_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP113357_2017-01-08_ABACAD/GBT_HIP113357_2017-01-08_ABACAD.known-explanation.json",
+  "known_explanation_state": "known",
+  "manifest_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP113357_2017-01-08_ABACAD/GBT_HIP113357_2017-01-08_ABACAD.manifest.json",
+  "markdown_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP113357_2017-01-08_ABACAD/GBT_HIP113357_2017-01-08_ABACAD.md",
+  "ok": true,
+  "pathway": "do_not_submit_false_positive",
+  "reader_type": "turboSETI_csv",
+  "row_count": 78,
+  "track": "radio"
+}
+[2026-08-03T01:59:46Z] [CHUNK] HIP11565: scoring preserved local evidence GBT_HIP11565_2017-09-02_ABACAD
+{
+  "adversarial_review_path": null,
+  "candidate_id": "GBT_HIP11565_2017-09-02_ABACAD",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP11565_2017-09-02_ABACAD.csv",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP11565_2017-09-02_ABACAD.csv",
+    "row_count": 103,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP11565_2017-09-02_ABACAD/GBT_HIP11565_2017-09-02_ABACAD.json",
+  "known_explanation_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP11565_2017-09-02_ABACAD/GBT_HIP11565_2017-09-02_ABACAD.known-explanation.json",
+  "known_explanation_state": "known",
+  "manifest_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP11565_2017-09-02_ABACAD/GBT_HIP11565_2017-09-02_ABACAD.manifest.json",
+  "markdown_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP11565_2017-09-02_ABACAD/GBT_HIP11565_2017-09-02_ABACAD.md",
+  "ok": true,
+  "pathway": "do_not_submit_false_positive",
+  "reader_type": "turboSETI_csv",
+  "row_count": 103,
+  "track": "radio"
+}
+[2026-08-03T01:59:48Z] [CHUNK] HIP117712: scoring preserved local evidence GBT_HIP117712_2017-12-23_ABACAD
+{
+  "adversarial_review_path": null,
+  "candidate_id": "GBT_HIP117712_2017-12-23_ABACAD",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP117712_2017-12-23_ABACAD.csv",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/hunter_follow_ups/bl_hits/GBT_HIP117712_2017-12-23_ABACAD.csv",
+    "row_count": 65,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP117712_2017-12-23_ABACAD/GBT_HIP117712_2017-12-23_ABACAD.json",
+  "known_explanation_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP117712_2017-12-23_ABACAD/GBT_HIP117712_2017-12-23_ABACAD.known-explanation.json",
+  "known_explanation_state": "known",
+  "manifest_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP117712_2017-12-23_ABACAD/GBT_HIP117712_2017-12-23_ABACAD.manifest.json",
+  "markdown_path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results/GBT_HIP117712_2017-12-23_ABACAD/GBT_HIP117712_2017-12-23_ABACAD.md",
+  "ok": true,
+  "pathway": "do_not_submit_false_positive",
+  "reader_type": "turboSETI_csv",
+  "row_count": 65,
+  "track": "radio"
+}
+[2026-08-03T01:59:51Z] [DONE]  stream_process_evict batch complete
+[2026-08-03T01:59:51Z] [INFO]  Targets attempted: 5/5
+[2026-08-03T01:59:51Z] [INFO]  Downloaded: 0 (~0GB)
+[2026-08-03T01:59:51Z] [INFO]  Newly processed: 5
+[2026-08-03T01:59:51Z] [INFO]  Evicted (raw payload deleted after processing): 0
+[2026-08-03T01:59:51Z] [INFO]  Reused local DAT (no raw payload present): 5
+[2026-08-03T01:59:51Z] [INFO]  Already processed (download skipped): 0
+[2026-08-03T01:59:51Z] [INFO]  Failed: 0
+[2026-08-03T01:59:51Z] [INFO]  Total .dat files now in data/extended_corpus: 826
+[2026-08-03T01:59:51Z] [INFO]  Total candidate report manifests in results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/pipeline_results: 5
+
+Scientific guardrail:
+  Downloaded files and derived hit tables/candidate reports are local
+  calibration and generalisation aids only. No file or report entry
+  constitutes a technosignature detection or authorizes external
+  submission.
+Production scan RUN-2026-08-03_014225Z-0MTO-hunter-search
+Artifacts: results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/runs/RUN-2026-08-03_014225Z-0MTO-hunter-search
+Guardrail: local scheduling aid only; no detection or submission claim.
+[?25l⠋ validate-all[2K⠙ validate-all[2K⠹ validate-all[2K⠸ validate-all[2K⠼ validate-all[2K⠴ validate-all[2K⠴ validate-all
+[?25h[1A[2KOK validate-all (0.5s)
+[?25l⠋ scan-summary (5 candidates)
+[?25h[1A[2KOK scan-summary (5 candidates) (0.0s)
+[?25l⠋ cross-target-rfi-summary
+[?25h[1A[2KOK cross-target-rfi-summary (0.0s)
+[?25l⠋ escalation-gate-check
+[?25h[1A[2KOK escalation-gate-check (0.0s)
+[?25l⠋ review-dashboard
+[?25h[1A[2KOK review-dashboard (0.0s)
+[?25l⠋ prod-write-outcomes
+[?25h[1A[2KOK prod-write-outcomes (0.0s)
+[3m                          Completed target evaluations                          [0m
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃[1m [0m[1mIndex       [0m[1m [0m┃[1m [0m[1mTarget      [0m[1m [0m┃[1m [0m[1mKind        [0m[1m [0m┃[1m [0m[1mFollow-up[0m[1m [0m┃[1m [0m[1mScore[0m[1m [0m┃[1m [0m[1mPathway    [0m[1m [0m┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ FU-2026-08-… │ GBT_HIP1030… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ NEG-2026-08… │ GBT_HIP1113… │ radio sky    │ no        │ 0.126 │ do_not_sub… │
+│              │              │ target       │           │       │             │
+│ NEG-2026-08… │ GBT_HIP1133… │ radio sky    │ no        │ 0.126 │ do_not_sub… │
+│              │              │ target       │           │       │             │
+│ NEG-2026-08… │ GBT_HIP1156… │ radio sky    │ no        │ 0.125 │ do_not_sub… │
+│              │              │ target       │           │       │             │
+│ NEG-2026-08… │ GBT_HIP1177… │ radio sky    │ no        │ 0.125 │ do_not_sub… │
+│              │              │ target       │           │       │             │
+└──────────────┴──────────────┴──────────────┴───────────┴───────┴─────────────┘
+Done RUN-2026-08-03_014225Z-0MTO-hunter-search: 5 target(s), 1 follow-up candidate target(s).
+Completed SEARCH-20260803T013634Z-84635BDA as RUN-2026-08-03_014225Z-0MTO-hunter-search: 5 target(s), 1 follow-up target(s).

@@ -1,0 +1,416 @@
+^D[
+  {
+    "event_sequence": [
+      "created",
+      "run_started",
+      "run_completed"
+    ],
+    "events_sha256": "d54f8daa70855e5896b995fe1fd2856cf8edd7785770f7d26bf03d0ab32a1902",
+    "manifest_sha256": "9bd0ebc96bd682ec421b5ca1a341792616140f063c7f7fc54ce47ac1744da5b8",
+    "mode": "new",
+    "ordered_target_ids": [
+      "HIP2",
+      "HIP1444",
+      "HIP57866",
+      "HIP5938",
+      "HIP6748"
+    ],
+    "records": [
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/runs/RUN-2026-08-03_013806Z-8NEO-hunter-search/RUN-2026-08-03_013806Z-8NEO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.98929,
+          "cross_target_rfi_flagged": true,
+          "cross_target_rfi_match_count": 2,
+          "cross_target_rfi_matched_targets": [
+            "spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002",
+            "spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002"
+          ],
+          "descriptive_name": "spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002 (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": -5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": true,
+          "index_id": "FU-2026-08-03_013806Z-8NEO-002",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "unresolved",
+          "normalized_drift_hz_s_per_ghz": -3.3636608361010314,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002",
+          "top_candidate_id": "spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002",
+          "top_pathway": "human_review_queue",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP2"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/runs/RUN-2026-08-03_013806Z-8NEO-hunter-search/RUN-2026-08-03_013806Z-8NEO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.98929,
+          "cross_target_rfi_flagged": true,
+          "cross_target_rfi_match_count": 2,
+          "cross_target_rfi_matched_targets": [
+            "spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002",
+            "spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002"
+          ],
+          "descriptive_name": "spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002 (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": -5.291873,
+          "external_submission_allowed": false,
+          "follow_up_required": true,
+          "index_id": "FU-2026-08-03_013806Z-8NEO-001",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "unresolved",
+          "normalized_drift_hz_s_per_ghz": -3.4249933315714642,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002",
+          "top_candidate_id": "spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002",
+          "top_pathway": "human_review_queue",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP1444"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/runs/RUN-2026-08-03_013806Z-8NEO-hunter-search/RUN-2026-08-03_013806Z-8NEO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.98929,
+          "cross_target_rfi_flagged": false,
+          "cross_target_rfi_match_count": 0,
+          "cross_target_rfi_matched_targets": [],
+          "descriptive_name": "spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002 (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": 5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": true,
+          "index_id": "FU-2026-08-03_013806Z-8NEO-005",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "unresolved",
+          "normalized_drift_hz_s_per_ghz": 2.3771167109674787,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002",
+          "top_candidate_id": "spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002",
+          "top_pathway": "human_review_queue",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP57866"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/runs/RUN-2026-08-03_013806Z-8NEO-hunter-search/RUN-2026-08-03_013806Z-8NEO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.98929,
+          "cross_target_rfi_flagged": true,
+          "cross_target_rfi_match_count": 2,
+          "cross_target_rfi_matched_targets": [
+            "spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002",
+            "spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002"
+          ],
+          "descriptive_name": "spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002 (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": -5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": true,
+          "index_id": "FU-2026-08-03_013806Z-8NEO-003",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "unresolved",
+          "normalized_drift_hz_s_per_ghz": -3.3636608361010314,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002",
+          "top_candidate_id": "spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002",
+          "top_pathway": "human_review_queue",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP5938"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/runs/RUN-2026-08-03_013806Z-8NEO-hunter-search/RUN-2026-08-03_013806Z-8NEO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.98929,
+          "cross_target_rfi_flagged": true,
+          "cross_target_rfi_match_count": 2,
+          "cross_target_rfi_matched_targets": [
+            "spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002",
+            "spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002"
+          ],
+          "descriptive_name": "spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002 (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": -5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": true,
+          "index_id": "FU-2026-08-03_013806Z-8NEO-004",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "unresolved",
+          "normalized_drift_hz_s_per_ghz": -3.3748223178157004,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002",
+          "top_candidate_id": "spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002",
+          "top_pathway": "human_review_queue",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP6748"
+      }
+    ],
+    "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+    "search_id": "SEARCH-20260803T013540Z-9EC480FD"
+  },
+  {
+    "event_sequence": [
+      "created",
+      "run_started",
+      "run_completed"
+    ],
+    "events_sha256": "a2036372b9a3f57437f17abc0bdb5610fe667a80dc3097e83947c2b3ffbe52d4",
+    "manifest_sha256": "56e0ea09e4e8c442f8f37272a080cd785015e9e1d666188590d2db4dc6e1026b",
+    "mode": "follow-up",
+    "ordered_target_ids": [
+      "HIP103096",
+      "HIP111313",
+      "HIP113357",
+      "HIP11565",
+      "HIP117712"
+    ],
+    "records": [
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/runs/RUN-2026-08-03_014225Z-0MTO-hunter-search/RUN-2026-08-03_014225Z-0MTO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.988661,
+          "cross_target_rfi_flagged": false,
+          "cross_target_rfi_match_count": 0,
+          "cross_target_rfi_matched_targets": [],
+          "descriptive_name": "GBT_HIP103096_2016-10-22_ABACAD (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": 5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": true,
+          "index_id": "FU-2026-08-03_014225Z-0MTO-001",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "unknown",
+          "normalized_drift_hz_s_per_ghz": 3.6709343747338754,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "GBT_HIP103096_2016-10-22_ABACAD",
+          "top_candidate_id": "GBT_HIP103096_2016-10-22_ABACAD",
+          "top_pathway": "human_review_queue",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP103096"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/runs/RUN-2026-08-03_014225Z-0MTO-hunter-search/RUN-2026-08-03_014225Z-0MTO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.125593,
+          "cross_target_rfi_flagged": false,
+          "cross_target_rfi_match_count": 0,
+          "cross_target_rfi_matched_targets": [],
+          "descriptive_name": "GBT_HIP111313_2016-12-01_ABACAD (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": 5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": false,
+          "index_id": "NEG-2026-08-03_014225Z-0MTO-001",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "known",
+          "normalized_drift_hz_s_per_ghz": 2.377110510175877,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "GBT_HIP111313_2016-12-01_ABACAD",
+          "top_candidate_id": "GBT_HIP111313_2016-12-01_ABACAD",
+          "top_pathway": "do_not_submit_false_positive",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP111313"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/runs/RUN-2026-08-03_014225Z-0MTO-hunter-search/RUN-2026-08-03_014225Z-0MTO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.125822,
+          "cross_target_rfi_flagged": false,
+          "cross_target_rfi_match_count": 0,
+          "cross_target_rfi_matched_targets": [],
+          "descriptive_name": "GBT_HIP113357_2017-01-08_ABACAD (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": 5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": false,
+          "index_id": "NEG-2026-08-03_014225Z-0MTO-002",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "known",
+          "normalized_drift_hz_s_per_ghz": 2.3732073094154322,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "GBT_HIP113357_2017-01-08_ABACAD",
+          "top_candidate_id": "GBT_HIP113357_2017-01-08_ABACAD",
+          "top_pathway": "do_not_submit_false_positive",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP113357"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/runs/RUN-2026-08-03_014225Z-0MTO-hunter-search/RUN-2026-08-03_014225Z-0MTO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.125411,
+          "cross_target_rfi_flagged": false,
+          "cross_target_rfi_match_count": 0,
+          "cross_target_rfi_matched_targets": [],
+          "descriptive_name": "GBT_HIP11565_2017-09-02_ABACAD (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": 5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": false,
+          "index_id": "NEG-2026-08-03_014225Z-0MTO-003",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "known",
+          "normalized_drift_hz_s_per_ghz": 2.385439394919036,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "GBT_HIP11565_2017-09-02_ABACAD",
+          "top_candidate_id": "GBT_HIP11565_2017-09-02_ABACAD",
+          "top_pathway": "do_not_submit_false_positive",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP11565"
+      },
+      {
+        "provenance": {
+          "events": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/events.ndjson",
+          "manifest": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json",
+          "target_status": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/runs/RUN-2026-08-03_014225Z-0MTO-hunter-search/RUN-2026-08-03_014225Z-0MTO-hunter-search_target_status.json"
+        },
+        "result": {
+          "candidate_count": 1,
+          "composite_score": 0.125397,
+          "cross_target_rfi_flagged": false,
+          "cross_target_rfi_match_count": 0,
+          "cross_target_rfi_matched_targets": [],
+          "descriptive_name": "GBT_HIP117712_2017-12-23_ABACAD (radio sky target)",
+          "detection_claimed": false,
+          "drift_evidence_available": true,
+          "drift_evidence_limitation": "",
+          "drift_rate_hz_per_sec": 5.214355,
+          "external_submission_allowed": false,
+          "follow_up_required": false,
+          "index_id": "NEG-2026-08-03_014225Z-0MTO-004",
+          "is_earth_drift_consistent": false,
+          "known_explanation_state": "known",
+          "normalized_drift_hz_s_per_ghz": 2.38269815525351,
+          "observation_count": 1,
+          "score_basis": "pipeline_score",
+          "target_kind": "radio sky target",
+          "target_kind_confidence": "low",
+          "target_kind_limitation": "Local metadata does not identify the astrophysical object class.",
+          "target_name": "GBT_HIP117712_2017-12-23_ABACAD",
+          "top_candidate_id": "GBT_HIP117712_2017-12-23_ABACAD",
+          "top_pathway": "do_not_submit_false_positive",
+          "track": "radio"
+        },
+        "state": "completed",
+        "target_id": "HIP117712"
+      }
+    ],
+    "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+    "search_id": "SEARCH-20260803T013634Z-84635BDA"
+  }
+]

@@ -1,0 +1,16 @@
+# Command palette — UX-CMD-01, UX-CMD-02, UX-CMD-03
+# surface: type "/" then /Exit
+Command palette
+/New-Search
+/Follow-Up-Search
+/Run-Search
+/Show-Follow-Ups
+/Inspect-Target
+/Help
+/Exit
+Required
+Optional
+Availability
+never-before-searched
+Keyboard
+open the searchable command palette

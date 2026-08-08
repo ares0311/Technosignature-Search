@@ -1,0 +1,8 @@
+# Width-aware results table at 80 columns — UX-TABLE-01
+# surface: "/Inspect-Target" with COLUMNS=80
+# Rank and identity must survive at the narrowest supported width.
+selection
+Target
+Score
+GB
+Inspect-Target

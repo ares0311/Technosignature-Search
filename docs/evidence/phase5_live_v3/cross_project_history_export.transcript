@@ -1,0 +1,8 @@
+^D{
+  "disclaimer": "Cross-project Hunter search-history exports are local scheduling aids shared between independently sandboxed Astrometrics search projects. They do not constitute a detection, discovery, expert review, external validation, or authorization for external submission.",
+  "entry_count": 704,
+  "ok": true,
+  "output_path": "data_selection/hunter_prior_search_history_v1.json",
+  "schema_version": 1,
+  "unique_target_count": 634
+}

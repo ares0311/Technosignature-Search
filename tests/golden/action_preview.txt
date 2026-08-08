@@ -1,0 +1,13 @@
+# Resolved-action preview — CLI_UX_SPEC section 8
+# surface: "/New-Search 5 --preview-only"
+Mode:
+Requested targets:
+Scientific constraints:
+Primary sources:
+Source freshness:
+Cross-project history freshness:
+Estimated discovery universe:
+Estimated storage:
+Estimated compute:
+Output behavior:
+No search was frozen

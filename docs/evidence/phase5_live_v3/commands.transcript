@@ -1,0 +1,6 @@
+^DInstalled selection: .venv/bin/TechnoHunter --searches-dir results/prod_acceptance_v3/searches
+New execution: .venv/bin/TechnoHunter --no-animation --no-color --searches-dir results/prod_acceptance_v3/searches --scans-dir results/scans --priority-queue data_selection/target_priority_queue.csv --command /Run-Search SEARCH-20260803T013540Z-9EC480FD --approve-acquisition
+Follow-up execution: .venv/bin/TechnoHunter --no-animation --no-color --searches-dir results/prod_acceptance_v3/searches --scans-dir results/scans --priority-queue data_selection/target_priority_queue.csv --command /Run-Search SEARCH-20260803T013634Z-84635BDA --approve-acquisition
+Restart state: .venv/bin/TechnoHunter --no-animation --no-color --searches-dir results/prod_acceptance_v3/searches --scans-dir results/scans --priority-queue data_selection/target_priority_queue.csv --command /Show-Follow-Ups
+Restart inspect: .venv/bin/TechnoHunter --no-animation --no-color --searches-dir results/prod_acceptance_v3/searches --scans-dir results/scans --priority-queue data_selection/target_priority_queue.csv --command /Inspect-Target HIP103096
+Repeat refusal: .venv/bin/TechnoHunter --no-animation --no-color --searches-dir results/prod_acceptance_v3/searches --scans-dir results/scans --priority-queue data_selection/target_priority_queue.csv --command /Run-Search SEARCH-20260803T013634Z-84635BDA

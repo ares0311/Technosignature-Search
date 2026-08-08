@@ -1,0 +1,73 @@
+{
+  "app_version": "1.2.72",
+  "checks": [
+    {
+      "check_id": "durable_record_kinds",
+      "detail": {
+        "event_log_count": 39,
+        "search_manifest_count": 39
+      },
+      "requirement_ids": [
+        "DUR-01"
+      ],
+      "status": "PASS",
+      "summary": "all five durable record kinds are present"
+    },
+    {
+      "check_id": "adaptive_discovery",
+      "detail": {
+        "manifest": "results/searches/SEARCH-20260803T013100Z-CFF0B44E/manifest.json",
+        "new_mode_manifest_count": 17,
+        "strategy": "adaptive_score_bound_v1",
+        "termination_reason": "accessible_universe_exhausted"
+      },
+      "requirement_ids": [
+        "DISC-01",
+        "DISC-02"
+      ],
+      "status": "PASS",
+      "summary": "the frozen manifest persists complete adaptive-discovery sufficiency evidence"
+    }
+  ],
+  "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+  "contract_version": "HUNTER-PROD-2026-07-30.3",
+  "counts": {
+    "executed": 2,
+    "failed": 0,
+    "not_executed": 0,
+    "passed": 2
+  },
+  "environment": {
+    "app_version": "1.2.72",
+    "bin_dir": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin",
+    "installation_mode": "editable",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/python",
+    "python_version": "3.14.3",
+    "relevant_environment": {
+      "CI": null,
+      "NO_COLOR": "1",
+      "REDUCE_MOTION": null,
+      "TECHNO_HUNTER_REDUCE_MOTION": null,
+      "TECHNO_SEARCH_ENABLE_LIVE_DATA": null,
+      "TERM": "xterm-ghostty",
+      "VIRTUAL_ENV": null
+    },
+    "repo_root": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+    "resolved_canonical_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/TechnoHunter",
+    "virtual_environment": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv"
+  },
+  "gate_passed": true,
+  "no_claim": "This gate verifies software conformance only. It makes no detection, discovery, expert-review, external-validation, or external-submission claim.",
+  "prod_ready": false,
+  "schema_version": "hunter_prod_check_report_v1",
+  "scope": {
+    "kind": "partial",
+    "selected_checks": [
+      "adaptive_discovery",
+      "durable_record_kinds"
+    ]
+  },
+  "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+  "working_tree_state": "dirty"
+}

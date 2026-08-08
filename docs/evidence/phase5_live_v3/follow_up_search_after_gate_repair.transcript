@@ -1,0 +1,329 @@
+^D{
+  "app_version": "1.2.72",
+  "artifact_kind": "hunter_search_manifest",
+  "candidate_catalog": {
+    "candidate_count": 12086,
+    "identity_resolved_count": 1184,
+    "path": "data_selection/bl_archive_candidate_catalog.csv",
+    "ranking_eligible_count": 358,
+    "schema_version": "bl_archive_candidate_catalog_v1",
+    "sha256": "9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174"
+  },
+  "code_commit": "266d821",
+  "created_at_utc": "2026-08-03T02:58:21.211142Z",
+  "created_by_project": "Techno-Hunter",
+  "detection_claimed": false,
+  "disclaimer": "Hunter searches and follow-up records are local scientific workflow artifacts. They do not constitute a detection, discovery, expert review, external validation, or authorization for external submission.",
+  "eligibility_queue": {
+    "candidate_count": 6879,
+    "path": "data_selection/target_priority_queue.csv",
+    "schema_version": "target_priority_queue_v5",
+    "sha256": "2ebb3dcc26b02121987199f18d71bdc234c8b038461d0903a5e790475d8dc5bf",
+    "viable_candidate_count": 798
+  },
+  "external_submission_allowed": false,
+  "follow_up_registry": {
+    "schema_version": "hunter_follow_up_registry_v1",
+    "source_ledger_count": 31,
+    "unresolved_identity_count": 0
+  },
+  "initial_status": "pending",
+  "mode": "follow-up",
+  "pipeline": {
+    "acquisition": "scripts/run_stream_process_evict_batch.sh",
+    "interpretation": "techno_search.production_scan.run_production_scan",
+    "preprocessing": "scripts/run_turboseti_on_extended_corpus.sh",
+    "raw_retention_policy": "stream_process_evict",
+    "scoring": "scripts/run_pipeline_on_bl_data.sh",
+    "turbo_seti_parameters": {
+      "max_drift_hz_per_sec": 10.0,
+      "min_drift_hz_per_sec": 0.0001,
+      "snr_threshold": 10.0
+    }
+  },
+  "schema_version": "hunter_search_manifest_v3",
+  "search_id": "SEARCH-20260803T025821Z-CB60814F",
+  "selection": {
+    "adaptive_discovery": null,
+    "constraints": {},
+    "deterministic_tie_breaker": "canonical_target_id",
+    "execution_kind_counts": {
+      "existing_data_reanalysis": 5
+    },
+    "follow_up_discovery": {
+      "cadence_discovery_count": 0,
+      "discoveries": [],
+      "eligible_candidate_count": 798,
+      "examined_target_count": 6,
+      "requested_target_count": 5,
+      "retrieved_at_utc": "2026-08-03T02:58:22.649590Z",
+      "schema_version": "hunter_follow_up_discovery_report_v2",
+      "source": "https://breakthroughinitiatives.org/opendatasearch",
+      "sufficient": true,
+      "unavailable_candidates": [
+        {
+          "reason": "no complete later-epoch three-ON cadence was found for HIP40501",
+          "target_id": "HIP40501",
+          "validity_state": "refresh-required"
+        }
+      ],
+      "universe_exhausted": false
+    },
+    "follow_up_observation_fulfilled_count": 0,
+    "partial_selection_allowed": false,
+    "projected_download_gb": 0.0,
+    "quality": {
+      "interpretation": "deterministic relative ranking score; not a calibrated probability or absolute eligibility threshold",
+      "maximum": 0.98929,
+      "median": 0.98929,
+      "minimum": 0.98929,
+      "score_field": "follow_up_priority"
+    },
+    "ranking_key": "follow_up_priority",
+    "requested_count": 5,
+    "selected_count": 5,
+    "shortfall": null
+  },
+  "targets": [
+    {
+      "dec_deg": 10.7775,
+      "distance_light_years": 97.194601,
+      "estimated_download_gb": null,
+      "evidence": {
+        "candidate_id": "spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002",
+        "cross_target_rfi_flagged": false,
+        "drift_evidence_available": true,
+        "drift_rate_hz_per_sec": -5.291873,
+        "frequency_hz": 1553283691.0,
+        "pathway": "human_review_queue",
+        "score": 0.98929,
+        "snr": 139.993149
+      },
+      "execution_kind": "existing_data_reanalysis",
+      "exoplanet_host": "false",
+      "follow_up_observation_fulfilled": false,
+      "follow_up_observation_scheduled": false,
+      "follow_up_priority": 0.98929,
+      "galactic_latitude_deg": -46.187679,
+      "hip": "HIP11029",
+      "mode": "follow-up",
+      "name": "HIP11029",
+      "object_type": "Star",
+      "prior_search_count": 1,
+      "prior_search_provenance": [
+        {
+          "candidate_id": "spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002",
+          "follow_up_id": "FU-2026-07-25_033508Z-7GDV-002",
+          "ledger_path": "results/searches/SEARCH-20260725T033433Z-21EE3252/runs/RUN-2026-07-25_033508Z-7GDV-hunter-search/RUN-2026-07-25_033508Z-7GDV-hunter-search_follow_ups.json",
+          "pathway": "human_review_queue",
+          "project": "Techno-Hunter",
+          "relationship": "this_project_search",
+          "run_id": "RUN-2026-07-25_033508Z-7GDV-hunter-search",
+          "score": 0.98929
+        }
+      ],
+      "prior_search_provenance_summary": "Techno-Hunter:1",
+      "prior_seti_coverage_reference": "E17",
+      "queue_status": "already_acquired_local_cache",
+      "ra_deg": 35.50625,
+      "recommended_next_action": "complete the unresolved known-explanation checks before candidate promotion",
+      "selection_reason": "complete the unresolved known-explanation checks before candidate promotion",
+      "source_data_path": "data/extended_corpus/HIP11029/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.dat",
+      "source_hdf5_url": "",
+      "spectral_type": "F0V",
+      "target_selection_score": 0.221091
+    },
+    {
+      "dec_deg": 8.186667,
+      "distance_light_years": 103.391572,
+      "estimated_download_gb": null,
+      "evidence": {
+        "candidate_id": "spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002",
+        "cross_target_rfi_flagged": false,
+        "drift_evidence_available": true,
+        "drift_rate_hz_per_sec": -5.214355,
+        "frequency_hz": 1550202370.0,
+        "pathway": "human_review_queue",
+        "score": 0.98929,
+        "snr": 305.11911
+      },
+      "execution_kind": "existing_data_reanalysis",
+      "exoplanet_host": "false",
+      "follow_up_observation_fulfilled": false,
+      "follow_up_observation_scheduled": false,
+      "follow_up_priority": 0.98929,
+      "galactic_latitude_deg": -39.253899,
+      "hip": "HIP110341",
+      "mode": "follow-up",
+      "name": "HIP110341",
+      "object_type": "Star",
+      "prior_search_count": 1,
+      "prior_search_provenance": [
+        {
+          "candidate_id": "spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002",
+          "follow_up_id": "FU-2026-07-25_033508Z-7GDV-004",
+          "ledger_path": "results/searches/SEARCH-20260725T033433Z-21EE3252/runs/RUN-2026-07-25_033508Z-7GDV-hunter-search/RUN-2026-07-25_033508Z-7GDV-hunter-search_follow_ups.json",
+          "pathway": "human_review_queue",
+          "project": "Techno-Hunter",
+          "relationship": "this_project_search",
+          "run_id": "RUN-2026-07-25_033508Z-7GDV-hunter-search",
+          "score": 0.98929
+        }
+      ],
+      "prior_search_provenance_summary": "Techno-Hunter:1",
+      "prior_seti_coverage_reference": "E17",
+      "queue_status": "already_acquired_local_cache",
+      "ra_deg": 335.2325,
+      "recommended_next_action": "complete the unresolved known-explanation checks before candidate promotion",
+      "selection_reason": "complete the unresolved known-explanation checks before candidate promotion",
+      "source_data_path": "data/extended_corpus/HIP110341/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.dat",
+      "source_hdf5_url": "",
+      "spectral_type": "F6V",
+      "target_selection_score": 0.33889
+    },
+    {
+      "dec_deg": 63.879167,
+      "distance_light_years": 81.539094,
+      "estimated_download_gb": null,
+      "evidence": {
+        "candidate_id": "spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002",
+        "cross_target_rfi_flagged": false,
+        "drift_evidence_available": true,
+        "drift_rate_hz_per_sec": -5.214355,
+        "frequency_hz": 2242494965.0,
+        "pathway": "human_review_queue",
+        "score": 0.98929,
+        "snr": 245.144791
+      },
+      "execution_kind": "existing_data_reanalysis",
+      "exoplanet_host": "false",
+      "follow_up_observation_fulfilled": false,
+      "follow_up_observation_scheduled": false,
+      "follow_up_priority": 0.98929,
+      "galactic_latitude_deg": 5.354328,
+      "hip": "HIP110774",
+      "mode": "follow-up",
+      "name": "HIP110774",
+      "object_type": "Star",
+      "prior_search_count": 1,
+      "prior_search_provenance": [
+        {
+          "candidate_id": "spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002",
+          "follow_up_id": "FU-2026-07-24_062446Z-WE1V-046",
+          "ledger_path": "results/searches/SEARCH-20260724T062429Z-D7FA314D/runs/RUN-2026-07-24_062446Z-WE1V-hunter-search/RUN-2026-07-24_062446Z-WE1V-hunter-search_follow_ups.json",
+          "pathway": "human_review_queue",
+          "project": "Techno-Hunter",
+          "relationship": "this_project_search",
+          "run_id": "RUN-2026-07-24_062446Z-WE1V-hunter-search",
+          "score": 0.98929
+        }
+      ],
+      "prior_search_provenance_summary": "Techno-Hunter:1",
+      "prior_seti_coverage_reference": "E17",
+      "queue_status": "already_acquired_local_cache",
+      "ra_deg": 336.63625,
+      "recommended_next_action": "complete the unresolved known-explanation checks before candidate promotion",
+      "selection_reason": "complete the unresolved known-explanation checks before candidate promotion",
+      "source_data_path": "data/extended_corpus/HIP110774/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.dat",
+      "source_hdf5_url": "",
+      "spectral_type": "K7",
+      "target_selection_score": 0.184795
+    },
+    {
+      "dec_deg": 9.377778,
+      "distance_light_years": 41.748016,
+      "estimated_download_gb": null,
+      "evidence": {
+        "candidate_id": "spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002",
+        "cross_target_rfi_flagged": false,
+        "drift_evidence_available": true,
+        "drift_rate_hz_per_sec": -5.291873,
+        "frequency_hz": 1702500343.0,
+        "pathway": "human_review_queue",
+        "score": 0.98929,
+        "snr": 807.8573
+      },
+      "execution_kind": "existing_data_reanalysis",
+      "exoplanet_host": "false",
+      "follow_up_observation_fulfilled": false,
+      "follow_up_observation_scheduled": false,
+      "follow_up_priority": 0.98929,
+      "galactic_latitude_deg": -40.427753,
+      "hip": "HIP111313",
+      "mode": "follow-up",
+      "name": "HIP111313",
+      "object_type": "Star",
+      "prior_search_count": 1,
+      "prior_search_provenance": [
+        {
+          "candidate_id": "spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002",
+          "follow_up_id": "FU-2026-07-24_062446Z-WE1V-004",
+          "ledger_path": "results/searches/SEARCH-20260724T062429Z-D7FA314D/runs/RUN-2026-07-24_062446Z-WE1V-hunter-search/RUN-2026-07-24_062446Z-WE1V-hunter-search_follow_ups.json",
+          "pathway": "human_review_queue",
+          "project": "Techno-Hunter",
+          "relationship": "this_project_search",
+          "run_id": "RUN-2026-07-24_062446Z-WE1V-hunter-search",
+          "score": 0.98929
+        }
+      ],
+      "prior_search_provenance_summary": "Techno-Hunter:1",
+      "prior_seti_coverage_reference": "E17",
+      "queue_status": "already_acquired_local_cache",
+      "ra_deg": 338.259167,
+      "recommended_next_action": "complete the unresolved known-explanation checks before candidate promotion",
+      "selection_reason": "complete the unresolved known-explanation checks before candidate promotion",
+      "source_data_path": "data/extended_corpus/HIP111313/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.dat",
+      "source_hdf5_url": "",
+      "spectral_type": "M0V:",
+      "target_selection_score": 0.195929
+    },
+    {
+      "dec_deg": 20.768611,
+      "distance_light_years": 49.901926,
+      "estimated_download_gb": null,
+      "evidence": {
+        "candidate_id": "spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002",
+        "cross_target_rfi_flagged": false,
+        "drift_evidence_available": true,
+        "drift_rate_hz_per_sec": 5.291873,
+        "frequency_hz": 1249563217.0,
+        "pathway": "human_review_queue",
+        "score": 0.98929,
+        "snr": 96.264412
+      },
+      "execution_kind": "existing_data_reanalysis",
+      "exoplanet_host": "true",
+      "follow_up_observation_fulfilled": false,
+      "follow_up_observation_scheduled": false,
+      "follow_up_priority": 0.98929,
+      "galactic_latitude_deg": -34.727489,
+      "hip": "HIP113357",
+      "mode": "follow-up",
+      "name": "HIP113357",
+      "object_type": "Star",
+      "prior_search_count": 1,
+      "prior_search_provenance": [
+        {
+          "candidate_id": "spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002",
+          "follow_up_id": "FU-2026-07-24_062446Z-WE1V-012",
+          "ledger_path": "results/searches/SEARCH-20260724T062429Z-D7FA314D/runs/RUN-2026-07-24_062446Z-WE1V-hunter-search/RUN-2026-07-24_062446Z-WE1V-hunter-search_follow_ups.json",
+          "pathway": "human_review_queue",
+          "project": "Techno-Hunter",
+          "relationship": "this_project_search",
+          "run_id": "RUN-2026-07-24_062446Z-WE1V-hunter-search",
+          "score": 0.98929
+        }
+      ],
+      "prior_search_provenance_summary": "Techno-Hunter:1",
+      "prior_seti_coverage_reference": "E17",
+      "queue_status": "already_acquired_local_cache",
+      "ra_deg": 344.366667,
+      "recommended_next_action": "complete the unresolved known-explanation checks before candidate promotion",
+      "selection_reason": "complete the unresolved known-explanation checks before candidate promotion",
+      "source_data_path": "data/extended_corpus/HIP113357/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.dat",
+      "source_hdf5_url": "",
+      "spectral_type": "G5V",
+      "target_selection_score": 0.21912
+    }
+  ]
+}

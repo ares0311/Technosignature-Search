@@ -1,0 +1,11 @@
+# Width-aware results table at 140 columns — UX-TABLE-01
+# surface: "/Inspect-Target" with COLUMNS=140
+# A wider terminal must reveal the lower-priority science columns.
+selection
+Target
+Score
+GB
+Type
+Dist ly
+Execution
+Inspect-Target

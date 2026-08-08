@@ -1,0 +1,7 @@
+# Failure presentation — UX-RUN-03, DUR-04
+# surface: an unknown command
+ERROR:
+unknown command
+type / or /Help to list commands
+# Detailed tracebacks belong in logs, not the primary interactive response.
+!Traceback (most recent call last)

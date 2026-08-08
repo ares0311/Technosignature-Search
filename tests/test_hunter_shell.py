@@ -9,6 +9,8 @@ from techno_search.hunter_shell import (
     HunterShell,
 )
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
 
 class _Recorder:
     def __init__(self, exit_code: int = 0) -> None:
@@ -48,7 +50,13 @@ def test_slash_autocomplete_exposes_required_workflow(tmp_path: Path) -> None:
         matches.append(match.strip())
         state += 1
 
-    assert matches == list(REQUIRED_COMMANDS)
+    # Every required command must be completable. Contract section 2 also
+    # permits compatibility aliases, so completion is a superset, not equality.
+    assert set(REQUIRED_COMMANDS).issubset(set(matches))
+    assert matches[: len(REQUIRED_COMMANDS)] == list(REQUIRED_COMMANDS)
+    assert "/Inspect-Target" in matches
+    for alias in ("/Create-New-Search", "/Run-New-Search"):
+        assert alias in matches, f"compatibility alias {alias} must stay completable"
 
 
 def test_new_and_follow_up_commands_delegate_to_canonical_create(
@@ -126,6 +134,77 @@ def test_canonical_run_command_preserves_exact_cli_contract(tmp_path: Path) -> N
     )
 
     assert run.calls == [["--search-id", "SEARCH-20260727T120000Z-ABCDEF12"]]
+
+
+def test_inspect_uses_shell_searches_directory(tmp_path: Path) -> None:
+    inspect = _Recorder()
+    searches_dir = tmp_path / "isolated-searches"
+    shell = HunterShell(
+        handlers=CommandHandlers(inspect=inspect),
+        stdin=StringIO(),
+        stdout=StringIO(),
+        stderr=StringIO(),
+        interactive=False,
+        history_path=tmp_path / "history",
+        searches_dir=searches_dir,
+    )
+    searches_dir.mkdir()
+    (searches_dir / "SEARCH-20260727T120000Z-ABCDEF12").mkdir()
+    (searches_dir / "SEARCH-20260727T120000Z-ABCDEF12" / "manifest.json").write_text(
+        '{"targets": [{"target_id": "HIP2"}]}', encoding="utf-8"
+    )
+
+    assert shell.dispatch("/Inspect-Target 1").exit_code == 0
+    assert inspect.calls == [["1", "--searches-dir", str(searches_dir)]]
+
+
+def test_nondefault_shell_paths_reach_canonical_handlers(tmp_path: Path) -> None:
+    create = _Recorder()
+    run = _Recorder()
+    show = _Recorder()
+    searches_dir = tmp_path / "searches"
+    scans_dir = tmp_path / "scans"
+    priority_queue = REPO_ROOT / "data_selection" / "target_priority_queue.csv"
+    searches_dir.mkdir()
+    scans_dir.mkdir()
+    search_id = "SEARCH-20260727T120000Z-ABCDEF12"
+    pending = searches_dir / search_id
+    pending.mkdir()
+    (pending / "manifest.json").write_text(
+        '{"initial_status": "pending", "targets": [{"target_id": "HIP2"}]}',
+        encoding="utf-8",
+    )
+    shell = HunterShell(
+        handlers=CommandHandlers(create=create, run=run, show_follow_ups=show),
+        stdin=StringIO(),
+        stdout=StringIO(),
+        stderr=StringIO(),
+        interactive=False,
+        history_path=tmp_path / "history",
+        searches_dir=searches_dir,
+        scans_dir=scans_dir,
+        priority_queue=priority_queue,
+    )
+
+    assert shell.dispatch("/New-Search 5").exit_code == 0
+    assert shell.dispatch(f"/Run-Search {search_id}").exit_code == 0
+    assert shell.dispatch("/Show-Follow-Ups --json").exit_code == 0
+
+    shared_paths = [
+        "--scans-dir",
+        str(scans_dir),
+        "--searches-dir",
+        str(searches_dir),
+        "--priority-queue",
+        str(priority_queue),
+    ]
+    assert create.calls == [
+        ["--targets", "5", "--mode", "new", *shared_paths]
+    ]
+    assert run.calls == [
+        ["--search-id", search_id, "--searches-dir", str(searches_dir)]
+    ]
+    assert show.calls == [["--json", *shared_paths]]
 
 
 def test_help_and_bare_slash_are_discoverable(tmp_path: Path) -> None:

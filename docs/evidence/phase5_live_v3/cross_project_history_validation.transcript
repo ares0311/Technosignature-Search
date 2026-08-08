@@ -1,0 +1,46 @@
+^D{
+  "actual_source_sha256": [
+    "ad7763346bf3c3816fa6b1d817f2493d35b022af8e75e94d545f8f0de111691c"
+  ],
+  "aliases_fields_present": false,
+  "declared_source_sha256": [
+    "ad7763346bf3c3816fa6b1d817f2493d35b022af8e75e94d545f8f0de111691c"
+  ],
+  "entry_count": 704,
+  "identity_entries": [
+    {
+      "canonical_id": "HIP 60759",
+      "run_id": "RUN-2026-07-28_041452Z-BL8R-hunter-search",
+      "searched_at": "2026-07-28T04:15:41.327708Z",
+      "status": "human_review_queue",
+      "target_id": "HIP60759"
+    },
+    {
+      "canonical_id": "HIP 61099",
+      "run_id": "RUN-2026-07-28_043711Z-YJGV-hunter-search",
+      "searched_at": "2026-07-28T04:38:02.060033Z",
+      "status": "human_review_queue",
+      "target_id": "HIP61099"
+    },
+    {
+      "canonical_id": "HIP 3419",
+      "run_id": "RUN-2026-07-29_055553Z-YI5F-hunter-search",
+      "searched_at": "2026-07-29T05:56:41.892045Z",
+      "status": "human_review_queue",
+      "target_id": "HIP3419"
+    }
+  ],
+  "manifest_id": "hunter-prior-search-history-v1",
+  "ok": true,
+  "schema_version": 1,
+  "sibling_consumer_resolution": "valid",
+  "source_count": 1,
+  "source_history_group_count": 645,
+  "source_paths": [
+    "results/scan_history.ndjson"
+  ],
+  "source_validity_states": [
+    "valid"
+  ],
+  "unique_target_count": 634
+}

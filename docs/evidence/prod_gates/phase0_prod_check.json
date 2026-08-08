@@ -1,0 +1,577 @@
+{
+  "app_version": "1.2.72",
+  "checks": [
+    {
+      "check_id": "documented_installation",
+      "detail": {},
+      "requirement_ids": [
+        "LAUNCH-01"
+      ],
+      "status": "PASS",
+      "summary": "README documents the uv install command and the canonical executable"
+    },
+    {
+      "check_id": "entry_points",
+      "detail": {
+        "results": {
+          "Create-New-Search": {
+            "command": [
+              "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Create-New-Search",
+              "--help"
+            ],
+            "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+            "exit_status": 0,
+            "stderr": "",
+            "stdout": "usage: Create-New-Search [-h] --targets TARGETS --mode {new,follow-up} [--candidate-catalog CANDIDATE_CATALOG]\n                         [--priority-queue PRIORITY_QUEUE] [--scans-dir SCANS_DIR] [--searches-dir SEARCHES_DIR]\n                         [--manifest-dir MANIFEST_DIR] [--json] [--min-ra-deg MIN_RA_DEG] [--max-ra-deg MAX_RA_DEG]\n                         [--min-dec-deg MIN_DEC_DEG] [--max-dec-deg MAX_DEC_DEG]\n                         [--min-abs-galactic-latitude-deg MIN_ABS_GALACTIC_LATITUDE_DEG]\n                         [--max-estimated-download-gb MAX_ESTIMATED_DOWNLOAD_GB] [--target"
+          },
+          "Run-New-Search": {
+            "command": [
+              "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Run-New-Search",
+              "--help"
+            ],
+            "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+            "exit_status": 0,
+            "stderr": "",
+            "stdout": "usage: Run-New-Search [-h] [--search-id SEARCH_ID] [--searches-dir SEARCHES_DIR] [--history-file HISTORY_FILE]\n                      [--chunk-size CHUNK_SIZE] [--pipeline-workers PIPELINE_WORKERS] [--no-rich]\n                      [--approve-acquisition] [--json]\n\noptions:\n  -h, --help            show this help message and exit\n  --search-id SEARCH_ID\n  --searches-dir SEARCHES_DIR\n  --history-file HISTORY_FILE\n  --chunk-size CHUNK_SIZE\n  --pipeline-workers PIPELINE_WORKERS\n  --no-rich\n  --approve-acquisition\n                        Approve the immutable manifest's bounded raw archive acquisiti"
+          },
+          "Show-Follow-Ups": {
+            "command": [
+              "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Show-Follow-Ups",
+              "--help"
+            ],
+            "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+            "exit_status": 0,
+            "stderr": "",
+            "stdout": "usage: Show-Follow-Ups [-h] [--scans-dir SCANS_DIR] [--searches-dir SEARCHES_DIR] [--priority-queue PRIORITY_QUEUE]\n                       [--json]\n\noptions:\n  -h, --help            show this help message and exit\n  --scans-dir SCANS_DIR\n  --searches-dir SEARCHES_DIR\n  --priority-queue PRIORITY_QUEUE\n  --json\n"
+          },
+          "Techno-Hunter": {
+            "command": [
+              "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+              "--help"
+            ],
+            "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+            "exit_status": 0,
+            "stderr": "",
+            "stdout": "usage: Techno-Hunter [-h] [--command COMMAND] [--no-animation] [--no-color] [--history-file HISTORY_FILE]\n                     [--searches-dir SEARCHES_DIR] [--scans-dir SCANS_DIR] [--priority-queue PRIORITY_QUEUE]\n                     [--acceptance-work-dir ACCEPTANCE_WORK_DIR] [--acceptance-evidence ACCEPTANCE_EVIDENCE]\n\noptions:\n  -h, --help            show this help message and exit\n  --command COMMAND     Execute one slash command non-interactively (repeatable).\n  --no-animation\n  --no-color\n  --history-file HISTORY_FILE\n  --searches-dir SEARCHES_DIR\n  --scans-dir SCANS_DIR\n  --priority-q"
+          },
+          "TechnoHunter": {
+            "command": [
+              "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/TechnoHunter",
+              "--help"
+            ],
+            "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+            "exit_status": 0,
+            "stderr": "",
+            "stdout": "usage: Techno-Hunter [-h] [--command COMMAND] [--no-animation] [--no-color] [--history-file HISTORY_FILE]\n                     [--searches-dir SEARCHES_DIR] [--scans-dir SCANS_DIR] [--priority-queue PRIORITY_QUEUE]\n                     [--acceptance-work-dir ACCEPTANCE_WORK_DIR] [--acceptance-evidence ACCEPTANCE_EVIDENCE]\n\noptions:\n  -h, --help            show this help message and exit\n  --command COMMAND     Execute one slash command non-interactively (repeatable).\n  --no-animation\n  --no-color\n  --history-file HISTORY_FILE\n  --searches-dir SEARCHES_DIR\n  --scans-dir SCANS_DIR\n  --priority-q"
+          }
+        }
+      },
+      "requirement_ids": [
+        "LAUNCH-02",
+        "LAUNCH-04"
+      ],
+      "status": "PASS",
+      "summary": "all 5 documented entry points started cleanly"
+    },
+    {
+      "check_id": "launch_repo_root",
+      "detail": {
+        "evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+            "--no-animation",
+            "--no-color"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+          "exit_status": 0,
+          "stderr": "",
+          "stdout": "                                                    Command palette                                                     \n\u250f\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503    \u2503 Command             \u2503 Description                         \u2503 Required      \u2503 Optional     \u2503 Availability         \u2503\n\u2521\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 >  \u2502 /New-Search         \u2502 Select and freeze the best          \u2502 targets       \u2502 minimum ra \u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 available never-before-searched     \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 targets.                            \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Follow-Up-Search   \u2502 Select and freeze the previously    \u2502 targets       \u2502 minimum ra \u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 searched targets with the highest   \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 current scientific value.           \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Run-Search         \u2502 Execute the exact frozen targets of \u2502 none          \u2502 search id, \u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 a pending search.                   \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Show-Follow-Ups    \u2502 List actionable durable follow-up   \u2502 none          \u2502 machine-rea\u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 targets and their next action.      \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Inspect-Target     \u2502 Show full scientific detail, score  \u2502 none          \u2502 rank or ide\u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 components, provenance and          \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 limitations for one selected       "
+        }
+      },
+      "requirement_ids": [
+        "LAUNCH-02",
+        "LAUNCH-04"
+      ],
+      "status": "PASS",
+      "summary": "repository-root launch exposed the palette, /Help and /Exit"
+    },
+    {
+      "check_id": "launch_outside_repository",
+      "detail": {
+        "evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+            "--no-animation",
+            "--no-color",
+            "--history-file",
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/hunter-prod-check-outside-b22jvhii/history"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/hunter-prod-check-outside-b22jvhii",
+          "exit_status": 0,
+          "stderr": "",
+          "stdout": "                                                 TechnoHunter commands                                                  \n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Command            \u2503 Purpose                                                             \u2503 Required \u2503 Optional       \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 /New-Search        \u2502 Select and freeze the best available never-before-searched targets. \u2502 targets  \u2502 minimum ra (d\u2026 \u2502\n\u2502 /Follow-Up-Search  \u2502 Select and freeze the previously searched targets with the highest  \u2502 targets  \u2502 minimum ra (d\u2026 \u2502\n\u2502                    \u2502 current scientific value.                                           \u2502          \u2502                \u2502\n\u2502 /Run-Search        \u2502 Execute the exact frozen targets of a pending search.               \u2502 none     \u2502 search id, ap\u2026 \u2502\n\u2502 /Show-Follow-Ups   \u2502 List actionable durable follow-up targets and their next action.    \u2502 none     \u2502 machine-reada\u2026 \u2502\n\u2502 /Inspect-Target    \u2502 Show full scientific detail, score components, provenance and       \u2502 none     \u2502 rank or"
+        },
+        "unexpected_artifacts": []
+      },
+      "requirement_ids": [
+        "LAUNCH-02",
+        "LAUNCH-04"
+      ],
+      "status": "PASS",
+      "summary": "the installed application started and exited cleanly outside the repository"
+    },
+    {
+      "check_id": "invalid_input",
+      "detail": {
+        "evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+            "--no-animation",
+            "--no-color"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+          "exit_status": 1,
+          "stderr": "ERROR: unknown command '/Nope'; type / or /Help to list commands\n",
+          "stdout": ""
+        }
+      },
+      "requirement_ids": [
+        "LAUNCH-04",
+        "CLI-03"
+      ],
+      "status": "PASS",
+      "summary": "invalid input exits non-zero with an actionable message and no traceback"
+    },
+    {
+      "check_id": "command_palette",
+      "detail": {
+        "evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+            "--no-animation",
+            "--no-color"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+          "exit_status": 0,
+          "stderr": "",
+          "stdout": "                                                    Command palette                                                     \n\u250f\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503    \u2503 Command             \u2503 Description                         \u2503 Required      \u2503 Optional     \u2503 Availability         \u2503\n\u2521\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 >  \u2502 /New-Search         \u2502 Select and freeze the best          \u2502 targets       \u2502 minimum ra \u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 available never-before-searched     \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 targets.                            \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Follow-Up-Search   \u2502 Select and freeze the previously    \u2502 targets       \u2502 minimum ra \u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 searched targets with the highest   \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 current scientific value.           \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Run-Search         \u2502 Execute the exact frozen targets of \u2502 none          \u2502 search id, \u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 a pending search.                   \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Show-Follow-Ups    \u2502 List actionable durable follow-up   \u2502 none          \u2502 machine-rea\u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 targets and their next action.      \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Inspect-Target     \u2502 Show full scientific detail, score  \u2502 none          \u2502 rank or ide\u2026 \u2502 available            \u2502\n\u2502    \u2502                     \u2502 components, provenance and          \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 limitations for one selected        \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502                     \u2502 target.                             \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Help               \u2502 Show the described command table    \u2502 none          \u2502 none         \u2502 available            \u2502\n\u2502    \u2502                     \u2502 and keyboard help.                  \u2502               \u2502              \u2502                      \u2502\n\u2502    \u2502 /Exit               \u2502 Leave the shell without changing    \u2502 none         "
+        }
+      },
+      "requirement_ids": [
+        "CLI-01",
+        "CLI-02"
+      ],
+      "status": "PASS",
+      "summary": "typing / opens a palette listing every required command with parameter shapes"
+    },
+    {
+      "check_id": "interactive_pty_palette",
+      "detail": {
+        "evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+          "exit_status": null,
+          "plain_transcript_tail": "",
+          "pty_available": false,
+          "steps": [],
+          "timed_out": false,
+          "unavailable_reason": "posix_openpt failed: EPERM: Operation not permitted"
+        }
+      },
+      "requirement_ids": [
+        "CLI-01",
+        "CLI-02",
+        "CLI-03"
+      ],
+      "status": "NOT_EXECUTED",
+      "summary": "NOT EXECUTED \u2014 the host denied pseudo-terminal allocation (posix_openpt failed: EPERM: Operation not permitted)"
+    },
+    {
+      "check_id": "guided_input",
+      "detail": {
+        "fields_evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+            "--no-animation",
+            "--no-color"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+          "exit_status": 1,
+          "stderr": "ERROR: /New-Search requires a positive target count \u2014 for example: /New-Search 20\n",
+          "stdout": "/New-Search\n>  Targets *                 [20]     How many targets to select and freeze. Positive whole number.                     \n   Scientific constraints    [Open\u2026]  Optional RA/Dec window, Galactic-latitude floor, per-target size cap and catalog  \n                                      prefixes.                                                                         \n* required. Tab next field, Shift-Tab previous, Enter execute when valid, Escape cancel.\n"
+        }
+      },
+      "requirement_ids": [
+        "CLI-01",
+        "CLI-03"
+      ],
+      "status": "PASS",
+      "summary": "guided fields and live type/range sentinels reject invalid input actionably"
+    },
+    {
+      "check_id": "animation_degrades",
+      "detail": {},
+      "requirement_ids": [
+        "CLI-01"
+      ],
+      "status": "PASS",
+      "summary": "redirected non-TTY output is free of ANSI control sequences"
+    },
+    {
+      "check_id": "machine_output",
+      "detail": {
+        "top_level_keys": [
+          "completed_count",
+          "deferred_count",
+          "detection_claimed",
+          "disclaimer",
+          "eligible_count",
+          "eligible_entries",
+          "external_submission_allowed",
+          "refresh_required_count",
+          "scheduled_count",
+          "schema_version",
+          "source_entry_count",
+          "source_ledger_count"
+        ]
+      },
+      "requirement_ids": [
+        "CLI-01",
+        "CLI-03"
+      ],
+      "status": "PASS",
+      "summary": "machine-readable follow-up output is clean parseable JSON"
+    },
+    {
+      "check_id": "result_table",
+      "detail": {
+        "observations": {
+          "columns_140": {
+            "exit_status": 0,
+            "line_count": 13,
+            "longest_line": 140,
+            "sample": [
+              "                                              new selection \u2014 SEARCH-20260731T192156Z-6156C434",
+              "\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513",
+              "\u2503      # \u2503 Target           \u2503          Score \u2503         GB \u2503 Type            \u2503     Dist ly \u2503 Spec      \u2503    Prior \u2503 Execution               \u2503",
+              "\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529",
+              "\u2502      1 \u2502 HIP2             \u2502       0.538042 \u2502      0.239 \u2502 Star            \u2502       148.7 \u2502 K3V       \u2502        0 \u2502 novel_target_archive_pr\u2026\u2502",
+              "\u2502      2 \u2502 HIP1444          \u2502       0.537500 \u2502      0.242 \u2502 Star            \u2502        85.1 \u2502 G2V       \u2502        0 \u2502 novel_target_archive_pr\u2026\u2502"
+            ],
+            "stderr": ""
+          },
+          "columns_80": {
+            "exit_status": 0,
+            "line_count": 15,
+            "longest_line": 80,
+            "sample": [
+              "                new selection \u2014 SEARCH-20260731T192156Z-6156C434",
+              "\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2513",
+              "\u2503    # \u2503 Target       \u2503       Score \u2503      GB \u2503 Type         \u2503  Dist ly \u2503 Prior\u2503",
+              "\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2529",
+              "\u2502    1 \u2502 HIP2         \u2502    0.538042 \u2502   0.239 \u2502 Star         \u2502    148.7 \u2502     0\u2502",
+              "\u2502    2 \u2502 HIP1444      \u2502    0.537500 \u2502   0.242 \u2502 Star         \u2502     85.1 \u2502     0\u2502"
+            ],
+            "stderr": ""
+          }
+        }
+      },
+      "requirement_ids": [
+        "CLI-01"
+      ],
+      "status": "PASS",
+      "summary": "the result table stays within 80 and 140 column terminals"
+    },
+    {
+      "check_id": "action_preview",
+      "detail": {
+        "evidence": {
+          "command": [
+            "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+            "--no-animation",
+            "--no-color"
+          ],
+          "cwd": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+          "exit_status": 0,
+          "stderr": "",
+          "stdout": "... Adaptive discovery \u2192 identity/history \u2192 new-target ranking\n                                                Resolved action preview                                                 \nMode:                             new                                                                                   \nRequested targets:                5                                                                                     \nScientific constraints:           none (any eligible target)                                                            \nPrimary sources:                  data_selection/bl_archive_candidate_catalog.csv (candidate universe);                 \n                                  data_selection/target_priority_queue.csv (eligibility)                                \nSource freshness:                 bl_archive_candidate_catalog.csv modified 2026-07-24T12:45:36+00:00;                  \n                                  target_priority_queue.csv modified 2026-07-28T05:33:57+00:00                          \nCross-project history freshness:  absent: data_selection/hunter_prior_search_history_v1.json                            \nEstimated discovery universe:     12086 archive label(s); 6879 ranked queue row(s)                                      \nEstimated storage:                determined at freeze from real HEAD-preflighted product sizes; bounded by the 100 GB  \n                                  local cap                                                                             \nEstimated compute:                turboSETI plus radio pipeline per target, up to 5 target(s), 12 bounded workers       \nOutput behavior:                  durable immutable manifest and append-only events; terminal table for N <= 100,       \n                                  timestamped CSV export above it                                                       \nNo search was frozen. Re-run without --preview-only to freeze, or adjust the constraints above.\nArray idle. Durable search"
+        }
+      },
+      "requirement_ids": [
+        "CLI-01"
+      ],
+      "status": "PASS",
+      "summary": "the resolved-action preview reports every required row before freezing"
+    },
+    {
+      "check_id": "golden_ux_tests",
+      "detail": {
+        "golden_dir": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/tests/golden"
+      },
+      "requirement_ids": [
+        "CLI-01",
+        "EVAL-01"
+      ],
+      "status": "PASS",
+      "summary": "all 11 golden UX baselines exist"
+    },
+    {
+      "check_id": "canonical_routing",
+      "detail": {},
+      "requirement_ids": [
+        "PIPE-01",
+        "PIPE-02",
+        "CLI-03"
+      ],
+      "status": "PASS",
+      "summary": "the shell delegates every command to the canonical Hunter entry points"
+    },
+    {
+      "check_id": "durable_record_kinds",
+      "detail": {
+        "event_log_count": 34,
+        "search_manifest_count": 34
+      },
+      "requirement_ids": [
+        "DUR-01"
+      ],
+      "status": "PASS",
+      "summary": "all five durable record kinds are present"
+    },
+    {
+      "check_id": "exact_target_freezing",
+      "detail": {
+        "inspected": [
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260719T133145Z-3650F32A"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260719T141028Z-6D7C655C"
+          },
+          {
+            "executed_count": 3,
+            "frozen_count": 3,
+            "search_id": "SEARCH-20260721T173605Z-0F6693E8"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260722T012439Z-6285F141"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260722T012732Z-759A1D93"
+          },
+          {
+            "executed_count": 61,
+            "frozen_count": 61,
+            "search_id": "SEARCH-20260724T062429Z-D7FA314D"
+          },
+          {
+            "executed_count": 10,
+            "frozen_count": 10,
+            "search_id": "SEARCH-20260725T033433Z-21EE3252"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260726T010212Z-69817987"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260726T011409Z-39A09771"
+          },
+          {
+            "executed_count": 1,
+            "frozen_count": 1,
+            "search_id": "SEARCH-20260728T035648Z-A9FE6463"
+          }
+        ]
+      },
+      "requirement_ids": [
+        "DUR-02"
+      ],
+      "status": "PASS",
+      "summary": "16 completed run(s) executed only their frozen targets"
+    },
+    {
+      "check_id": "adaptive_discovery",
+      "detail": {
+        "manifest": "results/searches/SEARCH-20260731T192156Z-6156C434/manifest.json",
+        "new_mode_manifest_count": 14,
+        "strategy": "adaptive_score_bound_v1",
+        "termination_reason": "accessible_universe_exhausted"
+      },
+      "requirement_ids": [
+        "DISC-01",
+        "DISC-02"
+      ],
+      "status": "PASS",
+      "summary": "the frozen manifest persists complete adaptive-discovery sufficiency evidence"
+    },
+    {
+      "check_id": "identity_and_history",
+      "detail": {},
+      "requirement_ids": [
+        "IDENT-01",
+        "IDENT-03"
+      ],
+      "status": "PASS",
+      "summary": "the cross-project history contract implements every permitted validity state"
+    },
+    {
+      "check_id": "restart_and_resume",
+      "detail": {
+        "resumed": [
+          {
+            "completed_once": true,
+            "failure_preserved": true,
+            "search_id": "SEARCH-20260719T141028Z-6D7C655C",
+            "sequence": [
+              "created",
+              "run_started",
+              "run_failed",
+              "run_resumed",
+              "run_completed"
+            ]
+          }
+        ]
+      },
+      "requirement_ids": [
+        "E2E-03",
+        "DUR-04"
+      ],
+      "status": "PASS",
+      "summary": "1 search(es) preserve a durable failure-then-resume sequence"
+    },
+    {
+      "check_id": "real_data_evidence",
+      "detail": {
+        "bundles": [
+          {
+            "app_version": null,
+            "bundle": "hunter_v1_2_65_acceptance.json",
+            "tested_commit": null
+          },
+          {
+            "app_version": null,
+            "bundle": "hunter_v1_2_70_acceptance.json",
+            "tested_commit": null
+          },
+          {
+            "app_version": null,
+            "bundle": "hunter_v1_2_71_controlled_acceptance.json",
+            "tested_commit": null
+          }
+        ]
+      },
+      "requirement_ids": [
+        "E2E-04",
+        "CLAIM-04"
+      ],
+      "status": "PASS",
+      "summary": "3 machine-readable acceptance evidence bundle(s) are present"
+    },
+    {
+      "check_id": "package_completeness",
+      "detail": {},
+      "requirement_ids": [
+        "CLAIM-02",
+        "PROD-01"
+      ],
+      "status": "PASS",
+      "summary": "every required console script is registered in package metadata"
+    },
+    {
+      "check_id": "sibling_write_isolation",
+      "detail": {
+        "modules_scanned": 143,
+        "sibling_access": [
+          "read-only sibling export: data_selection/hunter_prior_search_history_v1.json",
+          "contract: hunter_prior_search_history_v1"
+        ]
+      },
+      "requirement_ids": [
+        "WS-01",
+        "WS-03"
+      ],
+      "status": "PASS",
+      "summary": "sibling access is repository-relative, read-only and schema-versioned"
+    },
+    {
+      "check_id": "readme_conformance",
+      "detail": {
+        "forbidden_terms": [
+          "Partial"
+        ]
+      },
+      "requirement_ids": [
+        "README-03"
+      ],
+      "status": "FAIL",
+      "summary": "the README uses forbidden planning vocabulary"
+    },
+    {
+      "check_id": "skipped_stage_labeling",
+      "detail": {},
+      "requirement_ids": [
+        "CLAIM-03"
+      ],
+      "status": "PASS",
+      "summary": "non-executed stages are labeled NOT EXECUTED and excluded from pass totals"
+    },
+    {
+      "check_id": "state_authority",
+      "detail": {
+        "ledger": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/configs/HUNTER_PROD_STATE.json"
+      },
+      "requirement_ids": [
+        "PROD-01",
+        "CLAIM-04"
+      ],
+      "status": "PASS",
+      "summary": "every machine-owned status in the ledger is justified by this gate run"
+    }
+  ],
+  "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+  "contract_version": "HUNTER-PROD-2026-07-30.3",
+  "counts": {
+    "executed": 24,
+    "failed": 1,
+    "not_executed": 1,
+    "passed": 23
+  },
+  "environment": {
+    "app_version": "1.2.72",
+    "bin_dir": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin",
+    "installation_mode": "editable",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/python3",
+    "python_version": "3.14.3",
+    "relevant_environment": {
+      "CI": null,
+      "NO_COLOR": null,
+      "REDUCE_MOTION": null,
+      "TECHNO_HUNTER_REDUCE_MOTION": null,
+      "TECHNO_SEARCH_ENABLE_LIVE_DATA": null,
+      "TERM": "xterm-ghostty",
+      "VIRTUAL_ENV": null
+    },
+    "repo_root": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+    "resolved_canonical_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+    "virtual_environment": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv"
+  },
+  "no_claim": "This gate verifies software conformance only. It makes no detection, discovery, expert-review, external-validation, or external-submission claim.",
+  "prod_ready": false,
+  "schema_version": "hunter_prod_check_report_v1",
+  "tested_commit": "03a154badd0f9370e8af765f9d24f86722f55091",
+  "working_tree_state": "dirty"
+}

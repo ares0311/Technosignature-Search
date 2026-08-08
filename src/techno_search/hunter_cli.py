@@ -7,6 +7,7 @@ import json
 import subprocess
 import sys
 from collections.abc import Callable, Sequence
+from datetime import UTC, datetime
 from io import StringIO
 from pathlib import Path
 from typing import Any, TextIO
@@ -16,12 +17,32 @@ from techno_search.hunter_follow_up_discovery import (
     FollowUpDiscoveryError,
     discover_follow_up_targets,
 )
+from techno_search.hunter_inspect import (
+    TargetInspectionError,
+    inspect_target,
+    list_inspectable_targets,
+)
 from techno_search.hunter_search import (
     SearchApprovalRequired,
     SearchLifecycleError,
     create_search,
     follow_up_registry,
     run_search,
+)
+from techno_search.hunter_tables import (
+    LARGE_REQUEST_THRESHOLD,
+    build_console,
+    render_action_preview,
+    render_follow_up_table,
+    render_selection_table,
+    render_target_detail,
+    write_large_request_export,
+)
+from techno_search.hunter_validation import (
+    FieldValidationError,
+    validate_constraints,
+    validate_search_id,
+    validate_target_count,
 )
 
 
@@ -74,10 +95,53 @@ def create_new_search(
         dest="target_prefixes",
         help="Restrict selection to one or more catalog-ID prefixes (repeatable).",
     )
+    parser.add_argument(
+        "--preview-only",
+        action="store_true",
+        help=(
+            "Show the resolved-action preview and exit without freezing a search."
+        ),
+    )
     args = parser.parse_args(argv)
+
+    # Interactive and scriptable operation share these canonical validators so a
+    # scripted run can never accept what guided entry would reject (UX-IN-04).
+    try:
+        target_count = validate_target_count(args.targets)
+        constraints = validate_constraints(
+            min_ra_deg=args.min_ra_deg,
+            max_ra_deg=args.max_ra_deg,
+            min_dec_deg=args.min_dec_deg,
+            max_dec_deg=args.max_dec_deg,
+            min_abs_galactic_latitude_deg=args.min_abs_galactic_latitude_deg,
+            max_estimated_download_gb=args.max_estimated_download_gb,
+            target_prefixes=args.target_prefixes or (),
+        )
+    except FieldValidationError as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
+
+    if args.preview_only:
+        preview = _build_action_preview(
+            mode=args.mode,
+            target_count=target_count,
+            constraints=constraints,
+            candidate_catalog=args.candidate_catalog,
+            priority_queue=args.priority_queue,
+        )
+        if args.json:
+            print(json.dumps(preview, indent=2, sort_keys=True))
+        else:
+            render_action_preview(preview, console=build_console(sys.stdout))
+            print(
+                "No search was frozen. Re-run without --preview-only to freeze, "
+                "or adjust the constraints above."
+            )
+        return 0
+
     try:
         manifest = create_search_impl(
-            target_count=args.targets,
+            target_count=target_count,
             mode=args.mode,
             candidate_catalog_path=args.candidate_catalog,
             queue_path=args.priority_queue,
@@ -103,17 +167,7 @@ def create_new_search(
             )
             if args.mode == "follow-up"
             else None,
-            constraints={
-                "min_ra_deg": args.min_ra_deg,
-                "max_ra_deg": args.max_ra_deg,
-                "min_dec_deg": args.min_dec_deg,
-                "max_dec_deg": args.max_dec_deg,
-                "min_abs_galactic_latitude_deg": (
-                    args.min_abs_galactic_latitude_deg
-                ),
-                "max_estimated_download_gb": args.max_estimated_download_gb,
-                "target_prefixes": args.target_prefixes or (),
-            },
+            constraints=constraints.as_dict(),
         )
     except (FollowUpDiscoveryError, SearchLifecycleError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
@@ -200,11 +254,77 @@ def show_follow_ups(argv: Sequence[str] | None = None) -> int:
     return 0
 
 
+def _build_action_preview(
+    *,
+    mode: str,
+    target_count: int,
+    constraints: Any,
+    candidate_catalog: Path,
+    priority_queue: Path,
+) -> dict[str, Any]:
+    """Resolve the pre-freeze action preview from real on-disk evidence only.
+
+    Every value is measured or explicitly reported as undetermined; nothing here
+    is estimated from a guess (CLI_UX_SPEC section 8, UX-RUN-02).
+    """
+
+    def _freshness(path: Path) -> str:
+        if not path.is_file():
+            return f"absent: {path}"
+        stamp = datetime.fromtimestamp(path.stat().st_mtime, tz=UTC)
+        return f"{path.name} modified {stamp.isoformat(timespec='seconds')}"
+
+    def _row_count(path: Path) -> int | None:
+        if not path.is_file():
+            return None
+        with path.open(encoding="utf-8", newline="") as handle:
+            return max(0, sum(1 for _ in handle) - 1)
+
+    catalog_rows = _row_count(candidate_catalog)
+    queue_rows = _row_count(priority_queue)
+    sibling_export = Path("data_selection/hunter_prior_search_history_v1.json")
+    universe = (
+        f"{catalog_rows} archive label(s); {queue_rows} ranked queue row(s)"
+        if catalog_rows is not None and queue_rows is not None
+        else "not determined — candidate sources are absent"
+    )
+    return {
+        "mode": mode,
+        "requested_targets": target_count,
+        "scientific_constraints": constraints.described(),
+        "primary_sources": (
+            f"{candidate_catalog} (candidate universe); {priority_queue} (eligibility)"
+        ),
+        "source_freshness": (
+            f"{_freshness(candidate_catalog)}; {_freshness(priority_queue)}"
+        ),
+        "cross_project_history_freshness": _freshness(sibling_export),
+        "estimated_discovery_universe": universe,
+        "estimated_storage": (
+            "determined at freeze from real HEAD-preflighted product sizes; "
+            "bounded by the 100 GB local cap"
+        ),
+        "estimated_compute": (
+            f"turboSETI plus radio pipeline per target, up to {target_count} target(s), "
+            "12 bounded workers"
+        ),
+        "output_behavior": (
+            "durable immutable manifest and append-only events; terminal table for "
+            f"N <= {LARGE_REQUEST_THRESHOLD}, timestamped CSV export above it"
+        ),
+        "no_claim": (
+            "Selection is local scientific triage only. No detection, discovery, "
+            "expert-review, external-validation, or submission claim follows."
+        ),
+    }
+
+
 def _print_created_search(
     manifest: dict[str, Any], searches_dir: Path, manifest_dir: Path, out: TextIO
 ) -> None:
     search_id = str(manifest["search_id"])
     targets = list(manifest["targets"])
+    console = build_console(out)
     print(
         f"Created pending {manifest['mode']} search {search_id} with {len(targets)} target(s).",
         file=out,
@@ -223,85 +343,83 @@ def _print_created_search(
             f"{shortfall['requested_count']} requested target(s) -- {shortfall['reason']}.",
             file=out,
         )
-    if len(targets) > 100:
-        print(f"Review CSV: {manifest_dir / f'{search_id}.csv'}", file=out)
-        return
-    print(
-        "Rank | Target | Type | Distance ly | Spectral | Exoplanet | "
-        "Prior searches | Prior provenance | Score | GB | Execution | Selection reason",
-        file=out,
-    )
-    for rank, target in enumerate(targets, 1):
-        score = (
-            target.get("follow_up_priority", 0.0)
-            if manifest["mode"] == "follow-up"
-            else target.get("target_selection_score", 0.0)
-        )
+    if len(targets) > LARGE_REQUEST_THRESHOLD:
+        export = write_large_request_export(manifest, export_dir=manifest_dir)
         print(
-            " | ".join(
-                [
-                    str(rank),
-                    str(target.get("hip", "")),
-                    str(target.get("object_type", "") or "unknown"),
-                    (
-                        f"{float(target['distance_light_years']):.2f}"
-                        if target.get("distance_light_years") is not None
-                        else "unknown"
-                    ),
-                    str(target.get("spectral_type", "") or "unknown"),
-                    str(target.get("exoplanet_host", "unknown")),
-                    str(target.get("prior_search_count", 0)),
-                    "; ".join(
-                        value
-                        for value in (
-                            str(
-                                target.get("prior_search_provenance_summary", "")
-                            ).strip(),
-                            str(target.get("cross_project_prior_search", "")).strip(),
-                        )
-                        if value
-                    )
-                    or "none",
-                    f"{float(score):.3f}",
-                    f"{float(target.get('estimated_download_gb') or 0.0):.3f}",
-                    str(target.get("execution_kind", "")),
-                    str(target.get("selection_reason", "")),
-                ]
-            ),
+            f"{len(targets)} target(s) exceed the {LARGE_REQUEST_THRESHOLD}-row "
+            f"terminal threshold; complete export written to {export}",
             file=out,
         )
+        print(
+            f"Durable non-CSV system of record: {searches_dir / search_id}", file=out
+        )
+        return
+    render_selection_table(manifest, console=console)
 
 
 def _print_follow_ups(registry: dict[str, Any], out: TextIO) -> None:
-    entries = list(registry["eligible_entries"])
-    print(
-        f"{len(entries)} actionable follow-up target(s) from "
-        f"{registry['source_ledger_count']} durable run ledger(s); "
-        f"{registry['unresolved_identity_count']} row(s) excluded for unresolved identity.",
-        file=out,
-    )
-    if not entries:
-        print("Follow-up targets: none", file=out)
-        return
-    print("Target | Priority | Evidence | Prior searches | Recommended next action", file=out)
-    for entry in entries:
-        evidence = entry["evidence"]
-        evidence_text = (
-            f"score={evidence['score']:.3f}, snr={evidence['snr']:.2f}, "
-            f"rfi={'yes' if evidence['cross_target_rfi_flagged'] else 'no'}"
-        )
+    if not registry.get("eligible_entries"):
         print(
-            " | ".join(
-                [
-                    str(entry["hip"]),
-                    f"{float(entry['follow_up_priority']):.3f}",
-                    evidence_text,
-                    str(len(entry["prior_search_provenance"])),
-                    str(entry["recommended_next_action"]),
-                ]
-            ),
+            f"0 actionable follow-up target(s) from "
+            f"{registry['source_ledger_count']} durable run ledger(s); "
+            f"{registry['unresolved_identity_count']} row(s) excluded for "
+            "unresolved identity.",
             file=out,
         )
+        print("Follow-up targets: none", file=out)
+        return
+    render_follow_up_table(registry, console=build_console(out))
+
+
+def inspect_target_command(argv: Sequence[str] | None = None) -> int:
+    """Show full durable detail for one selected target (UX-TABLE-02)."""
+    parser = argparse.ArgumentParser(prog="Inspect-Target")
+    parser.add_argument(
+        "reference",
+        nargs="?",
+        help="Rank number from the last selection table, or a catalog identity.",
+    )
+    parser.add_argument("--search-id")
+    parser.add_argument("--searches-dir", type=Path, default=Path("results/searches"))
+    parser.add_argument("--json", action="store_true")
+    args = parser.parse_args(argv)
+    try:
+        search_id = validate_search_id(args.search_id)
+    except FieldValidationError as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
+    try:
+        if args.reference is None:
+            # With no reference, list the frozen selection so the operator can
+            # choose a rank. This reuses the same width-aware table.
+            manifest = list_inspectable_targets(
+                searches_dir=args.searches_dir, search_id=search_id
+            )
+            if args.json:
+                print(json.dumps(manifest, indent=2, sort_keys=True))
+                return 0
+            console = build_console(sys.stdout)
+            render_selection_table(manifest, console=console)
+            # Routed through the width-aware console so it cannot exceed the
+            # detected terminal width (UX-TABLE-01).
+            console.print(
+                "Pass a rank number or catalog identity to inspect one target, "
+                "for example: /Inspect-Target 1"
+            )
+            return 0
+        detail = inspect_target(
+            searches_dir=args.searches_dir,
+            reference=args.reference,
+            search_id=search_id,
+        )
+    except TargetInspectionError as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
+    if args.json:
+        print(json.dumps(detail, indent=2, sort_keys=True))
+    else:
+        render_target_detail(detail, console=build_console(sys.stdout))
+    return 0
 
 
 def _quiet_command_runner(command: Sequence[str]) -> int:

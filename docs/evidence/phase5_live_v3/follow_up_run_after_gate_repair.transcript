@@ -1,0 +1,213 @@
+^D[2026-08-03T02:58:31Z] [INFO]  Logging to console and results/searches/SEARCH-20260803T025821Z-CB60814F/acquisition.log
+[2026-08-03T02:58:31Z] [START] stream_process_evict batch
+[2026-08-03T02:58:31Z] [INFO]  Manifest: results/searches/SEARCH-20260803T025821Z-CB60814F/manifest.json
+[2026-08-03T02:58:31Z] [INFO]  Targets: 5 (chunk size 25)
+[2026-08-03T02:58:31Z] [INFO]  Local storage cap: 100GB; free-space reserve: 10GB
+[2026-08-03T02:58:31Z] [1/5] HIP11029
+[2026-08-03T02:58:31Z] [REUSE] HIP11029: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T02:58:31Z] [2/5] HIP110341
+[2026-08-03T02:58:31Z] [REUSE] HIP110341: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T02:58:31Z] [3/5] HIP110774
+[2026-08-03T02:58:31Z] [REUSE] HIP110774: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T02:58:31Z] [4/5] HIP111313
+[2026-08-03T02:58:31Z] [REUSE] HIP111313: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T02:58:31Z] [5/5] HIP113357
+[2026-08-03T02:58:31Z] [REUSE] HIP113357: existing .dat will be scored into this search; no re-download needed
+[2026-08-03T02:58:31Z] [CHUNK] HIP11029: scoring preserved local evidence spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002
+{
+  "adversarial_review_path": null,
+  "candidate_id": "spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/HIP11029/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.dat",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/HIP11029/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.dat",
+    "row_count": 52,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.json",
+  "known_explanation_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.known-explanation.json",
+  "known_explanation_state": "unresolved",
+  "manifest_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.manifest.json",
+  "markdown_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002/spliced_blc0001020304050607_guppi_57525_60002_HIP11029_0015.gpuspec.0002.md",
+  "ok": true,
+  "pathway": "human_review_queue",
+  "reader_type": "turboSETI_csv",
+  "row_count": 52,
+  "track": "radio"
+}
+[2026-08-03T02:58:33Z] [CHUNK] HIP110341: scoring preserved local evidence spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002
+{
+  "adversarial_review_path": null,
+  "candidate_id": "spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/HIP110341/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.dat",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/HIP110341/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.dat",
+    "row_count": 47,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.json",
+  "known_explanation_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.known-explanation.json",
+  "known_explanation_state": "unresolved",
+  "manifest_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.manifest.json",
+  "markdown_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002/spliced_blc0001020304050607_guppi_57601_29831_Hip110341_0033.gpuspec.0002.md",
+  "ok": true,
+  "pathway": "human_review_queue",
+  "reader_type": "turboSETI_csv",
+  "row_count": 47,
+  "track": "radio"
+}
+[2026-08-03T02:58:36Z] [CHUNK] HIP110774: scoring preserved local evidence spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002
+{
+  "adversarial_review_path": null,
+  "candidate_id": "spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/HIP110774/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.dat",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/HIP110774/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.dat",
+    "row_count": 9,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.json",
+  "known_explanation_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.known-explanation.json",
+  "known_explanation_state": "unresolved",
+  "manifest_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.manifest.json",
+  "markdown_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002/spliced_blc0001020304050607_guppi_57793_14308_HIP110774_0018.gpuspec.0002.md",
+  "ok": true,
+  "pathway": "human_review_queue",
+  "reader_type": "turboSETI_csv",
+  "row_count": 9,
+  "track": "radio"
+}
+[2026-08-03T02:58:37Z] [CHUNK] HIP111313: scoring preserved local evidence spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002
+{
+  "adversarial_review_path": null,
+  "candidate_id": "spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/HIP111313/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.dat",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/HIP111313/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.dat",
+    "row_count": 63,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.json",
+  "known_explanation_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.known-explanation.json",
+  "known_explanation_state": "unresolved",
+  "manifest_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.manifest.json",
+  "markdown_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002/spliced_blc0001020304050607_guppi_57515_52001_HIP111313_0009.gpuspec.0002.md",
+  "ok": true,
+  "pathway": "human_review_queue",
+  "reader_type": "turboSETI_csv",
+  "row_count": 63,
+  "track": "radio"
+}
+[2026-08-03T02:58:39Z] [CHUNK] HIP113357: scoring preserved local evidence spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002
+{
+  "adversarial_review_path": null,
+  "candidate_id": "spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002",
+  "disclaimer": "Pipeline run results are local triage and provenance records only. They do not constitute detections, discoveries, external validation, or authorization for external submission.",
+  "error": null,
+  "input_path": "data/extended_corpus/HIP113357/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.dat",
+  "input_validation": {
+    "disclaimer": "Data quality validation checks input file structure for local pipeline execution only. It does not inspect real astronomical significance, modify candidate scores, authorize live data access, authorize external submission, or constitute a detection claim.",
+    "issue_count": 0,
+    "issues": [],
+    "ok": true,
+    "path": "data/extended_corpus/HIP113357/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.dat",
+    "row_count": 48,
+    "schema_version": "data_quality_v1",
+    "track": "radio",
+    "warning_count": 0,
+    "warnings": []
+  },
+  "json_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.json",
+  "known_explanation_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.known-explanation.json",
+  "known_explanation_state": "unresolved",
+  "manifest_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.manifest.json",
+  "markdown_path": "results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002/spliced_blc0001020304050607_guppi_57544_50437_HIP113357_0030.gpuspec.0002.md",
+  "ok": true,
+  "pathway": "human_review_queue",
+  "reader_type": "turboSETI_csv",
+  "row_count": 48,
+  "track": "radio"
+}
+[2026-08-03T02:58:42Z] [DONE]  stream_process_evict batch complete
+[2026-08-03T02:58:42Z] [INFO]  Targets attempted: 5/5
+[2026-08-03T02:58:42Z] [INFO]  Downloaded: 0 (~0GB)
+[2026-08-03T02:58:42Z] [INFO]  Newly processed: 5
+[2026-08-03T02:58:42Z] [INFO]  Evicted (raw payload deleted after processing): 0
+[2026-08-03T02:58:42Z] [INFO]  Reused local DAT (no raw payload present): 5
+[2026-08-03T02:58:42Z] [INFO]  Already processed (download skipped): 0
+[2026-08-03T02:58:42Z] [INFO]  Failed: 0
+[2026-08-03T02:58:42Z] [INFO]  Total .dat files now in data/extended_corpus: 831
+[2026-08-03T02:58:42Z] [INFO]  Total candidate report manifests in results/searches/SEARCH-20260803T025821Z-CB60814F/pipeline_results: 5
+
+Scientific guardrail:
+  Downloaded files and derived hit tables/candidate reports are local
+  calibration and generalisation aids only. No file or report entry
+  constitutes a technosignature detection or authorizes external
+  submission.
+Production scan RUN-2026-08-03_025831Z-OI90-hunter-search
+Artifacts: results/searches/SEARCH-20260803T025821Z-CB60814F/runs/RUN-2026-08-03_025831Z-OI90-hunter-search
+Guardrail: local scheduling aid only; no detection or submission claim.
+[?25l⠋ validate-all[2K⠙ validate-all[2K⠹ validate-all[2K⠹ validate-all
+[?25h[1A[2KOK validate-all (0.3s)
+[?25l⠋ scan-summary (5 candidates)
+[?25h[1A[2KOK scan-summary (5 candidates) (0.0s)
+[?25l⠋ cross-target-rfi-summary
+[?25h[1A[2KOK cross-target-rfi-summary (0.0s)
+[?25l⠋ escalation-gate-check
+[?25h[1A[2KOK escalation-gate-check (0.0s)
+[?25l⠋ review-dashboard
+[?25h[1A[2KOK review-dashboard (0.0s)
+[?25l⠋ prod-write-outcomes
+[?25h[1A[2KOK prod-write-outcomes (0.0s)
+[3m                          Completed target evaluations                          [0m
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃[1m [0m[1mIndex       [0m[1m [0m┃[1m [0m[1mTarget      [0m[1m [0m┃[1m [0m[1mKind        [0m[1m [0m┃[1m [0m[1mFollow-up[0m[1m [0m┃[1m [0m[1mScore[0m[1m [0m┃[1m [0m[1mPathway    [0m[1m [0m┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+│ FU-2026-08-… │ spliced_blc… │ radio sky    │ yes       │ 0.989 │ human_revi… │
+│              │              │ target       │           │       │             │
+└──────────────┴──────────────┴──────────────┴───────────┴───────┴─────────────┘
+Done RUN-2026-08-03_025831Z-OI90-hunter-search: 5 target(s), 5 follow-up candidate target(s).
+Completed SEARCH-20260803T025821Z-CB60814F as RUN-2026-08-03_025831Z-OI90-hunter-search: 5 target(s), 5 follow-up target(s).

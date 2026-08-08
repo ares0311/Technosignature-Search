@@ -308,7 +308,13 @@ def _discover_later_cadence(
                 if triple[2].mjd - triple[0].mjd <= 0.05:
                     triples.append(triple)
     if not triples:
-        raise FollowUpDiscoveryError(
+        # A candidate lacking a usable cadence is a per-candidate condition, not
+        # a discovery-wide failure. Raising the base class escaped the caller's
+        # per-candidate handler and aborted the whole search on the top-ranked
+        # target, so 803 eligible follow-ups could not produce even one frozen
+        # search. Contract section 1 requires returning the best available N and
+        # shrinking only after proving fewer valid candidates exist.
+        raise FollowUpCandidateUnavailable(
             f"no complete later-epoch three-ON cadence was found for {target_name}"
         )
 

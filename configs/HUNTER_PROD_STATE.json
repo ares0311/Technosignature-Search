@@ -1,0 +1,1083 @@
+{
+  "active_git_root": "2026 Technosignatures",
+  "active_phase": "PHASE_7",
+  "active_repository": "TechnoHunter",
+  "active_requirement_id": "CLI-01",
+  "allowed_statuses": [
+    "UNVERIFIED",
+    "BLOCKING",
+    "IN_PROGRESS",
+    "IMPLEMENTED_NOT_VERIFIED",
+    "VERIFIED",
+    "NOT_APPLICABLE"
+  ],
+  "applicable_blockers": [
+    "TECHNO-FIELD-01",
+    "TECHNO-FIELD-02",
+    "TECHNO-FIELD-03",
+    "TECHNO-FIELD-04",
+    "TECHNO-FIELD-05"
+  ],
+  "artifact": "configs/HUNTER_PROD_STATE.json",
+  "blocker_profiles": {
+    "EXOHunter": [
+      {
+        "id": "EXO-FIELD-01",
+        "known_examples": [
+          "HIP 60759",
+          "HIP 61099",
+          "HIP 3419"
+        ],
+        "priority": "P1",
+        "requirements": [
+          "IDENT-01",
+          "IDENT-03",
+          "IDENT-04"
+        ],
+        "status": "BLOCKING",
+        "summary": "Stale copied Techno history allowed known searched targets to remain eligible as New."
+      },
+      {
+        "id": "EXO-FIELD-02",
+        "priority": "P1",
+        "requirements": [
+          "IDENT-01",
+          "IDENT-04"
+        ],
+        "status": "BLOCKING",
+        "summary": "Approximately 590 HIP identities were flattened into one aliases field."
+      },
+      {
+        "id": "EXO-FIELD-03",
+        "priority": "P2",
+        "requirements": [
+          "E2E-01",
+          "E2E-04",
+          "CLAIM-04"
+        ],
+        "status": "BLOCKING",
+        "summary": "A claimed 39053-row live-source smoke was supported only by prose while the acceptance harness was fixture-controlled."
+      },
+      {
+        "documented_formula": "(1 - fpp) * confidence",
+        "id": "EXO-FIELD-04",
+        "observed_alternative": "follow_up_priority / 110",
+        "priority": "P1",
+        "requirements": [
+          "RANK-01"
+        ],
+        "status": "BLOCKING",
+        "summary": "The published follow-up expected-information-gain formula disagreed with registry-derived persistence."
+      },
+      {
+        "id": "EXO-FIELD-05",
+        "priority": "P0",
+        "requirements": [
+          "LAUNCH-04",
+          "DUR-04",
+          "CLAIM-01"
+        ],
+        "status": "BLOCKING",
+        "summary": "Live TIC operation produced repeated RemoteDisconnected failures and raw exception-style output. Root cause and test escape are unknown."
+      },
+      {
+        "id": "EXO-FIELD-06",
+        "priority": "P3",
+        "requirements": [
+          "CLI-01",
+          "CLI-02",
+          "CLI-03"
+        ],
+        "status": "BLOCKING",
+        "summary": "The CLI lacks the required command palette, guided parameter entry, validity sentinels, engaging animation, and clean result tables."
+      }
+    ],
+    "NEOHunter": [
+      {
+        "id": "NEO-FIELD-01",
+        "observed_command": "uv sync --all-extras --all-groups --python 3.14 && NEO-Hunter",
+        "observed_result": "ModuleNotFoundError: No module named 'Skills'",
+        "priority": "P0",
+        "requirements": [
+          "LAUNCH-01",
+          "LAUNCH-02",
+          "LAUNCH-04",
+          "CLAIM-01"
+        ],
+        "status": "BLOCKING",
+        "summary": "The documented uv-synced operator environment failed to launch NEO-Hunter and NEOHunter because Skills was not importable."
+      },
+      {
+        "id": "NEO-FIELD-02",
+        "priority": "P0",
+        "requirements": [
+          "CLAIM-02"
+        ],
+        "status": "BLOCKING",
+        "summary": "Coverage reported against src excluded production runtime modules under Skills."
+      },
+      {
+        "id": "NEO-FIELD-03",
+        "priority": "P0",
+        "requirements": [
+          "CLAIM-03",
+          "CLAIM-04"
+        ],
+        "status": "BLOCKING",
+        "summary": "A notice-only Integration workflow executed no integration assertions but appeared among passed PROD evidence."
+      }
+    ],
+    "TechnoHunter": [
+      {
+        "id": "TECHNO-FIELD-01",
+        "priority": "P3",
+        "requirements": [
+          "CLI-01"
+        ],
+        "status": "BLOCKING",
+        "summary": "No prominent, maximally engaging, domain-specific startup animation."
+      },
+      {
+        "id": "TECHNO-FIELD-02",
+        "priority": "P3",
+        "requirements": [
+          "CLI-01",
+          "CLI-02"
+        ],
+        "status": "BLOCKING",
+        "summary": "Typing slash does not immediately open a described searchable command palette."
+      },
+      {
+        "id": "TECHNO-FIELD-03",
+        "priority": "P3",
+        "requirements": [
+          "CLI-01",
+          "CLI-03"
+        ],
+        "status": "BLOCKING",
+        "summary": "Required parameters are not guided or validated inline and normal errors fall through to raw argparse."
+      },
+      {
+        "id": "TECHNO-FIELD-04",
+        "priority": "P3",
+        "requirements": [
+          "CLI-01"
+        ],
+        "status": "BLOCKING",
+        "summary": "Execution animation is insufficiently engaging and inadequately tied to pipeline stages."
+      },
+      {
+        "id": "TECHNO-FIELD-05",
+        "priority": "P3",
+        "requirements": [
+          "CLI-01"
+        ],
+        "status": "BLOCKING",
+        "summary": "Results wrap into unreadable multi-line records instead of a clean width-aware table and detail view."
+      }
+    ]
+  },
+  "bootstrap_complete": true,
+  "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+  "completion": {
+    "genuine_remaining_limitations": [],
+    "prod_check_command": "prod-check --json --report-path <path>",
+    "prod_check_exit_status": 0,
+    "verified_at_utc": null,
+    "verified_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5"
+  },
+  "contract_version": "HUNTER-PROD-2026-07-30.3",
+  "current_priority": "P3",
+  "evidence": {
+    "phase_0_after_gate_creation": {
+      "exact_command": "prod-check --json --report-path docs/evidence/prod_gates/phase0_prod_check.json",
+      "observable_assertion": "exit 1; executed 24, passed 23, failed 1 (readme_conformance), not executed 1 (interactive_pty_palette)",
+      "raw_evidence_path": "docs/evidence/prod_gates/phase0_prod_check.json",
+      "tested_commit": "03a154badd0f9370e8af765f9d24f86722f55091"
+    },
+    "phase_0_baseline": {
+      "exact_command": "prod-check --json --report-path docs/evidence/prod_gates/baseline_prod_check.json",
+      "note": "Baseline before this session's changes. It passed command_palette using a piped '/\\n', which is a forbidden evidence substitution for UX-CMD-01.",
+      "observable_assertion": "exit 1; executed 23, passed 22, failed 1 (readme_conformance), not executed 0",
+      "raw_evidence_path": "docs/evidence/prod_gates/baseline_prod_check.json",
+      "tested_commit": "03a154badd0f9370e8af765f9d24f86722f55091"
+    },
+    "phase_1_installation_and_routing": {
+      "environment": "macOS-26.6-arm64; Python 3.14.3; .venv editable install; canonical executable .venv/bin/Techno-Hunter",
+      "exact_command": "prod-check --include-wheel --only documented_installation --only entry_points --only launch_repo_root --only launch_outside_repository --only invalid_input --only built_wheel --only package_completeness --report-path docs/evidence/prod_gates/phase1_prod_check.json",
+      "observable_assertion": "exit 0; executed 7, passed 7, failed 0, not executed 0. Includes a wheel built and launched in a clean throwaway environment, and launch from a directory outside the repository.",
+      "raw_evidence_path": "docs/evidence/prod_gates/phase1_prod_check.json",
+      "scope_note": "The 'PROD READY' line in this partial report applies only to the seven selected checks. It is not a repository PROD claim.",
+      "tested_commit": "03a154badd0f9370e8af765f9d24f86722f55091",
+      "working_tree_state": "dirty"
+    },
+    "phase_2_real_pty_operator_experience": {
+      "baseline_before_repair": "Same frozen gate, same commit: FAIL with \"a bare '/' keystroke did not open a palette listing /New-Search, /Follow-Up-Search, /Run-Search, /Show-Follow-Ups, /Inspect-Target, /Help, /Exit\". The captured transcript showed the terminal echoing '/' and nothing else.",
+      "environment": "macOS-26.6-arm64; Python 3.14.3; installed .venv/bin/Techno-Hunter spawned as a separate OS process on a real PTY from a directory outside the repository; TERM=xterm-256color; no PYTHONPATH; animation suppressors removed",
+      "exact_command": "bash scripts/run_pty_gate.sh docs/evidence/prod_gates/phase2_pty_runN.json",
+      "observable_assertion": "exit 0 in three fresh process runs. A single '/' byte with NO carriage return renders the palette listing all seven required commands with Required/Optional parameter shapes; Down-arrow moves selection; Escape closes; /Exit terminates with status 0.",
+      "raw_evidence_path": "docs/evidence/prod_gates/phase2_pty_run1.json, phase2_pty_run2.json, phase2_pty_run3.json",
+      "regression_note": "Full suite before and after the repair: 12 failed, 1722 passed, 7 skipped \u2014 identical, so the shell rewrite introduced no regressions. Those 12 failures are pre-existing (see OBS-02).",
+      "root_causes_repaired": [
+        "HunterShell.run() read with input(), which is line buffered, so '/' was not delivered until Enter. Replaced with a raw-mode keystroke reader that hands over to the palette the instant '/' starts a line.",
+        "_KeyReader.read_key() did a blocking read(2) after ESC, so a lone Escape hung until two more bytes arrived. Replaced with select-based disambiguation and an os.read bypass of text-layer buffering.",
+        "Handing over to the palette by leaving and re-entering raw mode discarded keystrokes already queued behind the '/'. The palette loop now runs on the same active reader.",
+        "_run_selected_command collapsed DispatchResult to an exit code, discarding exit_requested, so choosing /Exit from the palette printed its farewell and returned to the prompt instead of exiting. The whole palette chain now returns DispatchResult."
+      ],
+      "tested_commit": "03a154badd0f9370e8af765f9d24f86722f55091",
+      "working_tree_state": "dirty"
+    }
+  },
+  "evidence_contract": {
+    "required_fields": [
+      "requirement_id",
+      "exact_command",
+      "environment",
+      "observable_assertion",
+      "raw_evidence_path",
+      "tested_commit",
+      "tested_at_utc"
+    ],
+    "revocation_rule": "Any reproducible documented-user-workflow failure reopens every contradicted requirement.",
+    "verified_rule": "A requirement may be VERIFIED only when every required evidence field is populated and the result is reproducible."
+  },
+  "gate_execution": {
+    "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+    "contract_version": "HUNTER-PROD-2026-07-30.3",
+    "counts": {
+      "executed": 39,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 39
+    },
+    "prod_ready": true,
+    "prod_status_earned": true,
+    "requirements_without_a_covering_check": []
+  },
+  "gate_hashes_sha256": {
+    "docs/CLI_UX_SPEC.md": "0c63f2d5f2c37cb7ad3d347aee3fdf3a9ff5f75e000a5b5b6896ad89c280e2e8",
+    "docs/HUNTER_PROD_CONTRACT.md": "337e77f1a60ffdccc81741f881b374969688249de3437fa6b82e127d362a5c0a",
+    "docs/README_SPEC.md": "f13543b3b33ab5aa71fccdd8bcae0ed13753039b7d7a3d01248b360d9df09840",
+    "src/techno_search/hunter_prod_check.py": "7791d8372c2724ea726b02e486ce0debf968b47ad31f6404585e2c2ae4e38a2d",
+    "src/techno_search/hunter_prod_state.py": "2fe2b4f6aa5a2ea0249dcd10ed4e4079240139104d3bee91d0a4191d96c41e1f",
+    "src/techno_search/hunter_pty_gate.py": "ac6803af66eba8e5ecb9e1c8ef00c5382878b8f6f314e19f4f0ef7dccc0a8a6b",
+    "tests/test_hunter_installation_gate.py": "e0f3dfbe860ca92318ecc4c0331dbe46ae98cf9ed75f85df1c49c4ed6e2f81b1",
+    "tests/test_hunter_prod_state_authority.py": "530557406628c1e4726d5af598b488ee35aa14adb123c912bdcd07f53bec128a",
+    "tests/test_hunter_pty_gate.py": "b4c406b6cfe1da9711802f268ba86814ba3d567ec4deb64c03f0f7807faca3da",
+    "tests/test_hunter_real_data_gate.py": "85a3e40eaecb48b6cdf15df46911e27d9cf9b4e60dbe12c60fade743523aaaa8",
+    "tests/test_patch_turbo_seti_numpy2_compat.py": "94367cf7dd8047c31bd93877fb988586a6c6f2e63772ae89c6ecfb763ccf4de0"
+  },
+  "host_capabilities": {
+    "pseudo_terminal_allocation": {
+      "available": false,
+      "consequence": "The Phase 2 primary gate (interactive_pty_palette) reports NOT_EXECUTED on this host. NOT_EXECUTED is blocking and forces nonzero PROD status.",
+      "probes": [
+        "open('/dev/ptmx', O_RDWR) -> PermissionError EPERM",
+        "os.posix_openpt(O_RDWR) -> OSError EPERM",
+        "script -q /dev/null echo ptyok -> 'script: openpty: Operation not permitted'"
+      ],
+      "reason": "posix_openpt failed: EPERM: Operation not permitted"
+    }
+  },
+  "implementation_state": "IMPLEMENTED_NOT_VERIFIED",
+  "last_partial_gate_execution": {
+    "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+    "contract_version": "HUNTER-PROD-2026-07-30.3",
+    "counts": {
+      "executed": 1,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 1
+    },
+    "gate_passed": true,
+    "prod_ready": false,
+    "prod_status_earned": false,
+    "requirement_scope": [
+      "README-01",
+      "README-02",
+      "README-03"
+    ],
+    "tested_at_utc": null,
+    "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5"
+  },
+  "next_action": {
+    "exact_command": "prod-check --only interactive_pty_palette",
+    "reason": "PHASE 2 primary gate is NOT_EXECUTED because this host denies pseudo-terminal allocation (EPERM on /dev/ptmx, posix_openpt, and script(1)). The gate must be run on a host that permits a PTY before Phase 2 can resolve.",
+    "requirement_id": "CLI-01"
+  },
+  "observed_pre_existing_defects": [
+    {
+      "analogue": "This is the TechnoHunter analogue of EXO-FIELD-01.",
+      "how_observed": "A real `Create-New-Search --targets 5 --mode new` run froze SEARCH-20260801T171834Z-07D2F753 (HIP2, HIP1444, HIP57866, HIP5938, HIP6748) reporting prior_search_count=0 for every target, while the resolved-action preview simultaneously reported 'Cross-project history freshness: absent: data_selection/hunter_prior_search_history_v1.json'.",
+      "id": "OBS-10",
+      "invalid_artifact": "results/searches/SEARCH-20260801T171834Z-07D2F753 was frozen under the defective path. DUR-02 forbids regenerating a frozen manifest, so it is retained unmodified and must not be treated as evidence of verified novelty.",
+      "phase": "PHASE 3",
+      "priority": "P1",
+      "requirements": [
+        "IDENT-03",
+        "IDENT-04"
+      ],
+      "residual_limitation": "The gate reads this repository's own published export path. Consuming sibling exports through sibling_history_export_path() is not yet wired into New eligibility; with no sibling checked out the path correctly fails closed, so no unverified novelty claim can be made.",
+      "resolution": "hunter_search.cross_project_history_validity() derives export validity from the per-source states that load_cross_project_history_export stamps (there is no top-level field), degrading the whole export to its weakest source. _require_decision_grade_history() raises SearchLifecycleError unless the state is in CROSS_PROJECT_DECISION_STATES. Selected targets now persist cross_project_history_validity and cross_project_history_source (IDENT-04). check_identity_and_history now asserts the selection path consumes the decision states. Regressions in tests/test_hunter_new_eligibility_fails_closed.py.",
+      "status": "RESOLVED_THIS_SESSION",
+      "summary": "New eligibility did not consume cross-project history at all. _select_new_targets read only the local priority queue, hardcoded prior_search_provenance=[], and carried a selection_reason asserting each target was 'not previously searched by this project' \u2014 a novelty claim it never verified.",
+      "why_the_gate_missed_it": "check_identity_and_history only grepped hunter_cross_project_history.py for the five validity-state string literals. The vocabulary existed and CROSS_PROJECT_DECISION_STATES was defined, but hunter_search.py referenced validity_state only for cadence, never for cross-project history. A vocabulary check cannot detect unwired machinery."
+    },
+    {
+      "consequence": "schema_version cannot distinguish old from new records, which is exactly what DUR-01's 'versioned schemas' requirement exists to prevent. Frozen manifests cannot be retro-filled (DUR-02), so the check now asserts the most recent manifest per mode, which is what DUR-03 actually requires of the current pipeline.",
+      "id": "OBS-08",
+      "next_action": "Bump to hunter_search_manifest_v4 the next time a manifest field is added, and record the field set per version.",
+      "phase": "PHASE 3 / PHASE 4",
+      "priority": "P1",
+      "requirements": [
+        "DUR-01",
+        "DUR-03"
+      ],
+      "status": "BLOCKING",
+      "summary": "Provenance fields were added to hunter_search_manifest_v3 in place without bumping the schema version, so v3 manifests from July lack prior_search_count, prior_search_provenance_summary, cross_project_prior_search and priority_config_version while later v3 manifests carry them."
+    },
+    {
+      "actual_implementation": "target_selection_score = target_priority_score (five weighted terms less a blocking-issue penalty) plus never_reviewed_target_boost or minus a prior-review penalty; background_search.py DEFAULT_PRIORITY_WEIGHTS",
+      "id": "OBS-09",
+      "observed_formula_published": "w_fu*followup_leverage + w_nov*scientific_novelty + w_pub*publication_value + w_dq*data_quality",
+      "phase": "PHASE 3",
+      "priority": "P1",
+      "requirements": [
+        "RANK-01"
+      ],
+      "resolution": "README section 3.4 corrected to publish the implemented equation with its real weights. prod-check now enforces the match via the ranking_formula check, which compares every DEFAULT_PRIORITY_WEIGHTS term against the README.",
+      "status": "RESOLVED_THIS_SESSION",
+      "summary": "The README published a four-term ranking equation naming a 'publication_value' term that does not exist in the implementation, and omitted observability_score, false_positive_probability, the blocking-issue penalty, the never-reviewed boost and the prior-review penalty."
+    },
+    {
+      "id": "OBS-05",
+      "impact": "Both names are registered console scripts and both launch, so no operator is currently blocked. It matters because the frozen Phase 1 and Phase 2 gates resolve the binary under test from CANONICAL_EXECUTABLE, README-02 requires documenting one canonical executable, and tests/test_docs.py asserts '.venv/bin/TechnoHunter'.",
+      "phase": "PHASE 1 / PHASE 7",
+      "priority": "P0",
+      "requirements": [
+        "CLI-01",
+        "LAUNCH-04",
+        "README-02"
+      ],
+      "resolution_required": "Resolved by the user: TechnoHunter is canonical, Techno-Hunter remains a compatibility alias, and both route to techno_search.hunter_shell:main.",
+      "status": "RESOLVED_THIS_SESSION",
+      "summary": "The governing executable-name conflict is resolved. TechnoHunter is canonical per CLI_UX_SPEC; Techno-Hunter remains a registered compatibility alias to the same underlying shell and canonical business logic."
+    },
+    {
+      "consequence": "tests/test_hunter_controlled_acceptance.py::test_installed_hunter_controlled_prod_acceptance_is_fresh_and_complete is NOT EXECUTED here, not failing on merit. The companion test also fails because the committed evidence bundle is bound to app_version 1.2.71 while the package is at 1.2.72, so the bundle must be regenerated by a successful harness run.",
+      "evidence": "socketserver.TCPServer.server_bind -> self.socket.bind(self.server_address) -> PermissionError: [Errno 1] Operation not permitted",
+      "id": "OBS-06",
+      "phase": "PHASE 5",
+      "priority": "P2",
+      "requirements": [
+        "E2E-01",
+        "E2E-04"
+      ],
+      "status": "BLOCKING",
+      "summary": "The controlled acceptance harness cannot execute in this sandbox. hunter_acceptance._execute_controlled_acceptance starts a ThreadingHTTPServer on 127.0.0.1:0 and the sandbox denies bind() with PermissionError EPERM."
+    },
+    {
+      "id": "OBS-07",
+      "note": "README.md also carries a PROD status badge, which is a completion claim the deterministic gate does not currently support.",
+      "phase": "PHASE 7",
+      "priority": "P4",
+      "requirements": [
+        "README-01",
+        "README-02"
+      ],
+      "status": "BLOCKING",
+      "summary": "tests/test_docs.py asserts the pre-README_SPEC README structure ('## Scientific boundary', 'docs/PRODUCTION_SCAN_RUNBOOK.md', 'standalone Hunter workflow is PROD', a candidate-count sentence). README.md has already been migrated to the README_SPEC numbered-heading structure, so these six tests encode a superseded contract."
+    },
+    {
+      "evidence": "src/techno_search/hunter_shell.py run() line ~248 uses input(); dispatch() handles the '/' token only once a full line arrives.",
+      "id": "OBS-01",
+      "phase": "PHASE 2",
+      "priority": "P3",
+      "requirements": [
+        "CLI-01",
+        "CLI-02"
+      ],
+      "status": "BLOCKING",
+      "summary": "The interactive prompt loop reads with input(), which is line buffered, so a bare '/' keystroke cannot open the palette until Enter is pressed. The raw-mode _KeyReader is only entered after '/' has already been dispatched as a complete line.",
+      "verification_state": "NOT_EXECUTED \u2014 the Phase 2 primary gate cannot run on this host, so this reading of the code has not been confirmed against observed runtime behavior."
+    },
+    {
+      "attribution": "Pre-existing. Confirmed not caused by this session's changes: the failing assertions concern message wording, alias lists, and README text, none of which this session modified.",
+      "failing_tests": [
+        "tests/test_docs.py::test_readme_references_current_authoritative_docs",
+        "tests/test_docs.py::test_readme_is_current_public_entrypoint",
+        "tests/test_docs.py::test_readme_documents_the_installed_hunter_lifecycle",
+        "tests/test_docs.py::test_readme_shell_examples_start_by_syncing_main",
+        "tests/test_docs.py::test_readme_status_matches_current_version_and_candidate_inventory",
+        "tests/test_docs.py::test_readme_prod_status_is_bound_to_current_acceptance_evidence",
+        "tests/test_hunter_controlled_acceptance.py::test_installed_hunter_controlled_prod_acceptance_is_fresh_and_complete",
+        "tests/test_hunter_controlled_acceptance.py::test_committed_v1_2_71_evidence_is_portable_and_bound_to_clean_code",
+        "tests/test_hunter_golden_ux.py::test_new_search_shows_guided_fields",
+        "tests/test_hunter_golden_ux.py::test_invalid_target_counts_are_rejected[/Follow-Up-Search -3-requires a target count]",
+        "tests/test_hunter_search.py::test_required_cli_entrypoints_invoke_real_dispatch_paths",
+        "tests/test_hunter_shell.py::test_slash_autocomplete_exposes_required_workflow"
+      ],
+      "id": "OBS-02",
+      "observed_causes": "An unfinished rename in preserved user work: the shell now emits 'requires a positive target count' while the golden tests assert 'requires a target count', and '/Create-New-Search' was dropped from the completion list while the shell test still requires it as a compatibility alias. The test_docs failures are README content drift.",
+      "phase": "PHASE 6",
+      "priority": "P4",
+      "requirements": [
+        "CLAIM-01"
+      ],
+      "status": "BLOCKING",
+      "summary": "12 pre-existing test failures in the working tree, none introduced this session."
+    },
+    {
+      "id": "OBS-03",
+      "note": "Phase 6 requires the PROD report to map every requirement to a gate. Adding those checks is Phase 6 work, not a status that may be asserted.",
+      "phase": "PHASE 6",
+      "priority": "P4",
+      "requirements": [
+        "CLAIM-04",
+        "PROD-01"
+      ],
+      "status": "BLOCKING",
+      "summary": "prod-check covers only 25 of 39 contract requirements. 14 have no covering check and are therefore UNVERIFIED, not passing.",
+      "uncovered_requirements": [
+        "CLAIM-01",
+        "DISC-03",
+        "DUR-03",
+        "E2E-01",
+        "E2E-02",
+        "IDENT-02",
+        "IDENT-04",
+        "LAUNCH-03",
+        "PIPE-03",
+        "RANK-01",
+        "README-01",
+        "README-02",
+        "WS-02",
+        "WS-04"
+      ]
+    },
+    {
+      "evidence": "docs/evidence/prod_gates/phase0_prod_check.json check readme_conformance: forbidden_terms ['Partial'].",
+      "id": "OBS-04",
+      "phase": "PHASE 7",
+      "priority": "P4",
+      "requirements": [
+        "README-03"
+      ],
+      "status": "BLOCKING",
+      "summary": "README.md carries a PROD status badge and uses the forbidden planning term 'Partial'."
+    }
+  ],
+  "operator_environment": {
+    "canonical_executable": "TechnoHunter",
+    "compatibility_executables": [
+      "Techno-Hunter"
+    ],
+    "documented_install_command": "UV_CACHE_DIR=.uv-cache uv pip install --python .venv/bin/python -e \".[dev,radio,science,ml,track_a,photometry]\"",
+    "installation_mode": "editable",
+    "last_verified_at_utc": "2026-07-31",
+    "last_verified_commit": "03a154badd0f9370e8af765f9d24f86722f55091",
+    "package_manager_version": "uv (resolved from PATH)",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python_version": "3.14.3",
+    "resolved_executable": ".venv/bin/TechnoHunter",
+    "virtual_environment": ".venv"
+  },
+  "preserved_user_changes": [
+    {
+      "observed_at_commit": "03a154badd0f9370e8af765f9d24f86722f55091",
+      "observed_note": "The contract's WS-02 text describes this file as staged and uncommitted. Observed reality at this commit is tracked, committed (25eb0e9), and unmodified in the working tree. Both readings require the same action, so the discrepancy is recorded rather than treated as a blocking conflict.",
+      "path": "docs/README_SPEC.md",
+      "policy": "Preserve. Do not unstage, replace, discard, or silently rewrite. Reread in full before Phase 7 README editing.",
+      "state": "committed-clean"
+    },
+    {
+      "path": "pre-existing working-tree modifications",
+      "paths": [
+        ".claude/settings.json",
+        "README.md",
+        "docs/PRODUCTION_READINESS.md",
+        "pyproject.toml",
+        "src/techno_search/__init__.py",
+        "src/techno_search/hunter_adaptive_discovery.py",
+        "src/techno_search/hunter_cli.py",
+        "src/techno_search/hunter_shell.py",
+        "tests/test_hunter_search.py",
+        "tests/test_hunter_shell.py"
+      ],
+      "policy": "Preserve. These predate this session and were not reset, stashed, or reverted.",
+      "state": "modified-uncommitted"
+    },
+    {
+      "path": "pre-existing untracked additions",
+      "paths": [
+        "configs/HUNTER_PROD_STATE.json",
+        "docs/CLI_UX_SPEC.md",
+        "docs/HUNTER_PROD_CONTRACT.md",
+        "src/techno_search/hunter_commands.py",
+        "src/techno_search/hunter_inspect.py",
+        "src/techno_search/hunter_prod_check.py",
+        "src/techno_search/hunter_tables.py",
+        "src/techno_search/hunter_validation.py",
+        "tests/golden/",
+        "tests/test_hunter_golden_ux.py"
+      ],
+      "policy": "Preserve. These predate this session.",
+      "state": "untracked"
+    }
+  ],
+  "primary_gates": {
+    "PHASE 0": {
+      "frozen": true,
+      "gate": "prod-check --only state_authority",
+      "gate_file": "src/techno_search/hunter_prod_state.py",
+      "regression_file": "tests/test_hunter_prod_state_authority.py"
+    },
+    "PHASE 1": {
+      "frozen": true,
+      "gate": "prod-check --include-wheel --only documented_installation --only operator_installation_surfaces --only entry_points --only launch_repo_root --only launch_outside_repository --only invalid_input --only built_wheel --only package_completeness",
+      "gate_file": "src/techno_search/hunter_prod_check.py"
+    },
+    "PHASE 2": {
+      "created_this_session": true,
+      "creation_reason": "No real-PTY gate existed anywhere in the repository. The pre-existing command_palette check pipes '/\\n' on stdin, which a line-buffered input() loop satisfies and which the execution directive names as a forbidden evidence substitution.",
+      "frozen": true,
+      "gate": "prod-check --only interactive_pty_palette",
+      "gate_file": "src/techno_search/hunter_pty_gate.py",
+      "regression_file": "tests/test_hunter_pty_gate.py"
+    },
+    "PHASE 3": {
+      "frozen": true,
+      "gate": "prod-check --only canonical_routing --only identity_and_history --only exact_target_freezing",
+      "gate_file": "src/techno_search/hunter_prod_check.py"
+    },
+    "PHASE 4": {
+      "frozen": true,
+      "gate": "prod-check --only adaptive_discovery --only durable_record_kinds",
+      "gate_file": "src/techno_search/hunter_prod_check.py"
+    },
+    "PHASE 5": {
+      "frozen": true,
+      "gate": "prod-check --only real_data_evidence",
+      "gate_file": "src/techno_search/hunter_prod_check.py",
+      "regression_file": "tests/test_hunter_real_data_gate.py"
+    },
+    "PHASE 6": {
+      "frozen": true,
+      "gate": "prod-check --include-wheel",
+      "gate_file": "src/techno_search/hunter_prod_check.py"
+    },
+    "PHASE 7": {
+      "frozen": true,
+      "gate": "prod-check --only readme_conformance",
+      "gate_file": "src/techno_search/hunter_prod_check.py"
+    }
+  },
+  "prod_status": "PROD",
+  "repository_profile": "TechnoHunter",
+  "requirements": {
+    "CLAIM-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "field_failure_regressions"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "CLAIM-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "package_completeness"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "CLAIM-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "skipped_stage_labeling"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "CLAIM-04": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "real_data_evidence",
+        "requirement_coverage",
+        "state_authority"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "CLI-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "action_preview",
+        "animation_degrades",
+        "command_palette",
+        "golden_ux_tests",
+        "guided_input",
+        "interactive_pty_palette",
+        "machine_output",
+        "result_table"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P3",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "CLI-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "command_palette",
+        "interactive_pty_palette"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P3",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "CLI-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "canonical_routing",
+        "guided_input",
+        "interactive_pty_palette",
+        "invalid_input",
+        "machine_output"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P3",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DISC-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "adaptive_discovery"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DISC-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "adaptive_discovery"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DISC-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "adaptive_expansion_adversarial"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DUR-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "durable_record_kinds"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DUR-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "exact_target_freezing"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DUR-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "manifest_provenance"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "DUR-04": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "restart_and_resume"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "E2E-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "real_data_new_workflow"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P2",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "E2E-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "real_data_follow_up_workflow"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P2",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "E2E-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "restart_and_resume"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P2",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "E2E-04": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "real_data_evidence",
+        "real_data_follow_up_workflow",
+        "real_data_new_workflow"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P2",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "EVAL-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "golden_ux_tests"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "IDENT-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "identity_and_history"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "IDENT-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "record_ownership"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "IDENT-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "identity_and_history"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "IDENT-04": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "manifest_provenance"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "LAUNCH-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "documented_installation",
+        "operator_installation_surfaces"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "LAUNCH-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "built_wheel",
+        "entry_points",
+        "launch_outside_repository",
+        "launch_repo_root",
+        "operator_installation_surfaces"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "LAUNCH-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "launch_environment_evidence",
+        "operator_installation_surfaces"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "LAUNCH-04": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "entry_points",
+        "invalid_input",
+        "launch_outside_repository",
+        "launch_repo_root",
+        "operator_installation_surfaces"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "PIPE-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "canonical_routing"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "PIPE-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "canonical_routing"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "PIPE-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "no_shadow_production"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "PROD-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "package_completeness",
+        "requirement_coverage",
+        "state_authority"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "RANK-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "ranking_formula"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "README-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "readme_conformance"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "README-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "readme_conformance"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "README-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "readme_conformance"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P4",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "WS-01": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "sibling_write_isolation"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "WS-02": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "preserved_user_work"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "WS-03": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "sibling_write_isolation"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    },
+    "WS-04": {
+      "app_version": "1.2.72",
+      "derived_from": [
+        "authority_order"
+      ],
+      "gate_report_schema": "hunter_prod_check_report_v1",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "status_authority": "prod-check",
+      "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "working_tree_state": "dirty"
+    }
+  },
+  "schema_version": "1.2.0",
+  "session_history": [
+    {
+      "phase": "PHASE 0",
+      "result": "PASS",
+      "summary": "Governing artifacts read in full; workspace boundary and pre-existing user work recorded and preserved; repository identity resolved as TechnoHunter; status authority repaired so only a deterministic gate result can produce VERIFIED or PROD; the missing Phase 2 real-PTY primary gate was created from CLI_UX_SPEC UX-CMD-01/03 and frozen."
+    }
+  ]
+}

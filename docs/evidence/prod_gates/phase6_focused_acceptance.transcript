@@ -1,0 +1,145 @@
+^DRunning pytest with 6 workers / 6 non-overlapping loadfile shards.
+bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...bringing up nodes...
+.....................................................F.................. [ 35%]
+........................................................................ [ 70%]
+...........................................................              [100%]
+=================================== FAILURES ===================================
+____ TestLedgerOnDisk.test_partial_state_gate_passes_without_awarding_prod _____
+[gw1] darwin -- Python 3.14.3 /Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/python
+tests/test_hunter_prod_state_authority.py:251: in test_partial_state_gate_passes_without_awarding_prod
+    assert report["gate_passed"] is True
+E   assert False is True
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.14.3-final-0 _______________
+
+Name                                                          Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------
+src/techno_search/__init__.py                                    40      0   100%
+src/techno_search/adversarial_review.py                          69     69     0%   34-211
+src/techno_search/ai_hardening_gate.py                          117     99    15%   21, 25, 29-31, 35, 39, 43, 47, 51-53, 57-58, 62-67, 71-86, 111-223
+src/techno_search/anomalies/__init__.py                           2      2     0%   3-5
+src/techno_search/anomalies/catalog_reader.py                    25     25     0%   3-67
+src/techno_search/anomalies/prototype.py                         89     89     0%   3-215
+src/techno_search/artifact_cleanup.py                            72     58    19%   41-42, 52-91, 118-145, 156-172, 176, 193-196, 202-203
+src/techno_search/background_search.py                          682    367    46%   337, 345, 353, 361, 369, 377, 385, 393, 401, 417-421, 426-427, 477-489, 497-509, 517-530, 541-553, 564-577, 588-600, 611-623, 634-646, 657-669, 727-758, 788-801, 839-853, 894-911, 964-972, 998-1005, 1038-1062, 1090-1100, 1147-1148, 1158-1175, 1215-1258, 1269-1274, 1307-1348, 1364-1378, 1404-1547, 1566-1572, 1586-1613, 1625-1651, 1663-1690, 1697, 1711, 1753, 1778, 1798, 1821, 1845, 1858, 1885, 1919, 1943, 1965-2006, 2033-2074, 2078, 2082-2086, 2090, 2117, 2135, 2161, 2173-2178, 2187-2194, 2198-2206, 2214-2218, 2247, 2270-2275, 2279, 2283, 2287
+src/techno_search/cadence_triage.py                              91     91     0%   3-188
+src/techno_search/calibration.py                                 74     41    45%   45, 56, 69-75, 83, 98-118, 144-166, 178-180, 189, 204, 213
+src/techno_search/candidate_annotation.py                        42     20    52%   26, 46, 61-78, 84-98
+src/techno_search/candidate_audit_trail.py                       41     20    51%   33, 52, 66-82, 90-108
+src/techno_search/candidate_escalation.py                        59     29    51%   22, 45, 83-110, 127-132, 152-210, 233
+src/techno_search/candidate_feature_vector.py                    42     19    55%   19, 38, 54-58, 77-95
+src/techno_search/candidate_methods_summary.py                    7      3    57%   13-17
+src/techno_search/candidate_observation_notes.py                 47     23    51%   33, 55, 72-91, 99-116
+src/techno_search/candidate_priority_queue.py                    41     19    54%   32, 52, 67-84, 88-101
+src/techno_search/candidate_resolution.py                        51     29    43%   33, 53, 68-85, 91-114
+src/techno_search/candidate_retention.py                         55     32    42%   33, 54, 70-88, 94-122
+src/techno_search/catalog_crossmatch.py                          66     66     0%   12-285
+src/techno_search/cli.py                                       3228   2097    35%   127-129, 133-135, 139-141, 145-147, 151-153, 157-159, 163-165, 169-171, 175-177, 181-183, 187-189, 193-195, 199-201, 205-207, 211-213, 220, 224, 228, 232, 236, 240, 244, 248, 252, 256, 260, 264, 268, 272, 276, 280, 284, 288, 292, 296, 300, 304, 308, 312, 316, 320, 324, 328, 332, 336, 340, 344, 348, 352, 356, 360, 364, 368, 372, 376, 380, 384, 388, 392, 396, 400, 404, 408, 412, 416, 420, 424, 428, 432, 436, 440, 444, 448, 452, 456, 460, 464, 468, 472, 476, 480, 484, 488, 492, 496, 500, 504, 508, 512, 516, 520, 524, 528, 532, 536, 540, 544, 548, 552, 556, 560, 564, 568, 572, 576, 580, 584, 588, 592, 596, 600, 604, 608, 612, 616, 620, 624, 628, 632, 636, 640, 647, 650, 653, 656, 659, 662, 665, 668, 671, 674, 677, 680, 683, 686, 689, 692, 695, 698, 701, 704, 707, 710, 713, 716, 719, 722, 725, 728, 731, 734, 737, 740, 743, 746, 749, 752, 755, 758, 761, 764, 767, 770, 774, 784, 788, 792, 803, 809, 815, 819, 823, 827, 831, 835, 841, 847, 853, 859, 865, 871, 877, 883, 889, 895, 899, 1015, 1028-1178, 1183-1229, 1239-1281, 1297-1304, 1318-1334, 1339-1376, 1381-1403, 1420-1450, 1467-1510, 1515-1531, 1546-1574, 1583-1593, 1610-1627, 1643-1658, 1675-1686, 1704-1717, 1733-1736, 1747-1748, 1751-1767, 1770-1778, 1781-1793, 1796-1802, 1805-1811, 1814-1818, 1821-1834, 1837-1848, 1851-1868, 1871-1888, 1891-1904, 1907-1965, 1968-1989, 1992-2003, 2006-2025, 2028-2031, 2034-2042, 2045-2053, 2056-2058, 2061-2063, 2066-2067, 2070-2074, 2077-2085, 2088-2096, 2099-2107, 2110-2118, 2121-2129, 2132-2140, 2143-2151, 2154-2162, 2165-2174, 2177-2185, 2188-2200, 2280-5325, 5331-5333, 5345-5395, 5401-5402, 5411, 5419-5438, 5470-5477, 5481, 5487-5506, 5524-5626, 5675-5678, 5687-5694, 5719-5720, 5736-5737, 5743-5748, 5754-5759, 5769, 5775-5785, 5790-5807, 5812-5817, 9904
+src/techno_search/config.py                                     123     70    43%   55, 73, 79, 85, 91-102, 120-175, 181-190, 201, 217, 225-227, 234-236, 240, 248, 254, 258-264
+src/techno_search/constants.py                                    2      0   100%
+src/techno_search/cross_target_rfi.py                            42     36    14%   33-86, 103-108
+src/techno_search/cross_track.py                                 43     21    51%   42, 58, 68-100, 106-117
+src/techno_search/curated_dataset_admission.py                  100     67    33%   39, 69, 100-138, 144-202, 206-246
+src/techno_search/curated_dataset_intake.py                      52     27    48%   27, 50, 68-91, 97-116
+src/techno_search/data_collection_status.py                      85     85     0%   26-231
+src/techno_search/data_quality.py                               170    170     0%   2-317
+src/techno_search/feature_importance.py                          37     17    54%   19, 36, 50-54, 71-82
+src/techno_search/feature_normalization.py                       43     19    56%   18, 39, 57-61, 82-96
+src/techno_search/follow_up_request.py                           53     27    49%   28, 46, 62-82, 86-110
+src/techno_search/gaia_scan_workflow.py                          46     46     0%   7-144
+src/techno_search/gbt_cadence.py                                270    270     0%   3-567
+src/techno_search/globular_filter.py                             73     73     0%   19-215
+src/techno_search/hunter_acceptance.py                          232    185    20%   58, 69-86, 90-415, 431-579, 723-760, 764-783, 787-818, 827-839, 843-844, 850-855, 859, 863, 867-876, 880-888, 896-905
+src/techno_search/hunter_adaptive_discovery.py                  129     41    68%   48, 90, 126-129, 192, 261-367, 377, 393-394
+src/techno_search/hunter_cli.py                                 171     54    68%   120-122, 125-140, 172-174, 176, 214-219, 223, 247-249, 251, 271-291, 347-356, 362-370, 388-390, 399-400, 419, 427-433
+src/techno_search/hunter_commands.py                            136     24    82%   34, 37, 119, 289, 314, 350-368
+src/techno_search/hunter_constraints.py                          63     16    75%   35, 37, 39, 41, 43, 45, 47, 51, 76, 80, 82-86, 90, 92, 98
+src/techno_search/hunter_cross_project_history.py               147     15    90%   91-92, 107, 118, 140, 142, 158, 170, 211, 237, 330, 333-334, 336, 366
+src/techno_search/hunter_follow_up_discovery.py                 237     35    85%   60, 134-135, 144, 156-177, 192, 202, 211-218, 334, 341, 348, 414, 419-420, 424, 430, 434, 440, 451, 456, 460-461, 465, 468, 480, 486
+src/techno_search/hunter_inspect.py                              87     17    80%   27-28, 30, 37, 42, 56-59, 67, 77, 88, 139, 141, 148, 151, 154
+src/techno_search/hunter_prod_check.py                         1102    798    28%   158, 196, 218, 259, 263-264, 280, 282, 294-303, 310, 320-336, 345-387, 397-420, 430-459, 470-545, 556-723, 733-766, 781-804, 828, 848-849, 857, 873, 875, 877, 889, 899-946, 956-981, 990-1026, 1036-1072, 1082-1114, 1124-1134, 1149-1166, 1175-1198, 1209-1268, 1295-1338, 1351-1394, 1404-1446, 1456-1513, 1541-1557, 1578, 1585-1586, 1588, 1590, 1592, 1595-1596, 1598, 1604-1605, 1610, 1619, 1623-1624, 1626, 1628, 1632-1633, 1642-1643, 1652, 1654, 1658, 1660, 1663, 1670, 1673, 1677, 1680, 1682-1683, 1685-1686, 1689, 1691, 1694, 1696, 1700-1701, 1710, 1716, 1718-1723, 1727-1728, 1734, 1738-1739, 1742-1743, 1747-1749, 1751-1752, 1755, 1757, 1763-1781, 1796-1824, 1835-1857, 1862-1914, 1931, 1967, 1988-2015, 2025-2046, 2056-2080, 2089-2115, 2124-2197, 2209-2247, 2257-2284, 2298-2333, 2348-2379, 2393-2420, 2427-2454, 2464, 2471, 2489-2514, 2584, 2617, 2656-2659, 2707-2735, 2740-2820, 2829-2831
+src/techno_search/hunter_prod_state.py                          159     12    92%   87, 163, 242, 253-261, 264-273, 356, 373-374, 413
+src/techno_search/hunter_pty_gate.py                            217    136    37%   80, 117-118, 126-129, 140-143, 148-182, 197-204, 209-234, 237, 240-246, 251-262, 268-269, 284-310, 314, 318, 321-327, 389-444
+src/techno_search/hunter_search.py                              636    111    83%   86, 109, 111, 113, 124, 133, 273, 279, 281, 285, 303-320, 325-337, 356, 466-479, 502-515, 620, 624, 627, 631-632, 772, 775, 822-824, 1033, 1041, 1068, 1072, 1079-1080, 1082, 1084, 1086, 1088, 1090, 1102, 1133, 1136, 1143, 1151, 1155, 1165, 1171, 1175, 1177, 1197, 1207, 1211, 1227, 1247-1250, 1259, 1266, 1270, 1322, 1335, 1357-1363, 1373-1376, 1382-1386, 1429, 1453, 1460, 1489, 1493, 1496-1497, 1502, 1504, 1553-1554, 1556, 1572, 1581
+src/techno_search/hunter_shell.py                               581    327    44%   130-145, 150-154, 160, 165-168, 171, 241-271, 290-341, 345-346, 350-356, 359-361, 369-383, 386-387, 393, 398-400, 431-432, 483, 499-511, 527-562, 573-583, 621-664, 668-672, 687, 691-693, 740-742, 771-773, 779-801, 804-812, 851-858, 861-868, 887-897, 901-904, 909-912, 916-920, 929-945, 948-952, 955-978, 994-995, 1006-1067
+src/techno_search/hunter_tables.py                              160     22    86%   64-65, 240-262, 310, 313-314, 323-355
+src/techno_search/hunter_validation.py                          102     49    52%   26, 28, 46-57, 70-80, 85-92, 101, 109-116, 128, 132, 162-173
+src/techno_search/infrared/__init__.py                            2      2     0%   3-5
+src/techno_search/infrared/catalog_reader.py                     48     48     0%   2-103
+src/techno_search/infrared/prototype.py                          73     73     0%   3-179
+src/techno_search/infrared_wise/__init__.py                       3      3     0%   3-11
+src/techno_search/infrared_wise/agn_indicator.py                 31     31     0%   22-80
+src/techno_search/infrared_wise/irsa_search.py                   41     41     0%   26-122
+src/techno_search/infrared_wise/photosphere_excess.py            83     83     0%   26-194
+src/techno_search/injection_recovery.py                          74     49    34%   36, 46-59, 65-72, 102-127, 142-145, 158-160, 164
+src/techno_search/known_explanation.py                           58     58     0%   3-190
+src/techno_search/live_data.py                                  537    354    34%   62-67, 73-78, 84-85, 93-94, 100-107, 115-130, 138-154, 169-170, 181-188, 199-206, 230-242, 264, 274, 302, 307, 327, 332, 344-366, 371-383, 388-396, 408-415, 428, 433, 442-450, 459-462, 467-473, 484, 490-495, 499-503, 507-513, 517-538, 551-553, 585, 606, 617, 633-647, 652, 656, 669-677, 707-731, 743, 756-757, 787-812, 823, 836-837, 868-888, 899, 909, 937-952, 963, 973-974, 999-1026, 1036, 1056, 1065-1103, 1108-1109, 1120-1132, 1142-1147, 1153-1167, 1173-1189, 1195-1203, 1209
+src/techno_search/log_store.py                                  266    176    34%   77-133, 141, 162-163, 218-247, 253-262, 295-312, 333-351, 364-376, 393-407, 436-437, 477-506, 531-576, 588-598, 610-620, 632, 659-695, 730-737, 859, 887, 916-924, 930-931, 954-955, 964-971, 975, 1004, 1033-1036, 1040-1042, 1046-1049, 1053-1059, 1066, 1070-1072
+src/techno_search/meerkat_frequency_neighbors.py                161    161     0%   3-323
+src/techno_search/model_architecture.py                          46     22    52%   31, 53, 70-92, 98-112
+src/techno_search/model_evaluation.py                            53     30    43%   19, 42, 60-83, 89-112
+src/techno_search/multi_epoch.py                                 83     83     0%   12-194
+src/techno_search/multi_epoch_summary.py                         47     26    45%   21, 41, 56-73, 81-102
+src/techno_search/multi_modal_crossmatch.py                      79     79     0%   24-198
+src/techno_search/multi_target_scan.py                           76     76     0%   8-227
+src/techno_search/observation_artifact.py                       126    126     0%   3-217
+src/techno_search/observation_campaign.py                        53     28    47%   26, 49, 67-87, 93-114
+src/techno_search/pathway.py                                     23      9    61%   33-51
+src/techno_search/photometry/__init__.py                          6      6     0%   3-12
+src/techno_search/photometry/aperiodic_dip.py                    78     78     0%   19-167
+src/techno_search/photometry/bls_detection.py                    67     67     0%   25-166
+src/techno_search/photometry/lightcurve_io.py                    32     32     0%   14-75
+src/techno_search/photometry/lightcurve_search.py                43     43     0%   12-111
+src/techno_search/photometry/prototype.py                        44     44     0%   9-134
+src/techno_search/photometry/transit_shape.py                    44     44     0%   19-107
+src/techno_search/pipeline_audit_summary.py                      28     24    14%   16-55
+src/techno_search/pipeline_config.py                             40     16    60%   21, 43, 60-78, 84-91
+src/techno_search/pipeline_runner.py                            386    386     0%   2-988
+src/techno_search/plotting.py                                    79     51    35%   85, 104-115, 129-154, 169-177, 181-198, 202-204, 221-224, 228
+src/techno_search/prod_scan_queue.py                            108     47    56%   62-64, 75, 78-79, 82, 118-119, 125-126, 132-140, 158-189, 197-221
+src/techno_search/production_run_outcomes.py                    255    187    27%   44-52, 64, 68, 71, 84-206, 224-244, 252-272, 291-298, 310-315, 328, 345-411, 434-481, 496-522, 526-532, 536-541, 551-612, 616-617, 642-646, 650-652, 658-661, 668-678, 686-693, 702, 711-717, 727, 730-731, 736, 744-758, 762-772
+src/techno_search/production_scan.py                            285    228    20%   45-95, 146-149, 160-216, 235, 253-254, 261-263, 267-275, 278, 281, 284-310, 317, 338-429, 441-468, 476-486, 497-507, 516-565, 578-592, 596-599, 603-605, 609-611, 615-616, 620-624, 628-630, 635-649, 653-665
+src/techno_search/provenance.py                                  77     40    48%   35, 64, 92-101, 111, 134-135, 157-197, 209-211
+src/techno_search/radio/__init__.py                               3      3     0%   3-14
+src/techno_search/radio/cross_band_features.py                   72     72     0%   12-238
+src/techno_search/radio/hit_table_reader.py                     154    154     0%   2-285
+src/techno_search/radio/injection.py                             23     23     0%   3-54
+src/techno_search/radio/prototype.py                            156    156     0%   3-388
+src/techno_search/radio_corpus_cleanup.py                        88     73    17%   26-27, 31-32, 43-86, 111-140, 150, 160-161, 174-189, 193-200, 204-207
+src/techno_search/radio_frequency_families.py                    92     92     0%   9-281
+src/techno_search/radio_real_corpus_summary.py                  372    372     0%   3-1073
+src/techno_search/real_data_admission_preflight.py              126     95    25%   15, 53, 75, 92-112, 118-120, 124-125, 131-170, 180-279
+src/techno_search/reporting.py                                  112     74    34%   53-66, 78, 104-167, 189, 228, 252-258, 344-360, 371-390, 399-401, 405-407, 411-413, 417-423, 433-435, 444-446, 454-459, 463-466, 470
+src/techno_search/reproducibility.py                             78     64    18%   37-74, 116-154, 170-192, 196-206
+src/techno_search/rfi_database.py                                81     51    37%   41, 60, 76, 80-100, 104-121, 128-129, 137-162
+src/techno_search/rfi_database_admission.py                      78     50    36%   35, 60, 80-105, 111-130, 134-163
+src/techno_search/scan_summary.py                               108     87    19%   26-31, 50-90, 108-213, 221-228, 253, 268-269, 283-287, 294, 298-300, 304
+src/techno_search/schemas.py                                     72      9    88%   68, 86, 104, 126, 154, 158-161
+src/techno_search/scoring.py                                    341    300    12%   55-89, 106, 112-113, 128-144, 152-163, 171-276, 280-327, 331-383, 389-439, 445-472, 478-506, 516, 520-526, 533-538, 542-547, 551, 564-574, 578-580, 584, 588, 592, 612-676, 690-724, 740-776, 791-842, 852-876, 880-881, 899-933
+src/techno_search/semisupervised_scorer.py                      211    211     0%   23-547
+src/techno_search/signal_registry.py                             56     33    41%   23, 43, 58-75, 83-97, 114-130
+src/techno_search/spectroscopy/__init__.py                        3      3     0%   3-10
+src/techno_search/spectroscopy/hitran_xsc_matched_filter.py      94     94     0%   28-229
+src/techno_search/spectroscopy/jwst_search.py                    44     44     0%   30-151
+src/techno_search/spectroscopy/jwst_spectrum_io.py               46     46     0%   36-145
+src/techno_search/spectroscopy/prototype.py                      40     40     0%   9-122
+src/techno_search/spectroscopy/technosignature_gases.py          49     49     0%   49-201
+src/techno_search/submission_readiness.py                        46     21    54%   37, 59, 76-98, 104-116
+src/techno_search/target_alias.py                                32      3    91%   34, 38, 58
+src/techno_search/target_priority_queue.py                      418     32    92%   99-100, 139-140, 155, 224, 236, 251, 257, 265, 278, 489, 494, 497, 502, 508, 950, 1086-1107, 1111-1116, 1122, 1152
+src/techno_search/target_recalibration_summary.py                41     24    41%   21, 37, 48-64, 72-106
+src/techno_search/track_a_catalogs.py                           178    178     0%   18-415
+src/techno_search/track_a_crossmatch.py                          50     50     0%   17-124
+src/techno_search/track_a_data_guard.py                          71     71     0%   9-174
+src/techno_search/track_a_htru2.py                              110    110     0%   15-278
+src/techno_search/track_a_replay.py                              55     55     0%   25-180
+src/techno_search/track_a_satellites.py                         194    194     0%   21-449
+src/techno_search/track_b_gate.py                               143    143     0%   20-435
+src/techno_search/tui.py                                        105    105     0%   14-256
+src/techno_search/validation.py                                 197    163    17%   90, 93, 103-136, 142-146, 152-191, 197-209, 215-245, 251-284, 290-343, 349-351, 358-362, 366-371, 381-383, 387, 391-393
+src/techno_search/validation_datasets.py                        106     47    56%   79, 87, 95, 105-117, 125-137, 145-157, 163-174, 193-209, 248-255, 275, 293, 307, 330
+-------------------------------------------------------------------------------------------
+TOTAL                                                         18018  12210    32%
+=========================== short test summary info ============================
+FAILED tests/test_hunter_prod_state_authority.py::TestLedgerOnDisk::test_partial_state_gate_passes_without_awarding_prod
+1 failed, 202 passed in 28.07s

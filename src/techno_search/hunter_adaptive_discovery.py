@@ -53,21 +53,35 @@ def adaptive_discovery_loop(
     current_queue = queue_path
     previous_signature: tuple[tuple[str, str], ...] | None = None
 
+    previous_top_ids: tuple[str, ...] = ()
+
     while True:
         state = _selection_support_state(
             current_queue, target_count, active_constraints
         )
+        top_ids = tuple(state.pop("top_n_target_ids"))
+        if rounds:
+            rounds[-1]["top_n_churn"] = _top_n_churn(previous_top_ids, top_ids)
+        previous_top_ids = top_ids
         if state["sufficient"]:
             public_state = {
-                key: value for key, value in state.items() if key != "expandable_rows"
+                key: value
+                for key, value in state.items()
+                if key not in {"expandable_rows"}
             }
             return current_queue, {
                 "strategy": "adaptive_score_bound_v1",
                 "sufficient": True,
                 "universe_exhausted": bool(state["universe_exhausted"]),
+                "termination_reason": (
+                    "accessible_universe_exhausted"
+                    if state["universe_exhausted"]
+                    else "top_n_supported_no_candidate_can_displace_nth"
+                ),
                 "round_count": len(rounds),
                 "rounds": rounds,
                 "constraints": active_constraints,
+                "sources": _source_watermarks(current_queue, queue_path),
                 **public_state,
             }
         expandable = list(state["expandable_rows"])
@@ -75,7 +89,8 @@ def adaptive_discovery_loop(
         if signature == previous_signature:
             raise AdaptiveDiscoveryError(
                 "adaptive discovery made no eligibility progress; current metadata "
-                "requires refresh before top-N sufficiency can be established"
+                "requires refresh before top-N sufficiency can be established "
+                "(termination_reason=no_eligibility_progress)"
             )
         previous_signature = signature
         selected_rows = expandable[:batch_size]
@@ -122,6 +137,63 @@ def prepare_production_new_target_queue(
         expand_round=_production_expand_round,
         constraints=constraints,
     )
+
+
+def _top_n_churn(
+    previous: Sequence[str], current: Sequence[str]
+) -> dict[str, Any]:
+    """Report real top-N membership movement between two expansion rounds."""
+    before, after = set(previous), set(current)
+    entered = sorted(after - before)
+    exited = sorted(before - after)
+    return {
+        "entered": entered,
+        "exited": exited,
+        "churn_count": len(entered) + len(exited),
+        "stable_count": len(after & before),
+    }
+
+
+def _source_watermarks(active_queue: Path, origin_queue: Path) -> list[dict[str, Any]]:
+    """Record the exact evidence sources and their content watermarks."""
+    watermarks: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for role, path in (
+        ("active_eligibility_queue", active_queue),
+        ("origin_eligibility_queue", origin_queue),
+        ("candidate_catalog", Path("data_selection/bl_archive_candidate_catalog.csv")),
+        ("hprc_seed_catalog", Path("data/bl_hprc_full_seed_targets.csv")),
+    ):
+        resolved = str(path)
+        if resolved in seen or not path.is_file():
+            continue
+        seen.add(resolved)
+        watermarks.append(
+            {
+                "role": role,
+                "path": resolved,
+                "sha256": _sha256(path),
+                "size_bytes": path.stat().st_size,
+            }
+        )
+    return watermarks
+
+
+def _rejection_counts(
+    rows: Sequence[Mapping[str, str]], constraints: Mapping[str, Any]
+) -> dict[str, int]:
+    """Count every excluded candidate by its real, auditable exclusion reason."""
+    counts: dict[str, int] = {}
+    for row in rows:
+        status = str(row.get("status") or "unknown_status")
+        if status == ELIGIBLE_STATUS:
+            if target_matches_constraints(row, constraints):
+                continue
+            reason = "excluded_by_scientific_constraints"
+        else:
+            reason = status
+        counts[reason] = counts.get(reason, 0) + 1
+    return dict(sorted(counts.items()))
 
 
 def _selection_support_state(
@@ -172,7 +244,11 @@ def _selection_support_state(
         "expandable_count": len(expandable),
         "universe_exhausted": not expandable,
         "sufficient": sufficient,
+        "rejection_counts_by_reason": _rejection_counts(rows, constraints),
         "expandable_rows": relevant if relevant else expandable,
+        "top_n_target_ids": [
+            str(row["target_id"]) for row in eligible[:target_count]
+        ],
     }
 
 

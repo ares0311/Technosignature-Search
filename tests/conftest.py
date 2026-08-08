@@ -2,9 +2,11 @@
 from __future__ import annotations
 
 import os
+from pathlib import Path
 
 import pytest
 
+from techno_search.hunter_search import CROSS_PROJECT_HISTORY_PATH_ENV
 from techno_search.log_store import default_sqlite_log_path, init_sqlite_log_db
 
 
@@ -16,6 +18,23 @@ def pytest_collection_modifyitems(items: list[pytest.Item]) -> None:
         for item in items:
             if item.get_closest_marker("integration_live"):
                 item.add_marker(skip_live)
+
+
+@pytest.fixture(scope="session", autouse=True)
+def decision_grade_cross_project_history() -> None:
+    """Point New eligibility at a real, decision-grade history export.
+
+    New selection fails closed when cross-project history is absent (IDENT-03).
+    The repository publishes its own export to a gitignored path, so tests
+    supply a committed real export instead. This changes only WHERE the export
+    is read from — it is still validated as decision-grade.
+    """
+    fixture = (
+        Path(__file__).parent / "fixtures" / "cross_project"
+        / "hunter_prior_search_history_v1.json"
+    )
+    if fixture.is_file():
+        os.environ.setdefault(CROSS_PROJECT_HISTORY_PATH_ENV, str(fixture))
 
 
 @pytest.fixture(scope="session", autouse=True)

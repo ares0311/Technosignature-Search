@@ -1,0 +1,10 @@
+# Startup identity — UX-START-01, UX-START-02 (TechnoHunter theme)
+# surface: launch with piped stdin, /Help then /Exit
+TechnoHunter
+Local scientific triage only
+command palette
+Array idle
+# Truthful presentation (UX-START-03): startup must not assert findings.
+!candidate detected
+!signal found
+!confirmed technosignature

@@ -1,0 +1,75 @@
+^D{
+  "claim_limitation": "74% is statement coverage over all Python under src/techno_search and scripts. Shell runtime is inventory-hashed and executable-gated, not included in the Python statement percentage. No 100% production coverage claim is made.",
+  "missing_required_runtime_python": [],
+  "non_python_runtime_surfaces": [
+    {
+      "coverage_method": "executable gate/transcript; not Python statement coverage",
+      "line_count": 736,
+      "path": "scripts/run_stream_process_evict_batch.sh",
+      "sha256": "ad3cdd6518e1a65800d7c898ba04bb36413604fa951b6c49cccf88d583cc68ac"
+    },
+    {
+      "coverage_method": "executable gate/transcript; not Python statement coverage",
+      "line_count": 183,
+      "path": "scripts/run_turboseti_on_extended_corpus.sh",
+      "sha256": "eeb8749803f5c2a687ccfba26031725712d23d03fca01a92112c727430594dec"
+    },
+    {
+      "coverage_method": "executable gate/transcript; not Python statement coverage",
+      "line_count": 81,
+      "path": "scripts/run_pipeline_on_bl_data.sh",
+      "sha256": "537ae75b6d7367e44939837a4bf8ff43fc9e7cf169ba0d725dbfa44255aa1399"
+    },
+    {
+      "coverage_method": "executable gate/transcript; not Python statement coverage",
+      "line_count": 97,
+      "path": "scripts/patch_turbo_seti_numpy2_compat.sh",
+      "sha256": "f1695bc451a5c41d331ad268c71944d7301a469f50d99ea266c6054909000cd7"
+    },
+    {
+      "coverage_method": "executable gate/transcript; not Python statement coverage",
+      "line_count": 78,
+      "path": "scripts/run_pty_gate.sh",
+      "sha256": "d1af33ff1e202ced78f5cdcae64e59a7065d33ebd42bcdaa8da09d504bcf2ead"
+    }
+  ],
+  "ok": true,
+  "python_statement_coverage": {
+    "covered_lines": 15368,
+    "file_count": 144,
+    "missing_lines": 5362,
+    "num_statements": 20730,
+    "package_file_count": 124,
+    "percent_covered": 74.13410516160154,
+    "script_python_file_count": 20,
+    "source_roots": [
+      "src/techno_search",
+      "scripts"
+    ]
+  },
+  "registered_entry_points": {
+    "Create-New-Search": "src/techno_search/hunter_cli.py",
+    "Inspect-Target": "src/techno_search/hunter_cli.py",
+    "Run-New-Search": "src/techno_search/hunter_cli.py",
+    "Show-Follow-Ups": "src/techno_search/hunter_cli.py",
+    "Techno-Hunter": "src/techno_search/hunter_shell.py",
+    "TechnoHunter": "src/techno_search/hunter_shell.py",
+    "prod-check": "src/techno_search/hunter_prod_check.py",
+    "techno-search": "src/techno_search/cli.py"
+  },
+  "required_runtime_python": [
+    "src/techno_search/cli.py",
+    "src/techno_search/hunter_shell.py",
+    "src/techno_search/hunter_cli.py",
+    "src/techno_search/hunter_search.py",
+    "src/techno_search/production_scan.py",
+    "src/techno_search/prod_scan_queue.py",
+    "src/techno_search/log_store.py",
+    "src/techno_search/config.py",
+    "src/techno_search/tui.py",
+    "src/techno_search/hunter_prod_check.py",
+    "scripts/bl_fetch.py",
+    "scripts/ingest_gbt_cadence.py",
+    "scripts/run_parallel_validation.py"
+  ]
+}

@@ -1,0 +1,13 @@
+prod-check hunter_prod_check_report_v1 — app 1.2.72 @ 03a154badd0f9370e8af765f9d24f86722f55091 (dirty)
+executed 7  passed 7  failed 0  not executed 0
+
+[PASS         ] documented_installation: README documents the uv install command and the canonical executable
+[PASS         ] entry_points: all 5 documented entry points started cleanly
+[PASS         ] launch_repo_root: repository-root launch exposed the palette, /Help and /Exit
+[PASS         ] launch_outside_repository: the installed application started and exited cleanly outside the repository
+[PASS         ] invalid_input: invalid input exits non-zero with an actionable message and no traceback
+[PASS         ] package_completeness: every required console script is registered in package metadata
+[PASS         ] built_wheel: the built wheel installed and launched in a clean environment
+
+verdict: PROD READY
+This gate verifies software conformance only. It makes no detection, discovery, expert-review, external-validation, or external-submission claim.

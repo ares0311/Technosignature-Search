@@ -1,0 +1,8 @@
+# Live validity sentinels — UX-IN-03, UX-IN-04
+# surface: "/New-Search twenty" and "/New-Search 0"
+Invalid
+positive whole number
+greater than zero
+# Raw argparse dumps are not the normal interactive error response.
+!usage:
+!Traceback (most recent call last)

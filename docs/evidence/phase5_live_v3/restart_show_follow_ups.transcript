@@ -1,0 +1,32 @@
+^D                                    Actionable follow-up targets                                    
+┏━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃    # ┃ Target       ┃  Priority ┃    Score ┃     SNR ┃ RFI  ┃ Next action                        ┃
+┡━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━╇━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│    1 │ HIP106147    │     0.997 │    0.997 │  153.54 │ no   │ repeat an ON/OFF cadence at a late…│
+│    2 │ HIP110774    │     0.997 │    0.997 │  245.14 │ no   │ repeat an ON/OFF cadence at a late…│
+│    3 │ HIP115445    │     0.997 │    0.997 │  886.66 │ no   │ repeat an ON/OFF cadence at a late…│
+│    4 │ HIP118212    │     0.997 │    0.997 │   91.31 │ no   │ repeat an ON/OFF cadence at a late…│
+│    5 │ HIP1242      │     0.997 │    0.997 │  671.01 │ no   │ repeat an ON/OFF cadence at a late…│
+│    6 │ HIP12444     │     0.997 │    0.997 │ 2941.16 │ no   │ repeat an ON/OFF cadence at a late…│
+│    7 │ HIP14669     │     0.997 │    0.997 │  129.48 │ no   │ repeat an ON/OFF cadence at a late…│
+│    8 │ HIP15457     │     0.997 │    0.997 │ 2013.42 │ no   │ repeat an ON/OFF cadence at a late…│
+│    9 │ HIP15638     │     0.997 │    0.997 │   98.60 │ no   │ repeat an ON/OFF cadence at a late…│
+│   10 │ HIP15919     │     0.997 │    0.997 │ 1850.17 │ no   │ repeat an ON/OFF cadence at a late…│
+│   11 │ HIP17609     │     0.997 │    0.997 │  263.56 │ no   │ repeat an ON/OFF cadence at a late…│
+│   12 │ HIP19849     │     0.997 │    0.997 │ 1515.59 │ no   │ repeat an ON/OFF cadence at a late…│
+│   13 │ HIP21482     │     0.997 │    0.997 │  576.31 │ no   │ repeat an ON/OFF cadence at a late…│
+│   14 │ HIP21556     │     0.997 │    0.997 │ 13628.… │ no   │ repeat an ON/OFF cadence at a late…│
+│   15 │ HIP24819     │     0.997 │    0.997 │  522.03 │ no   │ repeat an ON/OFF cadence at a late…│
+│   16 │ HIP26801     │     0.997 │    0.997 │   52.86 │ no   │ repeat an ON/OFF cadence at a late…│
+│   17 │ HIP27207     │     0.997 │    0.997 │   71.19 │ no   │ repeat an ON/OFF cadence at a late…│
+│   18 │ HIP29525     │     0.997 │    0.997 │ 2478.59 │ no   │ repeat an ON/OFF cadence at a late…│
+│   19 │ HIP30630     │     0.997 │    0.997 │  100.05 │ no   │ repeat an ON/OFF cadence at a late…│
+│   20 │ HIP32439     │     0.997 │    0.997 │   50.02 │ no   │ repeat an ON/OFF cadence at a late…│
+│   21 │ HIP33537     │     0.997 │    0.997 │  166.41 │ no   │ repeat an ON/OFF cadence at a late…│
+│   22 │ HIP34104     │     0.997 │    0.997 │ 1320.47 │ no   │ repeat an ON/OFF cadence at a late…│
+│   23 │ HIP35872     │     0.997 │    0.997 │   81.46 │ no   │ repeat an ON/OFF cadence at a late…│
+│   24 │ HIP40774     │     0.997 │    0.997 │  139.53 │ no   │ repeat an ON/OFF cadence at a late…│
+│   25 │ HIP43790     │     0.997 │    0.997 │  302.77 │ no   │ repeat an ON/OFF cadence at a late…│
+└──────┴──────────────┴───────────┴──────────┴─────────┴──────┴────────────────────────────────────┘
+792 actionable follow-up target(s) from 16 durable ledger(s); 0 row(s) excluded for unresolved 
+identity.

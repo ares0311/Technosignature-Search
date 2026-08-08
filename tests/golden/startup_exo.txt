@@ -1,0 +1,7 @@
+# Negative control — this repository is Techno-Hunter, never EXO-Hunter.
+# See tests/golden/README.md for why this baseline is negative here.
+TechnoHunter
+!EXOHunter
+!EXO-Hunter
+!habitable-zone scan
+!transit across a stellar disk

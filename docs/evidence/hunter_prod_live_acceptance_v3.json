@@ -1,0 +1,214 @@
+{
+  "schema_version": "hunter_prod_live_acceptance_v3",
+  "generated_at_utc": "2026-08-03T02:10:00Z",
+  "release": {
+    "app_version": "1.2.72",
+    "fixture_classification": "live authoritative source acceptance",
+    "installed_entry_point": "TechnoHunter",
+    "resolved_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/TechnoHunter",
+    "code_identity": {
+      "git_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "runtime_tree_sha256": "5d7fcac32d4745060fdee26ac9d711473023cc0589155e04777e066269634947"
+    }
+  },
+  "scope": {
+    "fixtures_used": false,
+    "mocks_used": false,
+    "imported_snapshots_used": false,
+    "real_authoritative_sources": true,
+    "detection_claimed": false,
+    "discovery_claimed": false,
+    "expert_review_claimed": false,
+    "external_validation_claimed": false,
+    "external_submission_allowed": false
+  },
+  "operator_session": {
+    "installation_command": "UV_CACHE_DIR=.uv-cache uv pip install --python .venv/bin/python -e \".[dev,radio,science,ml,track_a,photometry]\" && bash scripts/patch_turbo_seti_numpy2_compat.sh --python .venv/bin/python",
+    "terminated": true,
+    "canonical_executable": "TechnoHunter",
+    "compatibility_alias": "Techno-Hunter"
+  },
+  "source_watermarks": {
+    "new": "candidate_catalog_sha256=9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174; eligibility_queue_sha256=ee8ca3395b155078ac4bfb74e059bfad6105e04aecbadee5e604c10b86c14923",
+    "follow_up": "archive_search=https://breakthroughinitiatives.org/opendatasearch; retrieved_at_utc=2026-08-03T01:36:35.287541Z; 30 scan-level filename, MD5, byte-size, MJD, and ON/OFF watermarks"
+  },
+  "selected_targets": {
+    "new": ["HIP2", "HIP1444", "HIP57866", "HIP5938", "HIP6748"],
+    "follow_up": ["HIP103096", "HIP111313", "HIP113357", "HIP11565", "HIP117712"]
+  },
+  "searches": [
+    {
+      "mode": "new",
+      "search_id": "SEARCH-20260803T013540Z-9EC480FD",
+      "run_id": "RUN-2026-08-03_013806Z-8NEO-hunter-search",
+      "requested_target_count": 5,
+      "target_count": 5,
+      "target_ids": [
+        "HIP2",
+        "HIP1444",
+        "HIP57866",
+        "HIP5938",
+        "HIP6748"
+      ],
+      "ordered_manifest_target_ids": [
+        "HIP2",
+        "HIP1444",
+        "HIP57866",
+        "HIP5938",
+        "HIP6748"
+      ],
+      "executed_target_ids": [
+        "HIP2",
+        "HIP1444",
+        "HIP57866",
+        "HIP5938",
+        "HIP6748"
+      ],
+      "manifest_sha256": "9bd0ebc96bd682ec421b5ca1a341792616140f063c7f7fc54ce47ac1744da5b8",
+      "manifest_checksum_verified": true,
+      "history_updated": true,
+      "cross_project_novelty_checked": true,
+      "prior_searched_targets_selected": 0,
+      "source_provenance": [
+        {
+          "source_identity": "Breakthrough Listen Open Data Archive",
+          "watermark": "candidate_catalog_sha256=9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174; eligibility_queue_sha256=ee8ca3395b155078ac4bfb74e059bfad6105e04aecbadee5e604c10b86c14923"
+        }
+      ],
+      "durable_target_records": [
+        {
+          "target_id": "HIP2",
+          "state": "completed",
+          "provenance": "SEARCH-20260803T013540Z-9EC480FD manifest/events and RUN-2026-08-03_013806Z-8NEO-hunter-search target-status ledger",
+          "result": {"index_id": "FU-2026-08-03_013806Z-8NEO-002", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}
+        },
+        {
+          "target_id": "HIP1444",
+          "state": "completed",
+          "provenance": "SEARCH-20260803T013540Z-9EC480FD manifest/events and RUN-2026-08-03_013806Z-8NEO-hunter-search target-status ledger",
+          "result": {"index_id": "FU-2026-08-03_013806Z-8NEO-001", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}
+        },
+        {
+          "target_id": "HIP57866",
+          "state": "completed",
+          "provenance": "SEARCH-20260803T013540Z-9EC480FD manifest/events and RUN-2026-08-03_013806Z-8NEO-hunter-search target-status ledger",
+          "result": {"index_id": "FU-2026-08-03_013806Z-8NEO-005", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}
+        },
+        {
+          "target_id": "HIP5938",
+          "state": "completed",
+          "provenance": "SEARCH-20260803T013540Z-9EC480FD manifest/events and RUN-2026-08-03_013806Z-8NEO-hunter-search target-status ledger",
+          "result": {"index_id": "FU-2026-08-03_013806Z-8NEO-003", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}
+        },
+        {
+          "target_id": "HIP6748",
+          "state": "completed",
+          "provenance": "SEARCH-20260803T013540Z-9EC480FD manifest/events and RUN-2026-08-03_013806Z-8NEO-hunter-search target-status ledger",
+          "result": {"index_id": "FU-2026-08-03_013806Z-8NEO-004", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}
+        }
+      ]
+    },
+    {
+      "mode": "follow-up",
+      "search_id": "SEARCH-20260803T013634Z-84635BDA",
+      "run_id": "RUN-2026-08-03_014225Z-0MTO-hunter-search",
+      "requested_target_count": 5,
+      "target_count": 5,
+      "target_ids": [
+        "HIP103096",
+        "HIP111313",
+        "HIP113357",
+        "HIP11565",
+        "HIP117712"
+      ],
+      "ordered_manifest_target_ids": [
+        "HIP103096",
+        "HIP111313",
+        "HIP113357",
+        "HIP11565",
+        "HIP117712"
+      ],
+      "executed_target_ids": [
+        "HIP103096",
+        "HIP111313",
+        "HIP113357",
+        "HIP11565",
+        "HIP117712"
+      ],
+      "manifest_sha256": "56e0ea09e4e8c442f8f37272a080cd785015e9e1d666188590d2db4dc6e1026b",
+      "manifest_checksum_verified": true,
+      "history_updated": true,
+      "external_authority_boundary": "Automated local known-explanation and adversarial-review boundary reached; any credentialed third-party expert review or external submission remains unauthorized.",
+      "disposition_persisted": true,
+      "source_provenance": [
+        {
+          "source_identity": "Breakthrough Listen Open Data Archive",
+          "watermark": "archive_search=https://breakthroughinitiatives.org/opendatasearch; retrieved_at_utc=2026-08-03T01:36:35.287541Z; 30 scan-level filename, MD5, byte-size, MJD, and ON/OFF watermarks"
+        }
+      ],
+      "durable_target_records": [
+        {
+          "target_id": "HIP103096",
+          "state": "completed",
+          "provenance": "GBT_HIP103096_2016-10-22_ABACAD six-scan cadence and RUN-2026-08-03_014225Z-0MTO-hunter-search target-status ledger",
+          "result": {"index_id": "FU-2026-08-03_014225Z-0MTO-001", "pathway": "human_review_queue", "known_explanation_state": "unknown"}
+        },
+        {
+          "target_id": "HIP111313",
+          "state": "completed",
+          "provenance": "GBT_HIP111313_2016-12-01_ABACAD six-scan cadence and RUN-2026-08-03_014225Z-0MTO-hunter-search target-status ledger",
+          "result": {"index_id": "NEG-2026-08-03_014225Z-0MTO-001", "pathway": "do_not_submit_false_positive", "known_explanation_state": "known"}
+        },
+        {
+          "target_id": "HIP113357",
+          "state": "completed",
+          "provenance": "GBT_HIP113357_2017-01-08_ABACAD six-scan cadence and RUN-2026-08-03_014225Z-0MTO-hunter-search target-status ledger",
+          "result": {"index_id": "NEG-2026-08-03_014225Z-0MTO-002", "pathway": "do_not_submit_false_positive", "known_explanation_state": "known"}
+        },
+        {
+          "target_id": "HIP11565",
+          "state": "completed",
+          "provenance": "GBT_HIP11565_2017-09-02_ABACAD six-scan cadence and RUN-2026-08-03_014225Z-0MTO-hunter-search target-status ledger",
+          "result": {"index_id": "NEG-2026-08-03_014225Z-0MTO-003", "pathway": "do_not_submit_false_positive", "known_explanation_state": "known"}
+        },
+        {
+          "target_id": "HIP117712",
+          "state": "completed",
+          "provenance": "GBT_HIP117712_2017-12-23_ABACAD six-scan cadence and RUN-2026-08-03_014225Z-0MTO-hunter-search target-status ledger",
+          "result": {"index_id": "NEG-2026-08-03_014225Z-0MTO-004", "pathway": "do_not_submit_false_positive", "known_explanation_state": "known"}
+        }
+      ]
+    }
+  ],
+  "restart_resume": {
+    "application_restarted": true,
+    "state_survived": true,
+    "eligible_work_resumed": true,
+    "completed_work_not_regenerated": true,
+    "completed_work_not_repeated": true,
+    "observable_result": "A fresh installed process listed 792 durable actionable follow-ups and inspected HIP103096 from the completed frozen manifest. A completed-search rerun exited 1, and pre/post hashes for scan history, both manifests, and both event ledgers were identical."
+  },
+  "shared_state_write": {
+    "performed": false,
+    "disposition": "No sibling repository or shared cross-repository data location was mutated. The repository-owned portable history export was regenerated only after all local writers exited; no repository-defined export lock exists."
+  },
+  "evidence_artifacts": [
+    {"role": "commands", "path": "docs/evidence/phase5_live_v3/commands.transcript", "sha256": "300c5ba7bf281180cf4ebd7405c9690061251c94ad7fc6f01409faf43627a343"},
+    {"role": "keystrokes", "path": "docs/evidence/phase5_live_v3/operator_select.transcript", "sha256": "dd5034855b0bb9cca76747152d59cf13eb8766e7b36464d1293b9f8afc64b97e"},
+    {"role": "transcript", "path": "docs/evidence/phase5_live_v3/operator_run_new.transcript", "sha256": "be5b6156aafd3b79f82d3357293015613e06fc6e8ab9b3b1d5c4ffe82464e70a"},
+    {"role": "transcript", "path": "docs/evidence/phase5_live_v3/operator_run_follow_up.transcript", "sha256": "6773e21f2597a7e4d604732771bb44268ae789bcd9f94a539a4ec715f0238d39"},
+    {"role": "new_manifest", "path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json", "sha256": "9bd0ebc96bd682ec421b5ca1a341792616140f063c7f7fc54ce47ac1744da5b8"},
+    {"role": "follow_up_manifest", "path": "results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json", "sha256": "56e0ea09e4e8c442f8f37272a080cd785015e9e1d666188590d2db4dc6e1026b"},
+    {"role": "source_watermarks", "path": "docs/evidence/phase5_live_v3/source_watermarks.transcript", "sha256": "471e90a61ebf810ebcd6d4550f2a4494e846777e32d8b35abdfe83eb9248209e"},
+    {"role": "requests", "path": "docs/evidence/phase5_live_v3/source_watermarks.transcript", "sha256": "471e90a61ebf810ebcd6d4550f2a4494e846777e32d8b35abdfe83eb9248209e"},
+    {"role": "responses", "path": "docs/evidence/phase5_live_v3/operator_run_follow_up.transcript", "sha256": "6773e21f2597a7e4d604732771bb44268ae789bcd9f94a539a4ec715f0238d39"},
+    {"role": "environment", "path": "docs/evidence/phase5_live_v3/environment.transcript", "sha256": "92c851ae4532179ce722d0ce345a0749f957de47e607cd553cf1b4cca04c6069"},
+    {"role": "package_versions", "path": "docs/evidence/phase5_live_v3/package_versions_repo_cache.transcript", "sha256": "3460e518c2119fc9ba6095f15a4adaa5e6a853f2fe3f3f4085437561248c2012"},
+    {"role": "durable_state_export", "path": "docs/evidence/phase5_live_v3/durable_state_export_after_identity_mapping.transcript", "sha256": "58bffc8ef827faef80ed2d5759d5ddbc6aebf1870dd295deb5ea094f9447b5f6"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_show_follow_ups.transcript", "sha256": "3cac2b063fc7df0e67796bcb358639e723261aa1c9549ccc9db69140d882b2a3"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_inspect_follow_up.transcript", "sha256": "d73a32f859b91b5d3fb39f7a4d0b3a68d22dc0c5a63f83b0238948e06c64fcc9"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_completed_rerun_refusal.transcript", "sha256": "5bb590eeaeca8913405aebfa60449de196c2c49dd6d34441b0a96b5449bcdfa3"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_pre_rerun_hashes.transcript", "sha256": "eeb117e946acf71859cb43103b7663d5df8f572edfa8de5d6725a517a4ec42fb"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_post_rerun_hashes.transcript", "sha256": "eeb117e946acf71859cb43103b7663d5df8f572edfa8de5d6725a517a4ec42fb"}
+  ]
+}

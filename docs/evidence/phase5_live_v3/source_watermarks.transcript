@@ -1,0 +1,366 @@
+^D[
+  {
+    "candidate_catalog": {
+      "candidate_count": 12086,
+      "identity_resolved_count": 1184,
+      "path": "data_selection/bl_archive_candidate_catalog.csv",
+      "ranking_eligible_count": 358,
+      "schema_version": "bl_archive_candidate_catalog_v1",
+      "sha256": "9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174"
+    },
+    "eligibility_queue": {
+      "candidate_count": 6879,
+      "path": "results/adaptive_discovery/SEARCH-20260803T013540Z-9EC480FD/target_priority_queue.csv",
+      "schema_version": "target_priority_queue_v5",
+      "sha256": "ee8ca3395b155078ac4bfb74e059bfad6105e04aecbadee5e604c10b86c14923",
+      "viable_candidate_count": 4861
+    },
+    "follow_up_archive": null,
+    "follow_up_retrieved_at_utc": null,
+    "manifest_sha256": "9bd0ebc96bd682ec421b5ca1a341792616140f063c7f7fc54ce47ac1744da5b8",
+    "mode": "new",
+    "search_id": "SEARCH-20260803T013540Z-9EC480FD",
+    "selection_sources": [
+      {
+        "path": "results/adaptive_discovery/SEARCH-20260803T013540Z-9EC480FD/target_priority_queue.csv",
+        "role": "active_eligibility_queue",
+        "sha256": "ee8ca3395b155078ac4bfb74e059bfad6105e04aecbadee5e604c10b86c14923",
+        "size_bytes": 4798189
+      },
+      {
+        "path": "data_selection/bl_archive_candidate_catalog.csv",
+        "role": "candidate_catalog",
+        "sha256": "9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174",
+        "size_bytes": 3844422
+      },
+      {
+        "path": "data/bl_hprc_full_seed_targets.csv",
+        "role": "hprc_seed_catalog",
+        "sha256": "23f4d14fd6feb77f6f9a314e52d80881b063366108654a5bffb0c30211fff926",
+        "size_bytes": 108940
+      }
+    ],
+    "target_requests": [
+      {
+        "archive": null,
+        "cadence_id": null,
+        "retrieved_at_utc": null,
+        "scan_watermarks": [],
+        "source_hdf5_url": "https://bldata.berkeley.edu/pipeline/AGBT16A_999_232/holding/spliced_blc0001020304050607_guppi_57573_50527_HIP2_0021.gpuspec.0002.h5",
+        "target_id": "HIP2"
+      },
+      {
+        "archive": null,
+        "cadence_id": null,
+        "retrieved_at_utc": null,
+        "scan_watermarks": [],
+        "source_hdf5_url": "https://bldata.berkeley.edu/pipeline/AGBT16A_999_189/holding/spliced_blc0001020304050607_guppi_57522_55365_HIP1444_0003.gpuspec.0002.h5",
+        "target_id": "HIP1444"
+      },
+      {
+        "archive": null,
+        "cadence_id": null,
+        "retrieved_at_utc": null,
+        "scan_watermarks": [],
+        "source_hdf5_url": "https://bldata.berkeley.edu/pipeline/AGBT16B_999_58/holding/spliced_blc0001020304050607_guppi_57692_55914_HIP57866_0009.gpuspec.0002.h5",
+        "target_id": "HIP57866"
+      },
+      {
+        "archive": null,
+        "cadence_id": null,
+        "retrieved_at_utc": null,
+        "scan_watermarks": [],
+        "source_hdf5_url": "https://bldata.berkeley.edu/pipeline/AGBT16B_999_26/holding/spliced_blc0001020304050607_guppi_57654_22782_Hip5938_0032.gpuspec.0002.h5",
+        "target_id": "HIP5938"
+      },
+      {
+        "archive": null,
+        "cadence_id": null,
+        "retrieved_at_utc": null,
+        "scan_watermarks": [],
+        "source_hdf5_url": "https://bldata.berkeley.edu/pipeline/AGBT16B_999_34/holding/spliced_blc0001020304050607_guppi_57662_19980_HIP6748_0039.gpuspec.0002.h5",
+        "target_id": "HIP6748"
+      }
+    ]
+  },
+  {
+    "candidate_catalog": {
+      "candidate_count": 12086,
+      "identity_resolved_count": 1184,
+      "path": "data_selection/bl_archive_candidate_catalog.csv",
+      "ranking_eligible_count": 358,
+      "schema_version": "bl_archive_candidate_catalog_v1",
+      "sha256": "9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174"
+    },
+    "eligibility_queue": {
+      "candidate_count": 6879,
+      "path": "data_selection/target_priority_queue.csv",
+      "schema_version": "target_priority_queue_v5",
+      "sha256": "2ebb3dcc26b02121987199f18d71bdc234c8b038461d0903a5e790475d8dc5bf",
+      "viable_candidate_count": 791
+    },
+    "follow_up_archive": "https://breakthroughinitiatives.org/opendatasearch",
+    "follow_up_retrieved_at_utc": "2026-08-03T01:36:35.287541Z",
+    "manifest_sha256": "56e0ea09e4e8c442f8f37272a080cd785015e9e1d666188590d2db4dc6e1026b",
+    "mode": "follow-up",
+    "search_id": "SEARCH-20260803T013634Z-84635BDA",
+    "selection_sources": [],
+    "target_requests": [
+      {
+        "archive": "Breakthrough Listen Open Data Archive",
+        "cadence_id": "GBT_HIP103096_2016-10-22_ABACAD",
+        "retrieved_at_utc": "2026-08-03T01:36:35.287541Z",
+        "scan_watermarks": [
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002.h5",
+            "md5": "0bd1f8b4970abe8b987f5d9916ff303f",
+            "mjd": 57683.0958,
+            "scan_role": "on",
+            "size_bytes": 238201510
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57683_08612_HIP101938_0022.gpuspec.0002.h5",
+            "md5": "81842b363350b3620b4af8fb3da0ddfa",
+            "mjd": 57683.0997,
+            "scan_role": "off",
+            "size_bytes": 238670492
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57683_08948_HIP103096_0023.gpuspec.0002.h5",
+            "md5": "ac0c80107a068900d04968004e9793ea",
+            "mjd": 57683.1036,
+            "scan_role": "on",
+            "size_bytes": 238070015
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57683_09278_HIP102193_0024.gpuspec.0002.h5",
+            "md5": "7b0795dd0bdeaf58bb002d3ad6ff0a84",
+            "mjd": 57683.1074,
+            "scan_role": "off",
+            "size_bytes": 238291268
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57683_09608_HIP103096_0025.gpuspec.0002.h5",
+            "md5": "ffa3a7e5eb82c48a7c665dd9aa8a99ed",
+            "mjd": 57683.1112,
+            "scan_role": "on",
+            "size_bytes": 238403212
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57683_09941_HIP102544_0026.gpuspec.0002.h5",
+            "md5": "81ab49d8d57c709136401d72f6ba5008",
+            "mjd": 57683.1151,
+            "scan_role": "off",
+            "size_bytes": 238514074
+          }
+        ],
+        "source_hdf5_url": "",
+        "target_id": "HIP103096"
+      },
+      {
+        "archive": "Breakthrough Listen Open Data Archive",
+        "cadence_id": "GBT_HIP111313_2016-12-01_ABACAD",
+        "retrieved_at_utc": "2026-08-03T01:36:35.287541Z",
+        "scan_watermarks": [
+          {
+            "filename": "spliced_blc1011121314151617_guppi_57723_01810_HIP111313_0027.gpuspec.0002.h5",
+            "md5": "8a44d14cdd01082e7fa677f8535ea05a",
+            "mjd": 57723.0209,
+            "scan_role": "on",
+            "size_bytes": 236324986
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_57723_02160_HIP110205_0028.gpuspec.0002.h5",
+            "md5": "b7faf706d93c8f2216ecd6567a820e3b",
+            "mjd": 57723.025,
+            "scan_role": "off",
+            "size_bytes": 236353371
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_57723_02509_HIP111313_0029.gpuspec.0002.h5",
+            "md5": "60d34a7c374de4903511e445417485cd",
+            "mjd": 57723.029,
+            "scan_role": "on",
+            "size_bytes": 236408784
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_57723_02857_HIP110250_0030.gpuspec.0002.h5",
+            "md5": "a5f0cf57e0a590e0655442df56f2660b",
+            "mjd": 57723.0331,
+            "scan_role": "off",
+            "size_bytes": 236331550
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_57723_03205_HIP111313_0031.gpuspec.0002.h5",
+            "md5": "55d1f5da26828bfa4b3618262003f67f",
+            "mjd": 57723.0371,
+            "scan_role": "on",
+            "size_bytes": 236446970
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_57723_03551_HIP110386_0032.gpuspec.0002.h5",
+            "md5": "16c2ae1b5b9185337b461fa043401d80",
+            "mjd": 57723.0411,
+            "scan_role": "off",
+            "size_bytes": 236519786
+          }
+        ],
+        "source_hdf5_url": "",
+        "target_id": "HIP111313"
+      },
+      {
+        "archive": "Breakthrough Listen Open Data Archive",
+        "cadence_id": "GBT_HIP113357_2017-01-08_ABACAD",
+        "retrieved_at_utc": "2026-08-03T01:36:35.287541Z",
+        "scan_watermarks": [
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57761_01299_HIP113357_0021.gpuspec.0002.h5",
+            "md5": "0b68031b8f9036ad3fe6de9ed864fb0c",
+            "mjd": 57761.015,
+            "scan_role": "on",
+            "size_bytes": 262560668
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57761_01646_HIP112359_0022.gpuspec.0002.h5",
+            "md5": "fc536fcf356980cf0cf1be4d05f42121",
+            "mjd": 57761.0191,
+            "scan_role": "off",
+            "size_bytes": 262973565
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57761_01992_HIP113357_0023.gpuspec.0002.h5",
+            "md5": "19da86557ee1f36ab83f53dae32cd71b",
+            "mjd": 57761.0231,
+            "scan_role": "on",
+            "size_bytes": 262720140
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57761_02336_HIP112495_0024.gpuspec.0002.h5",
+            "md5": "2fc27cca41051a3daada3d05604cbcd3",
+            "mjd": 57761.027,
+            "scan_role": "off",
+            "size_bytes": 262831756
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57761_02680_HIP113357_0025.gpuspec.0002.h5",
+            "md5": "c21c5585b8782c55ce7b6a30289d0423",
+            "mjd": 57761.031,
+            "scan_role": "on",
+            "size_bytes": 263147304
+          },
+          {
+            "filename": "spliced_blc0001020304050607_guppi_57761_03019_HIP112918_0026.gpuspec.0002.h5",
+            "md5": "3fc92564da03e896358252d91ad9f431",
+            "mjd": 57761.0349,
+            "scan_role": "off",
+            "size_bytes": 263021922
+          }
+        ],
+        "source_hdf5_url": "",
+        "target_id": "HIP113357"
+      },
+      {
+        "archive": "Breakthrough Listen Open Data Archive",
+        "cadence_id": "GBT_HIP11565_2017-09-02_ABACAD",
+        "retrieved_at_utc": "2026-08-03T01:36:35.287541Z",
+        "scan_watermarks": [
+          {
+            "filename": "spliced_blc3031323334353637_guppi_57998_38836_HIP11565_0013.gpuspec.0002.h5",
+            "md5": "e0db5f1af8307b269a1ba5b0f1190583",
+            "mjd": 57998.4495,
+            "scan_role": "on",
+            "size_bytes": 241877612
+          },
+          {
+            "filename": "spliced_blc3031323334353637_guppi_57998_39168_HIP10878_0014.gpuspec.0002.h5",
+            "md5": "0eaa7a19d18cd9e54315b3488f080c02",
+            "mjd": 57998.4533,
+            "scan_role": "off",
+            "size_bytes": 242043102
+          },
+          {
+            "filename": "spliced_blc3031323334353637_guppi_57998_39500_HIP11565_0015.gpuspec.0002.h5",
+            "md5": "94d8d22f1fbd25b459e35e4e6861ae36",
+            "mjd": 57998.4572,
+            "scan_role": "on",
+            "size_bytes": 242023196
+          },
+          {
+            "filename": "spliced_blc3031323334353637_guppi_57998_39833_HIP10962_0016.gpuspec.0002.h5",
+            "md5": "7bc2ece1a288c5b513854271c8585432",
+            "mjd": 57998.461,
+            "scan_role": "off",
+            "size_bytes": 241875587
+          },
+          {
+            "filename": "spliced_blc3031323334353637_guppi_57998_40166_HIP11565_0017.gpuspec.0002.h5",
+            "md5": "b680b44559aaa9b66c9934a779c11acc",
+            "mjd": 57998.4649,
+            "scan_role": "on",
+            "size_bytes": 241914706
+          },
+          {
+            "filename": "spliced_blc3031323334353637_guppi_57998_40499_HIP10998_0018.gpuspec.0002.h5",
+            "md5": "62b139470ef8bf3af2fd8938089af143",
+            "mjd": 57998.4687,
+            "scan_role": "off",
+            "size_bytes": 241901331
+          }
+        ],
+        "source_hdf5_url": "",
+        "target_id": "HIP11565"
+      },
+      {
+        "archive": "Breakthrough Listen Open Data Archive",
+        "cadence_id": "GBT_HIP117712_2017-12-23_ABACAD",
+        "retrieved_at_utc": "2026-08-03T01:36:35.287541Z",
+        "scan_watermarks": [
+          {
+            "filename": "spliced_blc1011121314151617_guppi_58110_69504_HIP117712_0057.gpuspec.0002.h5",
+            "md5": "db9a2f04c1d54c3eb1c25b6430c1f225",
+            "mjd": 58110.8044,
+            "scan_role": "on",
+            "size_bytes": 242082776
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_58110_69839_HIP117172_0058.gpuspec.0002.h5",
+            "md5": "160a18eea6050a1c3a093ea607691b19",
+            "mjd": 58110.8083,
+            "scan_role": "off",
+            "size_bytes": 242533084
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_58110_70174_HIP117712_0059.gpuspec.0002.h5",
+            "md5": "e7fb57d246db1de8416717d844709a8b",
+            "mjd": 58110.8122,
+            "scan_role": "on",
+            "size_bytes": 242605077
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_58110_70508_HIP117376_0060.gpuspec.0002.h5",
+            "md5": "283f462bd73f65f4eece0c17595469ae",
+            "mjd": 58110.8161,
+            "scan_role": "off",
+            "size_bytes": 242604799
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_58110_70842_HIP117712_0061.gpuspec.0002.h5",
+            "md5": "5919bb702526d2bb8f01a4d63b80574c",
+            "mjd": 58110.8199,
+            "scan_role": "on",
+            "size_bytes": 242066718
+          },
+          {
+            "filename": "spliced_blc1011121314151617_guppi_58110_71172_HIP117681_0062.gpuspec.0002.h5",
+            "md5": "9877e9b0068bc7e57b73f2433053417f",
+            "mjd": 58110.8238,
+            "scan_role": "off",
+            "size_bytes": 242128032
+          }
+        ],
+        "source_hdf5_url": "",
+        "target_id": "HIP117712"
+      }
+    ]
+  }
+]

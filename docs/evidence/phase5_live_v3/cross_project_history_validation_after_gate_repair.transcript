@@ -1,0 +1,49 @@
+^D{
+  "schema_version": 1,
+  "manifest_id": "hunter-prior-search-history-v1",
+  "source_count": 1,
+  "entry_count": 714,
+  "sources": [
+    {
+      "completed_at": "2026-08-03T03:00:03.166414+00:00",
+      "method_or_data": "GBT/MeerKAT turboSETI radio SETI search; ABACAB cadence + composite pathway scoring",
+      "mode": "new",
+      "provenance_uri": "local-artifact:results/scan_history.ndjson#sha256=3413ce80381825a20c7b1f97dd1814bf5ec02f40a5275ac49da2e0adda7d6634",
+      "search_id": "techno-hunter-scan-history-export-2026-08-03T03:00:03.166414+00:00",
+      "searched_by": "Techno-Hunter",
+      "source_path": "results/scan_history.ndjson",
+      "source_project": "2026 Technosignatures",
+      "source_sha256": "3413ce80381825a20c7b1f97dd1814bf5ec02f40a5275ac49da2e0adda7d6634",
+      "started_at": "2026-08-03T03:00:03.166414+00:00"
+    }
+  ],
+  "identities": [
+    {
+      "canonical_id": "HIP 60759",
+      "mission": "GBT/MeerKAT radio",
+      "run_id": "RUN-2026-07-28_041452Z-BL8R-hunter-search",
+      "score": 0.98929,
+      "searched_at": "2026-07-28T04:15:41.327708Z",
+      "status": "human_review_queue",
+      "target_id": "HIP60759"
+    },
+    {
+      "canonical_id": "HIP 61099",
+      "mission": "GBT/MeerKAT radio",
+      "run_id": "RUN-2026-07-28_043711Z-YJGV-hunter-search",
+      "score": 0.98929,
+      "searched_at": "2026-07-28T04:38:02.060033Z",
+      "status": "human_review_queue",
+      "target_id": "HIP61099"
+    },
+    {
+      "canonical_id": "HIP 3419",
+      "mission": "GBT/MeerKAT radio",
+      "run_id": "RUN-2026-07-29_055553Z-YI5F-hunter-search",
+      "score": 0.98929,
+      "searched_at": "2026-07-29T05:56:41.892045Z",
+      "status": "human_review_queue",
+      "target_id": "HIP3419"
+    }
+  ]
+}

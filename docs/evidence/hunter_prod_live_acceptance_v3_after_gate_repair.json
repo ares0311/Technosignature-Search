@@ -1,0 +1,126 @@
+{
+  "schema_version": "hunter_prod_live_acceptance_v3",
+  "generated_at_utc": "2026-08-03T03:01:00Z",
+  "release": {
+    "app_version": "1.2.72",
+    "fixture_classification": "live authoritative source acceptance",
+    "installed_entry_point": "TechnoHunter",
+    "resolved_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/TechnoHunter",
+    "code_identity": {
+      "git_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+      "runtime_tree_sha256": "a0a4356974e9c69593ec32279c90c5bc40bead1e84c7db794dcecd6cf1e256c1"
+    }
+  },
+  "scope": {
+    "fixtures_used": false,
+    "mocks_used": false,
+    "imported_snapshots_used": false,
+    "real_authoritative_sources": true,
+    "detection_claimed": false,
+    "discovery_claimed": false,
+    "expert_review_claimed": false,
+    "external_validation_claimed": false,
+    "external_submission_allowed": false
+  },
+  "operator_session": {
+    "installation_command": "UV_CACHE_DIR=.uv-cache uv pip install --python .venv/bin/python -e \".[dev,radio,science,ml,track_a,photometry]\" && bash scripts/patch_turbo_seti_numpy2_compat.sh --python .venv/bin/python",
+    "terminated": true,
+    "canonical_executable": "TechnoHunter",
+    "compatibility_alias": "Techno-Hunter"
+  },
+  "source_watermarks": {
+    "new": "candidate_catalog_sha256=9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174; eligibility_queue_sha256=f5ad77ae2676cd53fbb36d59fab850794ae6446ed6120881da31e7b12c127fe6",
+    "follow_up": "five retained Breakthrough Listen turboSETI tables with SHA-256 values 459da7f0f204bad84b15a82e7e9512d94c004b7132a1ddeef082a04cf64a8381, 12a6ab92a351ba52faa283655dd3510677db85ab7fda8192a2f1087ec63d9350, ef621a97ae582a4313878b8c021adb64e6e2e27e994cdcfae9f0cf872786defa, 741a00778aaf902e316354221f430e1344da95aed1e1a9e6630218ae23992b5c, 85e8e63d0ece78a6dd697c3ec45e4e4e0108a8c5dfc1ceb079e68789225e206f"
+  },
+  "selected_targets": {
+    "new": ["HIP63608", "HIP116819", "HIP58684", "HIP59608", "HIP116971"],
+    "follow_up": ["HIP11029", "HIP110341", "HIP110774", "HIP111313", "HIP113357"]
+  },
+  "searches": [
+    {
+      "mode": "new",
+      "search_id": "SEARCH-20260803T025411Z-81B6A847",
+      "run_id": "RUN-2026-08-03_025429Z-5SDQ-hunter-search",
+      "requested_target_count": 5,
+      "target_count": 5,
+      "target_ids": ["HIP63608", "HIP116819", "HIP58684", "HIP59608", "HIP116971"],
+      "ordered_manifest_target_ids": ["HIP63608", "HIP116819", "HIP58684", "HIP59608", "HIP116971"],
+      "executed_target_ids": ["HIP63608", "HIP116819", "HIP58684", "HIP59608", "HIP116971"],
+      "manifest_sha256": "9f635f0d75e910748a1307cb6beb1e0f9fb5c246bea78884d63b14d06a0a6ace",
+      "manifest_checksum_verified": true,
+      "history_updated": true,
+      "cross_project_novelty_checked": true,
+      "prior_searched_targets_selected": 0,
+      "source_provenance": [
+        {
+          "source_identity": "Breakthrough Listen Open Data Archive",
+          "watermark": "candidate_catalog_sha256=9eaa678680d4ae49540baff8bf08e7ec79abb98090d507b0553c2daab5455174; eligibility_queue_sha256=f5ad77ae2676cd53fbb36d59fab850794ae6446ed6120881da31e7b12c127fe6"
+        }
+      ],
+      "durable_target_records": [
+        {"target_id": "HIP63608", "state": "completed", "provenance": "SEARCH-20260803T025411Z-81B6A847 manifest/events and RUN-2026-08-03_025429Z-5SDQ-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025429Z-5SDQ-004", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP116819", "state": "completed", "provenance": "SEARCH-20260803T025411Z-81B6A847 manifest/events and RUN-2026-08-03_025429Z-5SDQ-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025429Z-5SDQ-005", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP58684", "state": "completed", "provenance": "SEARCH-20260803T025411Z-81B6A847 manifest/events and RUN-2026-08-03_025429Z-5SDQ-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025429Z-5SDQ-002", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP59608", "state": "completed", "provenance": "SEARCH-20260803T025411Z-81B6A847 manifest/events and RUN-2026-08-03_025429Z-5SDQ-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025429Z-5SDQ-003", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP116971", "state": "completed", "provenance": "SEARCH-20260803T025411Z-81B6A847 manifest/events and RUN-2026-08-03_025429Z-5SDQ-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025429Z-5SDQ-001", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}}
+      ]
+    },
+    {
+      "mode": "follow-up",
+      "search_id": "SEARCH-20260803T025821Z-CB60814F",
+      "run_id": "RUN-2026-08-03_025831Z-OI90-hunter-search",
+      "requested_target_count": 5,
+      "target_count": 5,
+      "target_ids": ["HIP11029", "HIP110341", "HIP110774", "HIP111313", "HIP113357"],
+      "ordered_manifest_target_ids": ["HIP11029", "HIP110341", "HIP110774", "HIP111313", "HIP113357"],
+      "executed_target_ids": ["HIP11029", "HIP110341", "HIP110774", "HIP111313", "HIP113357"],
+      "manifest_sha256": "adbe8969e22a42e127060a044c0af21914a3ffcba3a2b09b614cb80aed5f028f",
+      "manifest_checksum_verified": true,
+      "history_updated": true,
+      "external_authority_boundary": "Automated local known-explanation review reached its legitimate boundary at unresolved evidence; any new observation, credentialed third-party expert review, or external submission remains unauthorized.",
+      "disposition_persisted": true,
+      "source_provenance": [
+        {
+          "source_identity": "Breakthrough Listen public archive observations retained as real turboSETI hit tables",
+          "watermark": "SHA-256 values and source paths are retained in docs/evidence/phase5_live_v3/source_watermarks_after_gate_repair.transcript"
+        }
+      ],
+      "durable_target_records": [
+        {"target_id": "HIP11029", "state": "completed", "provenance": "retained Breakthrough Listen hit table and RUN-2026-08-03_025831Z-OI90-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025831Z-OI90-002", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP110341", "state": "completed", "provenance": "retained Breakthrough Listen hit table and RUN-2026-08-03_025831Z-OI90-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025831Z-OI90-004", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP110774", "state": "completed", "provenance": "retained Breakthrough Listen hit table and RUN-2026-08-03_025831Z-OI90-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025831Z-OI90-005", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP111313", "state": "completed", "provenance": "retained Breakthrough Listen hit table and RUN-2026-08-03_025831Z-OI90-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025831Z-OI90-001", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}},
+        {"target_id": "HIP113357", "state": "completed", "provenance": "retained Breakthrough Listen hit table and RUN-2026-08-03_025831Z-OI90-hunter-search target-status ledger", "result": {"index_id": "FU-2026-08-03_025831Z-OI90-003", "pathway": "human_review_queue", "known_explanation_state": "unresolved"}}
+      ]
+    }
+  ],
+  "restart_resume": {
+    "application_restarted": true,
+    "state_survived": true,
+    "eligible_work_resumed": true,
+    "completed_work_not_regenerated": true,
+    "completed_work_not_repeated": true,
+    "observable_result": "A fresh installed process listed 798 durable actionable follow-ups and inspected HIP11029 from the completed follow-up manifest. Re-running the completed New search exited 1. Pre/post SHA-256 values for scan history, both manifests, and both event ledgers were byte-identical."
+  },
+  "shared_state_write": {
+    "performed": false,
+    "disposition": "No sibling repository or shared cross-repository data location was mutated. The repository-owned portable history export was regenerated only after all local writers exited; no repository-defined export lock exists."
+  },
+  "evidence_artifacts": [
+    {"role": "commands", "path": "docs/evidence/phase5_live_v3/new_search_after_gate_repair.transcript", "sha256": "c26c41331c3a755a8893b518afaf798e07de2c3814d1410b36ac7d6338b3c454"},
+    {"role": "keystrokes", "path": "docs/evidence/phase5_live_v3/restart_after_gate_repair.transcript", "sha256": "cdde60f4a25602b569d3a7f38298536a31a0f19cbdc5a818519d2e6449e94952"},
+    {"role": "transcript", "path": "docs/evidence/phase5_live_v3/new_run_after_gate_repair.transcript", "sha256": "fa47744a6c03d3977774c87397fc0b995ea16a170b43c739beacd0007968279b"},
+    {"role": "transcript", "path": "docs/evidence/phase5_live_v3/follow_up_run_after_gate_repair.transcript", "sha256": "f041e4cc90979ae03d7477b458a3731201a4ba19ea15e5ad8b5a2cb8d5efb559"},
+    {"role": "new_manifest", "path": "results/searches/SEARCH-20260803T025411Z-81B6A847/manifest.json", "sha256": "9f635f0d75e910748a1307cb6beb1e0f9fb5c246bea78884d63b14d06a0a6ace"},
+    {"role": "follow_up_manifest", "path": "results/searches/SEARCH-20260803T025821Z-CB60814F/manifest.json", "sha256": "adbe8969e22a42e127060a044c0af21914a3ffcba3a2b09b614cb80aed5f028f"},
+    {"role": "source_watermarks", "path": "docs/evidence/phase5_live_v3/source_watermarks_after_gate_repair.transcript", "sha256": "3548bd3145879cc45639cf1aa2a4805e0e7c0ddf67e7960d44086056bfc56247"},
+    {"role": "requests", "path": "docs/evidence/phase5_live_v3/new_run_after_gate_repair.transcript", "sha256": "fa47744a6c03d3977774c87397fc0b995ea16a170b43c739beacd0007968279b"},
+    {"role": "responses", "path": "docs/evidence/phase5_live_v3/follow_up_search_after_gate_repair.transcript", "sha256": "44c2aa87f5aa3349b583372b52768e2ec53f57456aeab44fd2a3ea0b9ac08d23"},
+    {"role": "environment", "path": "docs/evidence/phase5_live_v3/environment_after_gate_repair.transcript", "sha256": "780ca3796a2ee7032f35032712c81c998a7431a6050dfd6050e872bf568277d0"},
+    {"role": "package_versions", "path": "docs/evidence/phase5_live_v3/package_versions_after_gate_repair.transcript", "sha256": "3460e518c2119fc9ba6095f15a4adaa5e6a853f2fe3f3f4085437561248c2012"},
+    {"role": "durable_state_export", "path": "docs/evidence/phase5_live_v3/restart_after_gate_repair.transcript", "sha256": "cdde60f4a25602b569d3a7f38298536a31a0f19cbdc5a818519d2e6449e94952"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/completed_rerun_refusal_after_gate_repair.transcript", "sha256": "d9446f0ff126d56a8c561ca30abe0d2879c129cc47e22e4a41e940bf4be818cb"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_hashes_before_completed_rerun.transcript", "sha256": "1fe350a25385989006d8f444b767c6204058bd898a9d05888500b987cfcdc78e"},
+    {"role": "restart_resume", "path": "docs/evidence/phase5_live_v3/restart_hashes_after_completed_rerun.transcript", "sha256": "1fe350a25385989006d8f444b767c6204058bd898a9d05888500b987cfcdc78e"}
+  ]
+}

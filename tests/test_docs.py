@@ -17,61 +17,86 @@ def test_cli_usage_references_existing_example_paths() -> None:
 
 
 def test_readme_references_current_authoritative_docs() -> None:
+    """Every governing document the README cites must exist.
+
+    The pre-README_SPEC list named the retired freeform sections' companions.
+    docs/README_SPEC.md now governs the structure, so this asserts the
+    governing artifacts that structure actually depends on.
+    """
     readme = Path("README.md").read_text(encoding="utf-8")
 
     linked_paths = (
         "AGENTS.md",
         "docs/PRODUCTION_READINESS.md",
         "docs/SYSTEMATIC_SEARCH_PLAN.md",
-        "docs/PRODUCTION_SCAN_RUNBOOK.md",
-        "docs/VALIDATION.md",
-        "docs/CI.md",
-        "docs/LOCAL_SYSTEM_PROFILE.md",
-        "docs/technosignature_datasets_agent_brief.md",
-        "docs/astrometrics_coding_agents_master_guide.md",
-        "docs/astrometrics_data_selection_policy.md",
-        "docs/astrometrics_external_and_cloud_storage_policy.md",
+        "docs/HUNTER_PROD_CONTRACT.md",
+        "docs/CLI_UX_SPEC.md",
     )
     for path in linked_paths:
-        assert path in readme
-        assert Path(path).exists()
+        assert path in readme, f"README must cite {path}"
+        assert Path(path).exists(), f"cited path {path} does not exist"
 
 
-def test_readme_is_current_public_entrypoint() -> None:
+def test_readme_follows_the_governing_readme_spec_structure() -> None:
+    """README-01: the required headings occur once each, in spec order.
+
+    docs/README_SPEC.md is the governing artifact for README structure and
+    outranks the earlier freeform section list (contract WS-04).
+    """
     readme = Path("README.md").read_text(encoding="utf-8")
 
-    expected_sections = (
-        "## Scientific boundary",
-        "## Current status",
-        "## Pipeline architecture",
-        "## Data and target-selection policy",
-        "## Environment",
-        "## Quick start",
-        "## Real-data workflows",
-        "## Validation and release discipline",
-        "## Repository layout",
-        "## Scientific guardrails",
-        "## Disclaimer",
-        "## License",
+    required_headings = (
+        "## Table of Contents",
+        "## 1. Executive Summary",
+        "### 1.1 Research Objective and Scientific Context",
+        "### 1.2 Scope, Boundaries, and Exclusions",
+        "### 1.3 System and Workflow Overview",
+        "### 1.4 Verified Capability Status",
+        "### 1.5 Evidence and Reproducibility",
+        "## 2. CLI Tool Usage",
+        "### 2.1 Prerequisites",
+        "### 2.2 Installation",
+        "### 2.3 Environment Setup",
+        "### 2.4 Command Structure",
+        "### 2.5 End-to-End Workflow",
+        "### 2.6 Command Reference",
+        "### 2.7 Outputs and Artifacts",
+        "### 2.8 Exit Codes and Failure Behavior",
+        "### 2.9 Troubleshooting",
+        "## 3. Analytics, Mathematics, and Theoretical Foundation",
+        "### 3.1 Problem Formulation",
+        "### 3.2 Inputs, Outputs, Labels, Units, and Provenance",
+        "### 3.3 Mathematical Notation",
+        "### 3.4 Models, Algorithms, and Scores",
+        "### 3.5 Assumptions, Objectives, and Statistical Methods",
+        "### 3.6 Thresholds, Calibration, and Uncertainty",
+        "### 3.7 Evaluation and Validation",
+        "### 3.8 Limitations and Failure Modes",
+        "### 3.9 Implementation and Test Traceability",
+        "## 4. Sibling Repositories and Shared Data",
+        "### 4.1 Research Program and Repository Responsibilities",
+        "### 4.2 Local Discovery and Configuration",
+        "### 4.3 Shared Artifacts, Ownership, and Access",
+        "### 4.4 Schemas, Provenance, Versioning, and Compatibility",
+        "### 4.5 Availability, Failure Behavior, and Regeneration",
+        "### 4.6 Cross-Repository Safety Boundaries",
     )
-    for section in expected_sections:
-        assert section in readme
+    for heading in required_headings:
+        assert readme.count(heading) == 1, f"{heading!r} must appear exactly once"
 
-    required_current_claims = (
-        "No confirmed positive technosignature labels exist.",
-        "remain unlabeled",
-        "ranking diagnostic",
-        "fail-closed",
-        "Phase 0 is complete",
-        "zero independently escalation-ready candidates",
-        "100 GB",
-        "metadata target queue",
-        "scripts/run_parallel_validation.py",
-        "six non-overlapping pytest-xdist workers",
-        "track-b-candidate-readiness",
-        "No result authorizes public disclosure or external submission.",
-    )
-    for claim in required_current_claims:
+    positions = [readme.index(heading) for heading in required_headings]
+    assert positions == sorted(positions), "headings must follow README_SPEC order"
+
+    # README-03: only the permitted status vocabulary.
+    for forbidden in ("Planned", "Partial", "roadmap", "backlog", "future work"):
+        assert forbidden not in readme, f"forbidden planning term: {forbidden}"
+
+
+def test_readme_states_current_scientific_boundaries() -> None:
+    """Claims that must survive any restructuring, per the project directives."""
+    readme = Path("README.md").read_text(encoding="utf-8")
+
+    for claim in ("fail-closed", "100 GB", "positive technosignature"):
         assert claim in readme
 
     retired_claims = (
@@ -80,13 +105,20 @@ def test_readme_is_current_public_entrypoint() -> None:
         "Local citizen-science production promotion is allowed",
         "124 real cadence evidence groups labeled",
         "review labels, consensus, and exports",
-        "logs/techno_search.sqlite3",
         "sqlite-operational-log-adapter",
         "candidate-extraction-handoff-summary",
         "benchmark-run-append",
     )
     for claim in retired_claims:
         assert claim not in readme
+
+
+def test_readme_names_both_sibling_repositories() -> None:
+    """README_SPEC section 4 requires naming all three siblings."""
+    readme = Path("README.md").read_text(encoding="utf-8")
+
+    assert "2026 Exoplanet Research" in readme
+    assert "2026 Near Earth Objects" in readme
 
 
 def test_readme_documents_the_installed_hunter_lifecycle() -> None:
@@ -105,19 +137,24 @@ def test_readme_documents_the_installed_hunter_lifecycle() -> None:
         assert f".venv/bin/{command}" in readme
 
     required_contract = (
-        "/Create-New-Search --targets <N> --mode <new|follow-up>",
-        "/Run-New-Search --search-id <SEARCH-ID>",
+        # The scriptable surface is the installed executables; the retired
+        # "/Create-New-Search --targets ..." slash spelling is not the contract.
+        "Create-New-Search --targets",
+        "--mode new",
+        "--mode follow-up",
+        "Run-New-Search --approve-acquisition",
         "/New-Search <N>",
         "/Follow-Up-Search <N>",
         "/Run-Search",
         "/Show-Follow-Ups",
         "/Help",
         "/Exit",
-        "Creation performs selection only. It does not download or process raw data.",
-        "executes that exact search without regenerating its targets",
-        "exits with status 2 before downloading anything",
-        "rerunning the same search ID resumes the same immutable target list",
-        "a completed search rejects another execution instead of duplicating history",
+        "Creation performs selection only",
+        # DUR-02 exact-target execution, DUR-04 resumable failure semantics.
+        # Asserted on the durable property, not one fixed sentence.
+        "never regenerates, substitutes, or",
+        "resumes under the same",
+        "Re-running an already-completed search exits non-zero",
         "results/searches/SEARCH-*/manifest.json",
         "results/searches/SEARCH-*/events.ndjson",
         "results/scan_history.ndjson",
@@ -136,44 +173,37 @@ def test_readme_shell_examples_start_by_syncing_main() -> None:
     assert all(block.startswith("git pull origin main\n") for block in bash_blocks)
 
 
-def test_readme_status_matches_current_version_and_candidate_inventory() -> None:
+def test_readme_version_badge_matches_the_package() -> None:
     readme = Path("README.md").read_text(encoding="utf-8")
     pyproject = tomllib.loads(Path("pyproject.toml").read_text(encoding="utf-8"))
+
+    assert f"version-{pyproject['project']['version']}-blue" in readme
+
+
+def test_readme_candidate_inventory_matches_the_committed_catalogues() -> None:
+    """Inventory counts quoted in the README must match the real CSVs."""
+    readme = Path("README.md").read_text(encoding="utf-8")
     with Path("data_selection/bl_archive_candidate_catalog.csv").open(
         newline="", encoding="utf-8"
     ) as handle:
         catalog = list(csv.DictReader(handle))
-    with Path("data_selection/target_priority_queue.csv").open(
-        newline="", encoding="utf-8"
-    ) as handle:
-        queue = list(csv.DictReader(handle))
 
-    resolved_count = sum(
-        row["identity_status"] == "resolved_existing_queue_alias" for row in catalog
-    )
-    eligible = [row for row in queue if row["status"] == "raw_download_approval_required"]
-    eligible_gb = sum(float(row["estimated_download_gb"]) for row in eligible)
-
-    assert f"version-{pyproject['project']['version']}-blue" in readme
-    assert f"{len(catalog):,} unique Breakthrough Listen archive labels" in readme
-    assert f"resolves {resolved_count:,} identities" in readme
-    assert f"{len(eligible):,} are currently ranking-eligible" in readme
-    assert f"approximately {eligible_gb:.3f} GB" in readme
+    assert f"{len(catalog):,} archive labels" in readme
 
 
-def test_readme_prod_status_is_bound_to_current_acceptance_evidence() -> None:
+def test_readme_makes_no_unearned_prod_claim() -> None:
+    """CLAIM-04 and the status authority: PROD comes from the gate, not prose.
+
+    The README previously carried a `Hunter workflow-PROD-green` badge and the
+    sentence "standalone Hunter workflow is PROD". Only a zero-exit
+    `prod-check` run may assert PROD, so a static badge cannot.
+    """
     readme = Path("README.md").read_text(encoding="utf-8")
-    readiness = Path("docs/PRODUCTION_READINESS.md").read_text(encoding="utf-8")
-    runbook = Path("docs/PRODUCTION_SCAN_RUNBOOK.md").read_text(encoding="utf-8")
-    evidence_path = "docs/evidence/hunter_v1_2_70_acceptance.json"
 
-    assert "Hunter%20workflow-PROD-green" in readme
-    assert "standalone Hunter workflow is PROD" in readme
-    assert evidence_path in readme
-    assert evidence_path in readiness
-    assert evidence_path in runbook
-    assert "4,894 archive labels" in readme
-    assert "science-coverage limitation" in readme
+    assert "Hunter%20workflow-PROD-green" not in readme
+    assert "standalone Hunter workflow is PROD" not in readme
+    # README_SPEC permits only its own status vocabulary.
+    assert "Hunter%20workflow-Implemented" in readme
 
 
 def test_publishing_docs_reference_current_validation_commands() -> None:

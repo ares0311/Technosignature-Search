@@ -1,0 +1,272 @@
+≋ TechnoHunter v1.2.72
+Local scientific triage only — no detection, discovery, expert-review, 
+external-validation, or submission claim.
+Type / for the command palette, or /Help.
+TechnoHunter> 
+[2J[H                                Command palette                                 
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /New-Search         │ Select and freeze the best         │ targets      │
+│    │                     │ available never-before-searched    │              │
+│    │                     │ targets.                           │              │
+│    │ /Follow-Up-Search   │ Select and freeze the previously   │ targets      │
+│    │                     │ searched targets with the highest  │              │
+│    │                     │ current scientific value.          │              │
+│    │ /Run-Search         │ Execute the exact frozen targets   │ none         │
+│    │                     │ of a pending search.               │              │
+│    │ /Show-Follow-Ups    │ List actionable durable follow-up  │ none         │
+│    │                     │ targets and their next action.     │              │
+│    │ /Inspect-Target     │ Show full scientific detail, score │ none         │
+│    │                     │ components, provenance and         │              │
+│    │                     │ limitations for one selected       │              │
+│    │                     │ target.                            │              │
+│    │ /Help               │ Show the described command table   │ none         │
+│    │                     │ and keyboard help.                 │              │
+│    │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+/New-Search
+>  Targets *                 [20]     How many targets to select and freeze.    
+                                      Positive whole number.                    
+   Scientific constraints    [Open…]  Optional RA/Dec window, Galactic-latitude 
+                                      floor, per-target size cap and catalog    
+                                      prefixes.                                 
+* required. Tab next field, Shift-Tab previous, Enter execute when valid, Escape
+cancel.
+  Targets [20]: 5
+  Open scientific constraints? [y/N]: n
+... Adaptive discovery → identity/history → new-target ranking
+Created pending new search SEARCH-20260803T013540Z-9EC480FD with 5 target(s).
+Durable manifest: results/prod_acceptance_v3/searches/SEARCH-20260803T013540Z-9EC480FD/manifest.json
+Candidate universe: 12086; eligible: 4861; projected acquisition: 1.220 GB
+                new selection — SEARCH-20260803T013540Z-9EC480FD                
+┏━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━┓
+┃    # ┃ Target       ┃       Score ┃      GB ┃ Type         ┃  Dist ly ┃ Prior┃
+┡━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━┩
+│    1 │ HIP2         │    0.538042 │   0.239 │ Star         │    148.7 │     0│
+│    2 │ HIP1444      │    0.537500 │   0.242 │ Star         │     85.1 │     0│
+│    3 │ HIP57866     │    0.537422 │   0.263 │ Star         │     82.5 │     0│
+│    4 │ HIP5938      │    0.537379 │   0.239 │ Star         │     86.4 │     0│
+│    5 │ HIP6748      │    0.537316 │   0.238 │ Star         │    118.1 │     0│
+└──────┴──────────────┴─────────────┴─────────┴──────────────┴──────────┴──────┘
+page 1 of 1 — 5 frozen target(s). Columns truncate with …; use /Inspect-Target 
+<rank-or-id> for full detail.
+TechnoHunter> 
+[2J[H                                Command palette                                 
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /New-Search         │ Select and freeze the best         │ targets      │
+│    │                     │ available never-before-searched    │              │
+│    │                     │ targets.                           │              │
+│    │ /Follow-Up-Search   │ Select and freeze the previously   │ targets      │
+│    │                     │ searched targets with the highest  │              │
+│    │                     │ current scientific value.          │              │
+│    │ /Run-Search         │ Execute the exact frozen targets   │ none         │
+│    │                     │ of a pending search.               │              │
+│    │ /Show-Follow-Ups    │ List actionable durable follow-up  │ none         │
+│    │                     │ targets and their next action.     │              │
+│    │ /Inspect-Target     │ Show full scientific detail, score │ none         │
+│    │                     │ components, provenance and         │              │
+│    │                     │ limitations for one selected       │              │
+│    │                     │ target.                            │              │
+│    │ /Help               │ Show the described command table   │ none         │
+│    │                     │ and keyboard help.                 │              │
+│    │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+[2J[H                                Command palette                                 
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│    │ /New-Search         │ Select and freeze the best         │ targets      │
+│    │                     │ available never-before-searched    │              │
+│    │                     │ targets.                           │              │
+│ >  │ /Follow-Up-Search   │ Select and freeze the previously   │ targets      │
+│    │                     │ searched targets with the highest  │              │
+│    │                     │ current scientific value.          │              │
+│    │ /Run-Search         │ Execute the exact frozen targets   │ none         │
+│    │                     │ of a pending search.               │              │
+│    │ /Show-Follow-Ups    │ List actionable durable follow-up  │ none         │
+│    │                     │ targets and their next action.     │              │
+│    │ /Inspect-Target     │ Show full scientific detail, score │ none         │
+│    │                     │ components, provenance and         │              │
+│    │                     │ limitations for one selected       │              │
+│    │                     │ target.                            │              │
+│    │ /Help               │ Show the described command table   │ none         │
+│    │                     │ and keyboard help.                 │              │
+│    │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+/Follow-Up-Search
+>  Targets *                 [20]     How many targets to select and freeze.    
+                                      Positive whole number.                    
+   Scientific constraints    [Open…]  Optional RA/Dec window, Galactic-latitude 
+                                      floor, per-target size cap and catalog    
+                                      prefixes.                                 
+* required. Tab next field, Shift-Tab previous, Enter execute when valid, Escape
+cancel.
+  Targets [20]: 5
+  Open scientific constraints? [y/N]: n
+... Durable evidence → follow-up value ranking
+Created pending follow-up search SEARCH-20260803T013634Z-84635BDA with 5 target(s).
+Durable manifest: results/prod_acceptance_v3/searches/SEARCH-20260803T013634Z-84635BDA/manifest.json
+Candidate universe: 12086; eligible: 791; projected acquisition: 7.331 GB
+             follow-up selection — SEARCH-20260803T013634Z-84635BDA             
+┏━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━┓
+┃    # ┃ Target       ┃       Score ┃      GB ┃ Type         ┃  Dist ly ┃ Prior┃
+┡━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━┩
+│    1 │ HIP103096    │    0.997193 │   1.430 │ Star         │     23.0 │    12│
+│    2 │ HIP111313    │    0.997193 │   1.418 │ Star         │     41.7 │     6│
+│    3 │ HIP113357    │    0.997193 │   1.577 │ Star         │     49.9 │     8│
+│    4 │ HIP11565     │    0.997193 │   1.452 │ Star         │     61.6 │     6│
+│    5 │ HIP117712    │    0.997193 │   1.454 │ Star         │     34.9 │     6│
+└──────┴──────────────┴─────────────┴─────────┴──────────────┴──────────┴──────┘
+page 1 of 1 — 5 frozen target(s). Columns truncate with …; use /Inspect-Target 
+<rank-or-id> for full detail.
+TechnoHunter> 
+[2J[H                                Command palette                                 
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /New-Search         │ Select and freeze the best         │ targets      │
+│    │                     │ available never-before-searched    │              │
+│    │                     │ targets.                           │              │
+│    │ /Follow-Up-Search   │ Select and freeze the previously   │ targets      │
+│    │                     │ searched targets with the highest  │              │
+│    │                     │ current scientific value.          │              │
+│    │ /Run-Search         │ Execute the exact frozen targets   │ none         │
+│    │                     │ of a pending search.               │              │
+│    │ /Show-Follow-Ups    │ List actionable durable follow-up  │ none         │
+│    │                     │ targets and their next action.     │              │
+│    │ /Inspect-Target     │ Show full scientific detail, score │ none         │
+│    │                     │ components, provenance and         │              │
+│    │                     │ limitations for one selected       │              │
+│    │                     │ target.                            │              │
+│    │ /Help               │ Show the described command table   │ none         │
+│    │                     │ and keyboard help.                 │              │
+│    │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+[2J[H                          Command palette — filter: E                           
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+│    │ /New-Search         │ Select and freeze the best         │ targets      │
+│    │                     │ available never-before-searched    │              │
+│    │                     │ targets.                           │              │
+│    │ /Follow-Up-Search   │ Select and freeze the previously   │ targets      │
+│    │                     │ searched targets with the highest  │              │
+│    │                     │ current scientific value.          │              │
+│    │ /Run-Search         │ Execute the exact frozen targets   │ none         │
+│    │                     │ of a pending search.               │              │
+│    │ /Inspect-Target     │ Show full scientific detail, score │ none         │
+│    │                     │ components, provenance and         │              │
+│    │                     │ limitations for one selected       │              │
+│    │                     │ target.                            │              │
+│    │ /Help               │ Show the described command table   │ none         │
+│    │                     │ and keyboard help.                 │              │
+│    │ /Show-Follow-Ups    │ List actionable durable follow-up  │ none         │
+│    │                     │ targets and their next action.     │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+[2J[H                          Command palette — filter: Ex                          
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+│    │ /Run-Search         │ Execute the exact frozen targets   │ none         │
+│    │                     │ of a pending search.               │              │
+│    │ /Show-Follow-Ups    │ List actionable durable follow-up  │ none         │
+│    │                     │ targets and their next action.     │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+[2J[H                         Command palette — filter: Exi                          
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+[2J[H                         Command palette — filter: Exit                         
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃    ┃ Command             ┃ Description                        ┃ Required     ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ >  │ /Exit               │ Leave the shell without changing   │ none         │
+│    │                     │ durable search state.              │              │
+└────┴─────────────────────┴────────────────────────────────────┴──────────────┘
+                               Keyboard                               
+/             open the searchable command palette                     
+type          filter the palette live                                 
+Up / Down     move the palette selection                              
+Enter         select the command, or execute when every field is valid
+Tab           complete a command name, or move to the next field      
+Shift-Tab     move to the previous field                              
+Escape        close the palette or cancel the guided editor           
+Ctrl-C        cancel without changing durable search state            
+Array idle. Durable searches remain on disk.

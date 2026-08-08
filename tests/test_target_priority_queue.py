@@ -122,6 +122,7 @@ def test_build_target_priority_queue_marks_discovered_urls_for_size_preflight(
     rows = build_target_priority_queue(
         seed_csv_path=seed_path,
         data_status_path=status_path,
+        scan_history_path=tmp_path / "missing_scan_history.ndjson",
     )
     rows_by_id = {row["target_id"]: row for row in rows}
 
@@ -148,6 +149,7 @@ def test_build_target_priority_queue_prefers_unsearched_metadata_targets(
     rows = build_target_priority_queue(
         seed_csv_path=seed_path,
         data_status_path=status_path,
+        scan_history_path=tmp_path / "missing_scan_history.ndjson",
     )
 
     assert [row["target_id"] for row in rows] == ["HIP2", "HIP71681", "GJ99427"]
@@ -174,6 +176,7 @@ def test_write_target_priority_queue_summary_counts_statuses(tmp_path: Path) -> 
         output_path,
         seed_csv_path=seed_path,
         data_status_path=status_path,
+        scan_history_path=tmp_path / "missing_scan_history.ndjson",
     )
 
     assert output_path.exists()
@@ -197,6 +200,7 @@ def test_queue_preserves_domain_specific_candidate_metadata(tmp_path: Path) -> N
     rows = build_target_priority_queue(
         seed_csv_path=seed_path,
         data_status_path=status_path,
+        scan_history_path=tmp_path / "missing_scan_history.ndjson",
     )
     rows_by_id = {row["target_id"]: row for row in rows}
     hip2 = rows_by_id["HIP2"]
@@ -220,6 +224,7 @@ def test_manifest_preserves_domain_specific_candidate_metadata(tmp_path: Path) -
         queue_path,
         seed_csv_path=seed_path,
         data_status_path=status_path,
+        scan_history_path=tmp_path / "missing_scan_history.ndjson",
     )
 
     manifest = build_target_priority_manifest(

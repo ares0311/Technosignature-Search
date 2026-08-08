@@ -1,0 +1,321 @@
+{
+  "app_version": "1.2.72",
+  "checks": [
+    {
+      "check_id": "requirement_coverage",
+      "detail": {
+        "covered": 0,
+        "declared": 39,
+        "uncovered_requirements": [
+          "CLAIM-01",
+          "CLAIM-02",
+          "CLAIM-03",
+          "CLAIM-04",
+          "CLI-01",
+          "CLI-02",
+          "CLI-03",
+          "DISC-01",
+          "DISC-02",
+          "DISC-03",
+          "DUR-01",
+          "DUR-02",
+          "DUR-03",
+          "DUR-04",
+          "E2E-01",
+          "E2E-02",
+          "E2E-03",
+          "E2E-04",
+          "EVAL-01",
+          "IDENT-01",
+          "IDENT-02",
+          "IDENT-03",
+          "IDENT-04",
+          "LAUNCH-01",
+          "LAUNCH-02",
+          "LAUNCH-03",
+          "LAUNCH-04",
+          "PIPE-01",
+          "PIPE-02",
+          "PIPE-03",
+          "PROD-01",
+          "RANK-01",
+          "README-01",
+          "README-02",
+          "README-03",
+          "WS-01",
+          "WS-02",
+          "WS-03",
+          "WS-04"
+        ]
+      },
+      "requirement_ids": [
+        "PROD-01",
+        "CLAIM-04"
+      ],
+      "status": "FAIL",
+      "summary": "39 of 39 mandatory requirements have no covering check"
+    },
+    {
+      "check_id": "state_authority",
+      "detail": {
+        "violations": [
+          {
+            "field": "requirements.CLAIM-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.CLAIM-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.CLAIM-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.CLAIM-04.status",
+            "justified": "BLOCKING",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.CLI-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.CLI-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.CLI-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DISC-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DISC-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DISC-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DUR-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DUR-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DUR-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.DUR-04.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.E2E-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.EVAL-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.IDENT-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.IDENT-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.IDENT-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.IDENT-04.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.LAUNCH-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.LAUNCH-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.LAUNCH-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.LAUNCH-04.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.PIPE-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.PIPE-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.PIPE-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.PROD-01.status",
+            "justified": "BLOCKING",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.RANK-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.README-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.README-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.README-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.WS-01.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.WS-02.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.WS-03.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          },
+          {
+            "field": "requirements.WS-04.status",
+            "justified": "UNVERIFIED",
+            "reason": "VERIFIED requires every covering gate check to pass in this report",
+            "recorded": "VERIFIED"
+          }
+        ]
+      },
+      "requirement_ids": [
+        "PROD-01",
+        "CLAIM-04"
+      ],
+      "status": "FAIL",
+      "summary": "the state ledger records a status this gate run does not justify"
+    }
+  ],
+  "cli_ux_version": "HUNTER-CLI-UX-2026-07-30.3",
+  "contract_version": "HUNTER-PROD-2026-07-30.3",
+  "counts": {
+    "executed": 2,
+    "failed": 2,
+    "not_executed": 0,
+    "passed": 0
+  },
+  "environment": {
+    "app_version": "1.2.72",
+    "bin_dir": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin",
+    "installation_mode": "editable",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/python3",
+    "python_version": "3.14.3",
+    "relevant_environment": {
+      "CI": null,
+      "NO_COLOR": "1",
+      "REDUCE_MOTION": null,
+      "TECHNO_HUNTER_REDUCE_MOTION": null,
+      "TECHNO_SEARCH_ENABLE_LIVE_DATA": null,
+      "TERM": "xterm-ghostty",
+      "VIRTUAL_ENV": null
+    },
+    "repo_root": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures",
+    "resolved_canonical_executable": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv/bin/Techno-Hunter",
+    "virtual_environment": "/Users/Rome/Library/CloudStorage/Dropbox/Rome's Stuff/Doc.Root/Personal Docs/Astrometrics/2026 Technosignatures/.venv"
+  },
+  "no_claim": "This gate verifies software conformance only. It makes no detection, discovery, expert-review, external-validation, or external-submission claim.",
+  "prod_ready": false,
+  "schema_version": "hunter_prod_check_report_v1",
+  "tested_commit": "266d821d64743f0e3e756eb4aa02e297cc5df4a5",
+  "working_tree_state": "dirty"
+}

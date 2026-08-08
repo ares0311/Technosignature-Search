@@ -1,0 +1,69 @@
+^DCanonical identity          HIP103096                                                        
+Aliases                     none recorded                                                    
+Search ID                   SEARCH-20260803T013634Z-84635BDA                                 
+Rank                        1                                                                
+Mode                        follow-up                                                        
+Execution kind              follow_up_later_epoch_cadence                                    
+Selection reason            repeat an ON/OFF cadence at a later epoch and compare persistence
+         Scientific metrics          
+ Metric                        Value 
+ Right ascension (deg)      313.3325 
+ Declination (deg)         62.154167 
+ Galactic latitude (deg)   11.090846 
+ Distance (light years)    22.961409 
+ Spectral type                   M2V 
+ SIMBAD object type             Star 
+ Exoplanet host                false 
+                Score components                
+ Component                                Value 
+ target_selection_score (ranking key)  0.163283 
+ follow_up_priority                    0.997193 
+ prior_search_count                          12 
+Source and transformation provenance
+  - producing project: Techno-Hunter
+  - search created: 2026-08-03T01:36:34.231617Z
+  - code commit: 266d821
+  - app version: 1.2.72
+  - manifest schema: hunter_search_manifest_v3
+  - queue status: already_acquired_local_cache
+  - data products: unknown
+  - prior SETI coverage reference: E17
+Prior-search evidence
+  - Techno-Hunter:12
+  - {'candidate_id': 'spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002', 
+'follow_up_id': 'FU-2026-07-16_215344Z-07OQ-091', 'ledger_path': 
+'results/scans/RUN-2026-07-16_215344Z-07OQ-prod-scan/RUN-2026-07-16_215344Z-07OQ-prod-scan_follow_up
+s.json', 'pathway': 'candidate_review_packet', 'project': 'Techno-Hunter', 'relationship': 
+'this_project_search', 'run_id': 'RUN-2026-07-16_215344Z-07OQ-prod-scan', 'score': 0.989186}
+  - {'candidate_id': 'spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002', 
+'follow_up_id': 'FU-2026-07-17_025132Z-9KAQ-091', 'ledger_path': 
+'results/scans/RUN-2026-07-17_025132Z-9KAQ-prod-scan/RUN-2026-07-17_025132Z-9KAQ-prod-scan_follow_up
+s.json', 'pathway': 'candidate_review_packet', 'project': 'Techno-Hunter', 'relationship': 
+'this_project_search', 'run_id': 'RUN-2026-07-17_025132Z-9KAQ-prod-scan', 'score': 0.989186}
+  - {'candidate_id': 'spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002', 
+'follow_up_id': 'FU-2026-07-17_223155Z-5ARN-207', 'ledger_path': 
+'results/scans/RUN-2026-07-17_223155Z-5ARN-prod-scan/RUN-2026-07-17_223155Z-5ARN-prod-scan_follow_up
+s.json', 'pathway': 'candidate_review_packet', 'project': 'Techno-Hunter', 'relationship': 
+'this_project_search', 'run_id': 'RUN-2026-07-17_223155Z-5ARN-prod-scan', 'score': 0.997193}
+  - {'candidate_id': 'spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002', 
+'follow_up_id': 'FU-2026-07-17_223155Z-5ARN-603', 'ledger_path': 
+'results/scans/RUN-2026-07-17_223155Z-5ARN-prod-scan/RUN-2026-07-17_223155Z-5ARN-prod-scan_follow_up
+s.json', 'pathway': 'candidate_review_packet', 'project': 'Techno-Hunter', 'relationship': 
+'this_project_search', 'run_id': 'RUN-2026-07-17_223155Z-5ARN-prod-scan', 'score': 0.989186}
+  - {'candidate_id': 'spliced_blc0001020304050607_guppi_57683_08276_HIP103096_0021.gpuspec.0002', 
+'follow_up_id': 'FU-2026-07-18_093631Z-OM38-281', 'ledger_path': 
+'results/scans/RUN-2026-07-18_093631Z-OM38-prod-scan/RUN-2026-07-18_093631Z-OM38-prod-scan_follow_up
+s.json', 'pathway': 'candidate_review_packet', 'project': 'Techno-Hunter', 'relationship': 
+'this_project_search', 'run_id': 'RUN-2026-07-18_093631Z-OM38-prod-scan', 'score': 0.997193}
+Estimated resource requirements
+  - estimated download: 1.430 GB
+  - raw payload retention: unknown
+Limitations
+  - deterministic relative ranking score; not a calibrated probability or absolute eligibility 
+threshold
+  - target_selection_score is a deterministic relative ranking value, not a calibrated probability 
+or an absolute eligibility threshold
+  - the semisupervised anomaly score is an uncalibrated ranking diagnostic and cannot define the 
+known-versus-unknown boundary
+  - selection is local scientific triage only — no detection, discovery, expert-review, 
+external-validation, or submission claim follows

@@ -1,0 +1,125 @@
+^D.................................FFFF....................                [100%]
+=================================== FAILURES ===================================
+_____ test_build_target_priority_queue_prefers_unsearched_metadata_targets _____
+
+tmp_path = PosixPath('/private/var/folders/5h/js7697s508b_p46j2gmmh8fr0000gn/T/pytest-of-Rome/pytest-452/test_build_target_priority_que1')
+
+    def test_build_target_priority_queue_prefers_unsearched_metadata_targets(
+        tmp_path: Path,
+    ) -> None:
+        seed_path = tmp_path / "seed.csv"
+        status_path = tmp_path / "status.json"
+        _write_seed_csv(seed_path)
+        _write_status_json(status_path)
+    
+        rows = build_target_priority_queue(
+            seed_csv_path=seed_path,
+            data_status_path=status_path,
+        )
+    
+>       assert [row["target_id"] for row in rows] == ["HIP2", "HIP71681", "GJ99427"]
+E       AssertionError: assert ['HIP71681', ...2', 'GJ99427'] == ['HIP2', 'HIP...1', 'GJ99427']
+E         
+E         At index 0 diff: 'HIP71681' != 'HIP2'
+E         Use -v to get more diff
+
+tests/test_target_priority_queue.py:153: AssertionError
+___________ test_write_target_priority_queue_summary_counts_statuses ___________
+
+tmp_path = PosixPath('/private/var/folders/5h/js7697s508b_p46j2gmmh8fr0000gn/T/pytest-of-Rome/pytest-452/test_write_target_priority_que0')
+
+    def test_write_target_priority_queue_summary_counts_statuses(tmp_path: Path) -> None:
+        seed_path = tmp_path / "seed.csv"
+        status_path = tmp_path / "status.json"
+        output_path = tmp_path / "data_selection" / "target_priority_queue.csv"
+        _write_seed_csv(seed_path)
+        _write_status_json(status_path)
+    
+        result = write_target_priority_queue(
+            output_path,
+            seed_csv_path=seed_path,
+            data_status_path=status_path,
+        )
+    
+        assert output_path.exists()
+        assert b"\r\n" not in output_path.read_bytes()
+        assert result["schema_version"] == "target_priority_queue_v5"
+        assert result["target_count"] == 3
+        assert result["by_status"] == {
+            "already_acquired_local_cache": 1,
+            "metadata_discovery_required": 1,
+            "queued_metadata_discovery": 1,
+        }
+>       assert result["top_targets"][0]["target_id"] == "HIP2"
+E       AssertionError: assert 'HIP71681' == 'HIP2'
+E         
+E         - HIP2
+E         + HIP71681
+
+tests/test_target_priority_queue.py:188: AssertionError
+___________ test_queue_preserves_domain_specific_candidate_metadata ____________
+
+tmp_path = PosixPath('/private/var/folders/5h/js7697s508b_p46j2gmmh8fr0000gn/T/pytest-of-Rome/pytest-452/test_queue_preserves_domain_sp0')
+
+    def test_queue_preserves_domain_specific_candidate_metadata(tmp_path: Path) -> None:
+        seed_path = tmp_path / "seed.csv"
+        status_path = tmp_path / "status.json"
+        _write_seed_csv(seed_path)
+        _write_status_json(status_path)
+    
+        rows = build_target_priority_queue(
+            seed_csv_path=seed_path,
+            data_status_path=status_path,
+        )
+        rows_by_id = {row["target_id"]: row for row in rows}
+        hip2 = rows_by_id["HIP2"]
+    
+        assert hip2["object_type"] == "Star"
+        assert float(hip2["distance_light_years"]) == pytest.approx(148.727308)
+        assert hip2["spectral_type"] == "K3V"
+        assert hip2["exoplanet_host"] == "false"
+        assert hip2["prior_seti_coverage_reference"] == "E17"
+>       assert hip2["prior_search_count"] == "0"
+E       AssertionError: assert '1' == '0'
+E         
+E         - 0
+E         + 1
+
+tests/test_target_priority_queue.py:209: AssertionError
+__________ test_manifest_preserves_domain_specific_candidate_metadata __________
+
+tmp_path = PosixPath('/private/var/folders/5h/js7697s508b_p46j2gmmh8fr0000gn/T/pytest-of-Rome/pytest-452/test_manifest_preserves_domain0')
+
+    def test_manifest_preserves_domain_specific_candidate_metadata(tmp_path: Path) -> None:
+        seed_path = tmp_path / "seed.csv"
+        status_path = tmp_path / "status.json"
+        queue_path = tmp_path / "queue.csv"
+        _write_seed_csv(seed_path)
+        _write_status_json(status_path)
+        write_target_priority_queue(
+            queue_path,
+            seed_csv_path=seed_path,
+            data_status_path=status_path,
+        )
+    
+        manifest = build_target_priority_manifest(
+            queue_path=queue_path,
+            max_targets=1,
+        )
+        target = manifest["targets"][0]
+    
+        assert target["object_type"] == "Star"
+        assert target["distance_light_years"] == pytest.approx(148.727308)
+        assert target["spectral_type"] == "K3V"
+        assert target["exoplanet_host"] == "false"
+        assert target["prior_seti_coverage_reference"] == "E17"
+>       assert target["prior_search_count"] == 0
+E       assert 1 == 0
+
+tests/test_target_priority_queue.py:236: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_target_priority_queue.py::test_build_target_priority_queue_prefers_unsearched_metadata_targets
+FAILED tests/test_target_priority_queue.py::test_write_target_priority_queue_summary_counts_statuses
+FAILED tests/test_target_priority_queue.py::test_queue_preserves_domain_specific_candidate_metadata
+FAILED tests/test_target_priority_queue.py::test_manifest_preserves_domain_specific_candidate_metadata
+4 failed, 53 passed in 2.36s
